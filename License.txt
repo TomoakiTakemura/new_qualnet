@@ -1,0 +1,149 @@
+SOFTWARE LICENSE AGREEMENT
+
+PLEASE READ THIS AGREEMENT CAREFULLY.  BY COPYING, INSTALLING, OR USING ALL OR ANY PORTION OF THIS SOFTWARE, YOU (HEREINAFTER “LICENSEE”) ACCEPT ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT, INCLUDING, WITHOUT LIMITATION, THE PROVISIONS ON LICENSE RESTRICTIONS IN SECTION 4, LIMITED WARRANTY IN SECTIONS 7 AND 8, LIMITATION OF LIABILITY IN SECTION 9, AND SPECIFIC PROVISIONS AND EXCEPTIONS IN SECTION 14.  LICENSEE AGREES THAT THIS AGREEMENT IS LIKE ANY WRITTEN NEGOTIATED AGREEMENT SIGNED BY LICENSEE.  THIS AGREEMENT IS ENFORCEABLE AGAINST LICENSEE.  IF LICENSEE DOES NOT AGREE TO THE TERMS OF THIS AGREEMENT, LICENSEE MAY NOT USE THE SOFTWARE.
+
+The Software is LICENSED, NOT SOLD, only in accordance with the terms of this agreement.  The Software may require activation or registration.
+
+1. Definitions  
+
+Unless otherwise defined herein, each term listed below shall have the meaning set forth below:
+
+1.1 “SCALABLE” means SCALABLE Network Technologies, Inc., a California corporation, with corporate offices at 600 Corporate Pointe, Suite 1200, Culver City, CA 90230, USA.
+
+1.2 “Authorized User” means Licensee, an associate or employee of Licensee, or an independent contractor of Licensee operating under a written independent contractor agreement requiring, among other things, that the independent contractor respect the ownership and confidentiality rights of SCALABLE.
+
+1.3 “Derivative File” means any program, library or file that comprises or contains any portion of, or is in whole or in part based upon, or is a derivative work of, the Software or any Executable Code and/or Source Code supplied by SCALABLE, including, but not limited to, the simulation kernel, model libraries, or model files, or containing portions of Source Code therefrom. 
+
+1.4 “Documentation” means the printed or on-line materials provided by SCALABLE that document the functions of the Software.  
+
+1.5 “Executable Code” means a program file stored in a format that can be executed by a Supported Computer without modification or when linked into a program. 
+
+1.6 “IP Address” means an Internet Protocol address. 
+
+1.7 “License Fee” means the then-effective fee established by SCALABLE and set forth in a separate SCALABLE Price List for authorizing the use of Software.
+
+1.8 “Licensed Computer” means a Supported Computer that has been registered with SCALABLE as that which is authorized to run the Licensed Product, by providing a hardware MAC address, in the case of a “node-locked” license.  In installations where there are multiple licenses for Licensed Products that are shared among multiple Supported Computers, “server-locked” licenses are managed on a central license server, registered by providing a hardware MAC address, and allocated to authorized users utilizing registered IP addresses.
+
+1.9 “Licensee” means you and any legal entity that obtained the Software and on whose behalf it is used; for example, and as applicable, your employer.
+
+1.10 “Licensee’s Network” means a local area network of one or more Supported Computers, which are solely owned or rented, operated, and administered by the Licensee, where each has in common an IP Address subnet, and on which the Software is installed and registered with SCALABLE, and which communicate with a Supported Computer that enables the execution of Executable Code and enforces the restrictions set forth in this License Agreement as to term of license, permitted IP addresses, and limits on the number of simultaneous users.  A computer is no longer part of a Licensee’s Network if it is loaned, rented or sold by the Licensee to another party, or if someone other than Authorized Users is permitted to access the computer.  
+
+1.11 “Licensed Product” means the Software and the Documentation.  
+
+1.12 “Maintenance” means user support, technical support and Software updates, which are provided to the Licensee under a separate Software Maintenance Agreement for a Maintenance Fee.
+
+1.13 “Maintenance Fee” means the then-effective fee established by SCALABLE and set forth in a separate SCALABLE Price List for providing Maintenance of the Software under a Maintenance Agreement during a designated time period.
+
+1.14 “Output File” means any file that is (a) not a Derivative File and (b) solely generated as output by the Licensee’s permitted use of the Software.
+
+1.15 “Software” means (a) all of the information with which this agreement is provided, including but not limited to: (i) all software files and other computer information, whether contained in magnetic, optical, semiconductor, hardcopy, or other storage media, including without limitation Source Code, Executable Code, and data files; (ii) any proprietary scripting logic embedded within exported file formats; and (iii) related Documentation; and (b) any modified versions and copies of, and upgrades, updates, and additions to, such information, provided to Licensee by SCALABLE at any time, to the extent not provided under separate terms (collectively, “Updates”).
+
+1.16 “Software Maintenance Agreement” means a separate agreement between SCALABLE and the Licensee, under which SCALABLE provides Maintenance to the Licensee, upon payment of SCALABLE’s then-effective Maintenance Fee.
+
+1.17 “Supported Computer” means a computer that meets the specifications (including a supported operating system, compiler, and other required software) listed in SCALABLE’s current standard Supported Computer List located in the Documentation or on SCALABLE’s website (currently www.scalable-networks.com).
+
+1.18 “Source Code” means a program file stored in a human-readable text format and that can be translated to Executable Code by an appropriate compiler or assembler, or that can be interpreted by an appropriate interpreter program.
+
+2. Software License
+
+2.1 License Grant.  Subject to Licensee’s continuous compliance with this agreement and payment of the applicable license fees, SCALABLE grants Licensee a non-exclusive, non-transferable and limited license to install and use the Software (a) during the term of such license (“License Term”), and (b) in a manner consistent with the terms of this agreement and applicable Documentation.  Nothing in this agreement grants, or is intended to grant, to the Licensee any ownership or other interest in the Licensed Products other than the right to use the Licensed Products in accordance with the terms of this agreement.  The license granted herein is supplemented by specific provisions in Section 14 as related to the use of certain applicable products and components that may be included in the Software.
+
+2.2 License Term.  Unless otherwise defined in this agreement, in the applicable Documentation, or at the time of purchase, License Term shall be perpetual.  Upon the expiration or termination of the License Term, some or all of the Software may cease to operate without prior notice.  Upon expiration or termination of the License Term, Licensee may not use the Software unless Licensee has renewed the license.  
+
+2.3 Output Files.  An Output File may be used, disclosed, and distributed by Licensee without restriction.  However, such use, disclosure, or distribution shall not grant, and does not grant to the recipient any rights in, or access to, the Software.
+
+2.4 Images.  Images of a Derivative File displayed on a computer screen, and a copies of such images, may be distributed only for purposes of publishing, presenting, or teaching and then only with SCALABLE’s prior written authorization, and accompanied by adequate written notice to the recipients that the image is from a proprietary product developed and owned by SCALABLE, which is protected under applicable intellectual property laws, and SCALABLE’s rights are not waived.
+
+2.5 Evaluation Software. The Software, or portions of the Software, that are provided for “evaluation purposes” or other similar designation (“Evaluation Software”) may be installed and used on Supported Computers during the License Term for demonstration, evaluation, and training purposes only, and only if any Output Files or other materials produced through such use are used only for internal, non-commercial, and non-production purposes. THE EVALUATION SOFTWARE IS PROVIDED “AS IS.”  ACCESS TO AND USE OF ANY OUTPUT FILES CREATED WITH SUCH EVALUATION SOFTWARE IS ENTIRELY AT LICENSEE’S OWN RISK.
+
+2.6 Documentation Copies.  Licensee may make copies of the Documentation for its own internal use in connection with use of the Software in accordance with this agreement, but no more than the amount reasonably necessary.
+
+2.7 Licensed Computer Registration.  Licensee shall provide hardware MAC addresses and IP addresses as appropriate to register the specific Licensed Computer(s).  The Licensee may re-register a license on different hardware twice per calendar year for node-locked licenses or once per calendar year for server-locked licenses at no charge provided that the license is covered under a current Software Maintenance Agreement.  Requests for additional re-registration may incur additional fees.
+
+3. Intellectual Property Ownership & Indemnification
+
+3.1 The Software and any authorized copies that Licensee makes are the intellectual property of and are owned by SCALABLE and its suppliers.  The structure, organization, and source code of the Software are the valuable trade secrets and confidential information of SCALABLE and its suppliers.  The Software is protected by law, including but not limited to the copyright laws of the United States and other countries, and by international treaty provisions.  Except as expressly stated herein, this agreement does not grant Licensee any intellectual property rights in the Software.  All rights not expressly granted are reserved by SCALABLE and its suppliers.
+
+3.2 In the event any suit or claim is brought against the Licensee alleging that the Software constitutes an infringement of any third party intellectual property right, SCALABLE shall defend the suit or claim at its expense and pay any final judgment, provided the Licensee: (a) notifies SCALABLE promptly in writing of such suit or claim: (b) permits SCALABLE to defend and/or settle, at SCALABLE’s election, such suit or claim on behalf of the Licensee; and (c) cooperates fully with SCALABLE on the defense.  This obligation shall only apply where the infringement is inherent in the Software, and not caused by a modification, or combination with other computer program(s), or caused by a use that is unauthorized by, or in violation of, this agreement.
+
+3.3 The indemnification provided by Section 3.2 shall extend to updated releases of the Software furnished to the Licensee by SCALABLE as part of a Software Maintenance Agreement.
+
+4. Restrictions and Requirements
+
+4.1 Proprietary Notices.  Any permitted copy of the Software (including without limitation Documentation) that Licensee makes must contain the same copyright and other proprietary notices that appear on or in the Software.
+
+4.2 Use Obligations.  Licensee agrees that it will not use the Software other than as permitted by this agreement and that it will not use the Software in a manner inconsistent with its design or Documentation.
+
+4.3 No Modifications.  Except as expressly permitted, Licensee may not modify, port, adapt, or translate the Software.
+
+4.4 No Reverse Engineering.  Licensee will not reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code of the Software.
+
+4.5 Any Source Code included as part of the Software may be used by Licensee only for its intended function as part of the Software.  Licensee is not permitted to, and shall not, incorporate or use any portion of the Source Code or the algorithms and ideas therein in connection with any other software.
+
+4.6 Licensee agrees not to remove or destroy any proprietary markings, restrictive legends, or patent, trademark or copyright notices placed upon, or contained within, the Software, Documentation, Derivative Files and Output Files, including but not limited to, start-up screens, logos, program comments, and program output messages.
+
+4.7 No Unbundling.  The Software may include various applications and components, may support multiple platforms and languages, and may be provided to Licensee on multiple media or in multiple copies.  Nonetheless, the Software is designed and provided to Licensee as a single product to be used as a single product on Supported Computers as permitted herein.  Unless otherwise permitted in the Documentation, Licensee is not required to install all component parts of the Software, but Licensee may not unbundle the component parts of the Software for use on different computers.
+
+4.8 NO TRANSFER.  LICENSEE WILL NOT RENT, LEASE, SELL, SUBLICENSE, ASSIGN, OR TRANSFER ITS RIGHTS IN THE SOFTWARE (INCLUDING WITHOUT LIMITATION, SOFTWARE OBTAINED THROUGH A WEB DOWNLOAD), OR AUTHORIZE ANY PORTION OF THE SOFTWARE TO BE COPIED ONTO ANOTHER INDIVIDUAL OR LEGAL ENTITY’S COMPUTER EXCEPT AS MAY BE EXPRESSLY PERMITTED HEREIN.
+
+4.9 SCALABLE reserves the right to modify a Licensed Product at any time, for any reason, including but not limited to removing previously available functionality, with no notice or compensation to Licensee.
+
+5. Termination and Expiration
+
+5.1 Licensee may, at any time, and without cause, terminate this agreement by providing SCALABLE with thirty (30) days written notice of termination.
+
+5.2 SCALABLE shall have the right, without further liability to the Licensee, to terminate this agreement if the Licensee commits a material breach thereof, and fails to cure, as acceptable to SCALABLE, within thirty (30) days after written notice from SCALABLE of the breach.
+
+5.3 Termination or expiration of this agreement shall not release the Licensee from liability to SCALABLE for accrued and unperformed obligations.
+
+5.4 Upon termination or expiration of this agreement, there shall be no refund by SCALABLE of prior payments.  The Licensee shall remain liable for any License Fee or Maintenance Fee, accrued and unpaid as of the date of termination or expiration.
+
+5.5 Upon expiration or termination of this agreement, for any reason, the Licensee shall, within three (3) days, delete all copies of the Software from its computers and storage media, including without limitation all backups, and destroy or return to SCALABLE all Software and Documentation.  Thereafter, the Software and Documentation shall not be used by Licensee or any Authorized User.  The Licensee shall within five (5) days of expiration or termination of this agreement, provide written certification to SCALABLE of the completion of this termination procedure.
+
+5.6 The following provisions shall survive any termination or expiration of this Agreement:  5.3, 5.4, 5.5, 7.3, 9, 10 and 12.
+
+6. Updates
+
+If the Software is an Update to a prior version of SCALABLE software (the “Prior Version”), then Licensee’s use of this Update is conditional upon its retention of the Prior Version.  If Licensee wishes to use this Update in addition to the Prior Version, then Licensee may only do so on the same Computer on which it has installed and is using the Prior Version.  Any obligations that SCALABLE may have to support Prior Versions during the License Term may end upon the availability of this Update.  No other use of the Update is permitted.  Additional Updates may be licensed to Licensee by SCALABLE with additional or different terms.
+
+7. Limited Warranty
+
+7.1 SCALABLE warrants that (a) it is the owner of the Licensed Products, (b) it has the right to enter into this agreement, and (c) performance of its obligations under this agreement shall not be unlawful, or in violation of any other contract entered into by SCALABLE.
+
+7.2 Except as otherwise stated in a separate agreement between SCALABLE and Licensee, SCALABLE warrants that the Software, as covered under a current Software Maintenance Agreement, and as originally delivered and unaltered, shall operate substantially as specified in the then effective Documentation, provided that the Software is used with a Supported Computer.  SCALABLE does not warrant that the operation of the Software in accordance with the Documentation shall meet any particular needs or requirements imposed or created by the Licensee.
+
+7.3 Licensee’s exclusive remedy for breach of Section 7.2 is to have SCALABLE use commercially reasonable efforts during the term of a Software Maintenance Agreement to correct any documented non-conformity of the Software that is reported in writing to SCALABLE.  The method of correction of the non-conformity shall be selected solely by SCALABLE.  
+
+8. Disclaimer
+
+EXCEPT FOR THE EXPRESS WARRANTY SET FORTH IN SECTION 7, SCALABLE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NONINFRINGEMENT, WITH RESPECT TO THE SOFTWARE AND DOCUMENTATION FURNISHED UNDER THIS LICENSE AGREEMENT.  Each party to this agreement acknowledges and agrees that it has not relied upon any representation or warranty, express or implied, by the other party in entering into this agreement other than those made by each party and contained in this agreement.  No representation, including, but not limited to, statements regarding capability, suitability for use, accuracy or performance of the Software, whether made by SCALABLE employees or otherwise, shall be deemed to be a warranty by SCALABLE for any purpose, or give rise to any liability of SCALABLE, unless contained in this agreement, or a written addendum executed by SCALABLE and Licensee.  The parties disclaim any applicability of the Uniform Commercial Code or United Nations Convention on Contracts for the International Sale of Goods.
+
+9. Limitation of Liability
+
+SCALABLE SHALL NOT BE LIABLE FOR INCIDENTAL, INDIRECT, COLLATERAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFIT OR BUSINESS INTERRUPTION) RESULTING FROM LOSS OF USE, DATA, OR PROFITS, ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE AGREEMENT, OR THE USE, INABILITY TO USE OR PERFORMANCE OF THE SOFTWARE AND DOCUMENTATION FURNISHED UNDER THIS LICENSE AGREEMENT, WHETHER IN AN ACTION OF CONTRACT, TORT, INCLUDING BUT NOT LIMITED TO NEGLIGENCE, OR OTHER THEORY, EVEN IF SCALABLE WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, UNLESS SUCH DAMAGE HAS BEEN CAUSED BY SCALABLE’S WILLFUL MISCONDUCT.  IN NO EVENT SHALL SCALABLE’S LIABILITY TO LICENSEE EXCEED THE AMOUNT PAID TO SCALABLE BY THE LICENSEE UNDER THIS LICENSE AGREEMENT IN THE TWELVE (12) MONTHS PRECEDING THE ACCRUAL OF THE CAUSE OF ACTION.
+
+10. Export Rules
+
+Licensee acknowledges that the Software is subject to the U.S. Export Administration Regulations (the “EAR”) or the International Traffic in Arms Regulations (the “ITAR”), and that Licensee will comply with the EAR and ITAR.  Licensee will not export or re-export the Software, directly or indirectly, to: (a) any countries that are subject to U.S. export restrictions (including, but not limited to, Cuba, Iran, North Korea, Sudan, and Syria), (b) any end user whom Licensee knows or has reason to know will utilize them in the design, development or production of nuclear, chemical or biological weapons, or rocket systems, space launch vehicles, and sounding rockets, or unmanned air vehicle systems, or (c) any end user who has been prohibited from participating in U.S. export transactions by any federal agency of the U.S. government.  In addition, Licensee is responsible for complying with any local laws in Licensee’s jurisdiction which may impact its right to import, export, or use the Software.  If SCALABLE has knowledge that a violation has occurred, SCALABLE may be prohibited from providing maintenance and support for the Software.
+
+11. Governing Law
+
+This agreement shall be interpreted and construed under the internal substantive laws of the State of California without reference to choice of law or conflict of law principles.  This agreement is deemed accepted, executed and performed in California.  The state and federal courts located in Los Angeles, California shall have exclusive jurisdiction over any action at law or in equity arising out of or under or relating to this agreement.  The parties waive any objection based on personal jurisdiction, venue, and forum non conveniens or similar doctrine.
+
+12. General Provisions
+
+12.1 If any part of this agreement is found void and unenforceable, it will not affect the validity of the balance of this agreement, which will remain valid and enforceable according to its terms. This agreement may only be modified in writing, signed by an authorized officer of SCALABLE.  The English version of this agreement will be the version used when interpreting or construing this agreement.  This is the entire agreement between SCALABLE and Licensee relating to the Software and it supersedes any prior representations, discussions, undertakings, communications, or advertising relating to the Software.
+
+12.2 Either party’s failure to exercise any of its rights under this agreement shall not constitute a waiver of any past, present, or future right or remedy.
+
+13. Notice to U.S. Government End Users
+
+The Software is provided with RESTRICTED RIGHTS.  The use, duplication, or disclosure by the Government of the Software is subject to restrictions as set forth in subdivision subparagraphs (a) through (d) of the Commercial Computer Software - Restricted Rights clause at FAR 52.227-19, (c)(1)(ii) of The Rights in Technical Data and Computer Software clause at DFARS 252.227-7013, and in similar clauses in the NASA FAR Supplement, as applicable.  The contractor/manufacturer of this Software is SCALABLE Network Technologies, Inc., whose corporate address can be found Section 1.1.
+
+14. Specific Provisions and Exceptions
+This section sets forth specific provisions related to certain products and components of the Software as well as limited exceptions to the above terms and conditions. To the extent that any provision in this section is in conflict with any other term or condition in this agreement, the terms stated in this section will supersede such other term or condition.
+
+14.1 Pre-release Software Additional Terms.  If the Software is pre-commercial release or beta software (“Pre-release Software”), then this section applies. The Pre-release Software does not represent final product from SCALABLE, and may contain bugs, errors, and other problems that could cause system or other failures and data loss. SCALABLE may never commercially release the Pre-release Software.  If Licensee received the Pre-release Software pursuant to a separate written agreement, then Licensee’s use of the Software is also governed by such agreement.  Licensee will promptly return or destroy all copies of Pre-release Software upon the earlier of SCALABLE’s request or upon SCALABLE’s commercial release of such Software.  LICENSEE’S USE OF PRE-RELEASE SOFTWARE IS AT ITS OWN RISK.  SEE SECTIONS 7, 8 AND 9 FOR LIMITED WARRANTY AND LIABILITY LIMITATIONS THAT RELATE TO PRE-RELEASE SOFTWARE.
+
+14.2 EDU Program Software Product.  If the Software is acquired under the provisions of the SCALABLE EDU Program, Licensee is not entitled to use the Software unless Licensee qualifies in its jurisdiction as an Educational User.  Please visit www.scalable-networks.com to learn about eligibility.
+

@@ -1,0 +1,80 @@
+(address-map 
+   (object-map 
+      (map-entry 
+         (address  1 3001)
+         (name  "Home Base")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "APC 1")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "APC 2")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "Route 1")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "Route 2")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "Point 1")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "Point 2")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 1")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 2")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 3")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 4")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 5")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 6")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 7")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 8")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 9")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "T80 10")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "The home base sends an ambush warning message every five seconds")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "This hill blocks the signal until the entities get closer to the sender")
+      )
+   )
+)

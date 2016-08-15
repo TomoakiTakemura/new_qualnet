@@ -1,0 +1,29 @@
+# Copyright (c) 2001-2015, SCALABLE Network Technologies, Inc.  All Rights Reserved.
+#                          600 Corporate Pointe
+#                          Suite 1200
+#                          Culver City, CA 90230
+#                          info@scalable-networks.com
+#
+# This source code is licensed, not sold, and is subject to a written
+# license agreement.  Among other things, no portion of this source
+# code may be copied, transmitted, disclosed, displayed, distributed,
+# translated, used as the basis for a derivative work, or used, in
+# whole or in part, for any program or purpose other than its intended
+# use in compliance with the license agreement as part of the QualNet
+# software.  This source code and certain of the algorithms contained
+# within it are confidential trade secrets of Scalable Network
+# Technologies, Inc. and may not be used as the basis for any other
+# software, hardware, product or service.
+
+1 0 (949.91870117187500, 1065.24975585937500, 0.00000000000000) 0 0
+2 0 (1534.00488281250000, 1099.20825195312500, 0.00000000000000) 0 0
+3 0 (2002.63232421875000, 1112.79174804687500, 0.00000000000000) 0 0
+4 0 (1017.83557128906250, 671.33111572265625, 0.00000000000000) 0 0
+5 0 (1663.04724121093750, 698.49792480468750, 0.00000000000000) 0 0
+6 0 (2029.79907226562500, 718.87304687500000, 0.00000000000000) 0 0
+2 6M (4676.94287109375000, 1133.16674804687500, 0.00000000000000) 0 0
+4 6M (4507.15039062500000, 718.87304687500000, 0.00000000000000) 0 0
+1 6M (4541.10888671875000, 1078.83312988281250, 0.00000000000000) 0 0
+5 6M (4656.56787109375000, 732.45642089843750, 0.00000000000000) 0 0
+3 6M (4826.36035156250000, 1072.04150390625000, 0.00000000000000) 0 0
+6 6M (4860.31884765625000, 807.16516113281250, 0.00000000000000) 0 0

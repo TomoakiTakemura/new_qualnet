@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+        <activationsettings path="@PREPTOOL_DIR@/@SCALABLE_LIB_SRC@" isserver="false"/>
+        <certificate path="bin/" hostverify="2" peerverify="true" />
+        <items installpath="bin" runtimeloadname="@SCALABLE_LIB@" >
+                <item path="bin/@BUILD_TARGET_SIMEXEC_REAL@@CMAKE_EXECUTABLE_SUFFIX@" />
+        </items>
+        <preferences>
+                <verbose level="0" />
+                <debuggable value="true" />
+                <stripwarnings value="false" />
+        </preferences>
+</config>

@@ -1,0 +1,30 @@
+(scenario-extras 
+   (force-hostility 
+      (force 
+         (force-id  1)
+         (force-name  "Friendly")
+         (force-color  0.000000 0.000000 0.000000)
+         (include-in-dialogs False)
+         (hostile-to 
+            (force-id  2)
+         )
+      )
+      (force 
+         (force-id  2)
+         (force-name  "Opposing")
+         (force-color  0.000000 0.000000 0.000000)
+         (include-in-dialogs False)
+         (hostile-to 
+            (force-id  1)
+         )
+      )
+      (force 
+         (force-id  3)
+         (force-name  "Neutral")
+         (force-color  0.000000 0.000000 0.000000)
+         (include-in-dialogs False)
+         (hostile-to )
+      )
+   )
+   (spawn-templates )
+)

@@ -1,0 +1,33 @@
+#ifndef LLROUND_CONFIG_H
+#define LLROUND_CONFIG_H
+
+#include <cmath>
+#include <cfloat>
+#include "clock.h"
+
+/* Define if we have llround */
+#cmakedefine HAVE_LLROUND
+
+/* Define if we have std::llround */
+#cmakedefine HAVE_STD_LLROUND
+
+#if defined(HAVE_LLROUND) || defined(HAVE_STD_LLROUND)
+inline clocktype clockround(double x)
+{
+#ifndef HAVE_LLROUND
+    using std::llround;
+#endif
+    return clocktype(llround(x));
+}
+#else
+inline clocktype clockround(double x)
+{
+    double xx = floor(x + 0.5);
+
+    clocktype xxx = (clocktype)xx;
+
+    return xxx;
+}
+#endif
+
+#endif // LLROUND_CONFIG_H

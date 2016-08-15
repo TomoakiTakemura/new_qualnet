@@ -1,0 +1,8 @@
+Warmup
+Port 9034
+TimeManagementMode TimeManagedFast 5.0
+InitializeSimulation COORDINATESYSTEM LatLonAlt
+CREATEPLATFORM 1 0 LAT 34.295 LON -119.750 DAMAGESTATE 0 Type 1
+CREATEPLATFORM 2 0 LAT 34.295 LON -119.749 DAMAGESTATE 0 Type 1
+CommEffectsRequest 1 2 45 ID1 99 UDP SIZE 512 Precedence Routine
+StopSimulation 60

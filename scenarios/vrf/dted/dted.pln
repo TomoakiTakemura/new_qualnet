@@ -1,0 +1,96 @@
+(
+   (Plan-File (version "2.0"))
+(Plan 
+      (pending-triggers )
+      (plan-name  "Home Base")
+      (Block 
+         (While 
+            (Condition 
+               (True )
+            )
+            (Block 
+               (Task 
+                  (task-type "send-text-task")
+                  (subtask False)
+                  (destination-name  "DtBroadcast")
+                  (text  "Warning! There is an ambush ahead!")
+               )
+               (Task 
+                  (task-type "wait-duration")
+                  (subtask False)
+                  (seconds-to-wait  5.000000)
+               )
+            )
+         )
+      )
+      (plan-execution-stack 
+      )
+   )
+   (Plan 
+      (pending-triggers )
+      (plan-name  "APC 1")
+      (Block 
+         (When 
+            (Trigger-name  "")
+            (Condition 
+               (ReceiveText 
+                  (MatchingText  "ambush")
+                  (AllowContaining True)
+               )
+            )
+            (Option  "ReTask")
+            (Block 
+               (Task 
+                  (task-type "move-to")
+                  (subtask False)
+                  (control-point  "Point 1")
+                  (continue-moving-flag False)
+               )
+            )
+         )
+         (Task 
+            (task-type "move-along")
+            (subtask False)
+            (route  "Route 1")
+            (traversal-direction  0)
+            (start-at-closest-point False)
+         )
+      )
+      (plan-execution-stack 
+      )
+   )
+   (Plan 
+      (pending-triggers )
+      (plan-name  "APC 2")
+      (Block 
+         (When 
+            (Trigger-name  "")
+            (Condition 
+               (ReceiveText 
+                  (MatchingText  "ambush")
+                  (AllowContaining True)
+               )
+            )
+            (Option  "ReTask")
+            (Block 
+               (Task 
+                  (task-type "move-to")
+                  (subtask False)
+                  (control-point  "Point 2")
+                  (continue-moving-flag False)
+               )
+            )
+         )
+         (Task 
+            (task-type "move-along")
+            (subtask False)
+            (route  "Route 2")
+            (traversal-direction  0)
+            (start-at-closest-point False)
+         )
+      )
+      (plan-execution-stack 
+      )
+   )
+
+)

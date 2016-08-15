@@ -1,0 +1,3 @@
+set(main_source ${CMAKE_CURRENT_LIST_DIR}/${BUILD_TARGET}-main-${BUILD_PLATFORM}${MPI_SUFFIX}${CMAKE_CXX_OUTPUT_EXTENSION})
+set_source_files_properties(${main_source}
+  PROPERTIES EXTERNAL_OBJECT 1)

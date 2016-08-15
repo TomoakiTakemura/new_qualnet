@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<category name="NODE CONFIGURATION">
+    <subcategory name="Physical Layer" class="interface,device,atmdevice,WirelessSubnet">
+        <variable name="Interface Name" key="DUMMY-INTERFACE-TYPE" type="Selection" default="SUBNET-WIRELESS" help="" visibilityrequires="false" keyvisible="false">
+            <option name="Link Wireless" value="LINK-WIRELESS" />
+            <option name="Subnet Wired" value="SUBNET-WIRED" />
+            <option name="Link Microwave" value="LINK-MICROWAVE" />
+            <option name="Subnet Wireless" value="SUBNET-WIRELESS" />
+            <option name="Link Wired" value="LINK-WIRED" />
+            <option name="Subnet Satellite" value="SUBNET-SATELLITE" />
+        </variable>
+        <variable name="Listenable Channels" key="PHY-LISTENABLE-CHANNELS" type="Mask" default="0" format="MaskArray" length="PROPAGATION-CHANNEL-FREQUENCY.length" addon="wireless" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'"/>
+        <variable name="Listening Channels" key="PHY-LISTENING-CHANNELS" type="Mask" default="0" format="MaskArray" length="PROPAGATION-CHANNEL-FREQUENCY.length" addon="wireless" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'"/>
+        <variable name="Radio Type" key="PHY-MODEL" type="Selection" default="PHY802.11b" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'">
+            <option value="None" name="None" />
+            <option value="PHY802.11a" name="802.11a/g Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-AUTO-RATE-FALLBACK" type="Selection" name="Enable Auto Rate Fallback" default="NO" optional="false">
+                    <option value="NO" name="No">
+                        <variable key="PHY802.11-DATA-RATE" type="Selection" name="Data Rate" default="6000000" help="Data rates in bps. Supported data rates: 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 36 Mbps, 48 Mbps, 54 Mbps">
+                            <option value="6000000" name="6 Mbps"/>
+                            <option value="9000000" name="9 Mbps"/>
+                            <option value="12000000" name="12 Mbps"/>
+                            <option value="18000000" name="18 Mbps"/>
+                            <option value="24000000" name="24 Mbps"/>
+                            <option value="36000000" name="36 Mbps"/>
+                            <option value="48000000" name="48 Mbps"/>
+                            <option value="54000000" name="54 Mbps"/>
+                        </variable>
+                    </option>
+                    <option value="YES" name="Yes">
+                        <variable key="DUMMY-PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Specify Broadcast Data Rate" default="Not Applicable" optional="true"> 
+                            <option value="Not Applicable" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Broadcast Data Rate" default="6000000" help="Data rates in bps. Supported data rates: 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 36 Mbps, 48 Mbps, 54 Mbps">
+                                    <option value="6000000" name="6 Mbps"/>
+                                    <option value="9000000" name="9 Mbps"/>
+                                    <option value="12000000" name="12 Mbps"/>
+                                    <option value="18000000" name="18 Mbps"/>
+                                    <option value="24000000" name="24 Mbps"/>
+                                    <option value="36000000" name="36 Mbps"/>
+                                    <option value="48000000" name="48 Mbps"/>
+                                    <option value="54000000" name="54 Mbps"/>
+                                </variable>
+                            </option>
+                        </variable>
+                    </option>
+                </variable>
+                <variable key="PHY802.11-FREQUENCY-BAND" type="selection" name="Frequency Band" default="5000000000">
+                    <option value="2400000000" name="2.4 GHz">
+                        <variable key="PHY802.11-20MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 20 MHz" min="1" max="12" default="6" />
+                    </option>
+                    <option value="5000000000" name="5 GHz">
+                        <variable key="PHY802.11-20MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 20 MHz" min="9" max="163" default="40" />
+                    </option>
+                </variable>
+                <variable key="PHY802.11-TX-POWER-6MBPS" type="Fixed" name="Transmission Power at 6 Mbps (dBm)" default="20.0" oldKey="PHY802.11a-TX-POWER--6MBPS"/>
+                <variable key="PHY802.11-TX-POWER-9MBPS" type="Fixed" name="Transmission Power at 9 Mbps (dBm)" default="20.0" oldKey="PHY802.11a-TX-POWER--9MBPS"/>
+                <variable key="PHY802.11-TX-POWER-12MBPS" type="Fixed" name="Transmission Power at 12 Mbps (dBm)" default="19.0" oldKey="PHY802.11a-TX-POWER-12MBPS"/>
+                <variable key="PHY802.11-TX-POWER-18MBPS" type="Fixed" name="Transmission Power at 18 Mbps (dBm)" default="19.0" oldKey="PHY802.11a-TX-POWER-18MBPS"/>
+                <variable key="PHY802.11-TX-POWER-24MBPS" type="Fixed" name="Transmission Power at 24 Mbps (dBm)" default="18.0" oldKey="PHY802.11a-TX-POWER-24MBPS"/>
+                <variable key="PHY802.11-TX-POWER-36MBPS" type="Fixed" name="Transmission Power at 36 Mbps (dBm)" default="18.0" oldKey="PHY802.11a-TX-POWER-36MBPS"/>
+                <variable key="PHY802.11-TX-POWER-48MBPS" type="Fixed" name="Transmission Power at 48 Mbps (dBm)" default="16.0" oldKey="PHY802.11a-TX-POWER-48MBPS"/>
+                <variable key="PHY802.11-TX-POWER-54MBPS" type="Fixed" name="Transmission Power at 54 Mbps (dBm)" default="16.0" oldKey="PHY802.11a-TX-POWER-54MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-6MBPS" type="Fixed" name="Receive Sensitivity at 6 Mbps (dBm)" default="-82.0" oldKey="PHY802.11a-RX-SENSITIVITY--6MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-9MBPS" type="Fixed" name="Receive Sensitivity at 9 Mbps (dBm)" default="-81.0" oldKey="PHY802.11a-RX-SENSITIVITY--9MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-12MBPS" type="Fixed" name="Receive Sensitivity at 12 Mbps (dBm)" default="-79.0" oldKey="PHY802.11a-RX-SENSITIVITY-12MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-18MBPS" type="Fixed" name="Receive Sensitivity at 18 Mbps (dBm)" default="-77.0" oldKey="PHY802.11a-RX-SENSITIVITY-18MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-24MBPS" type="Fixed" name="Receive Sensitivity at 24 Mbps (dBm)" default="-74.0" oldKey="PHY802.11a-RX-SENSITIVITY-24MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-36MBPS" type="Fixed" name="Receive Sensitivity at 36 Mbps (dBm)" default="-70.0" oldKey="PHY802.11a-RX-SENSITIVITY-36MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-48MBPS" type="Fixed" name="Receive Sensitivity at 48 Mbps (dBm)" default="-66.0" oldKey="PHY802.11a-RX-SENSITIVITY-48MBPS"/>
+                <variable key="PHY802.11-RX-SENSITIVITY-54MBPS" type="Fixed" name="Receive Sensitivity at 54 Mbps (dBm)" default="-65.0" oldKey="PHY802.11a-RX-SENSITIVITY-54MBPS"/>
+                <variable key="PHY802.11-ESTIMATED-DIRECTIONAL-ANTENNA-GAIN" type="Fixed" name="Estimated Directional Antenna Gain (dB)" default="15.0" visibilityrequires="false"/>
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11a">
+                    <option value="BER-BASED" name="BER-based Reception Model" help="If specified, the Simulator will look up Bit Error Rate (BER) in the SNR - BER table specified by BER-TABLE-FILE.">
+                        <variable name="Number of BER Tables" key="DUMMY-NUM-PHY-RX-BER-TABLE-802.11a" default="8" type="Array" embeddedarray="true" disable="true">
+                            <variable key="PHY-RX-BER-TABLE-FILE" type="File" name="BER Table" default="[Required]" filetype="ber" />
+                        </variable>
+                    </option>
+                    <option value="PHY802.11a" name="PHY802.11a Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.11b" name="802.11b Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-AUTO-RATE-FALLBACK" type="Selection" name="Enable Auto Rate Fallback" default="NO" optional="false">
+                    <option value="NO" name="No">
+                        <variable key="PHY802.11-DATA-RATE" type="Selection" name="Data Rate" default="2000000" help="Data rates in bps. Supported data rates: 1 Mbps, 2 Mbps, 5.5 Mbps, 11 Mbps">
+                            <option value="1000000" name="1 Mbps"/>
+                            <option value="2000000" name="2 Mbps"/>
+                            <option value="5500000" name="5.5 Mbps"/>
+                            <option value="11000000" name="11 Mbps"/>
+                        </variable>
+                    </option>
+                    <option value="YES" name="Yes">
+                        <variable key="DUMMY-PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Specify Broadcast Data Rate" default="NO" optional="true">
+                            <option value="NO" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Broadcast Data Rate" default="2000000" help="Data rates in bps. Supported data rates: 1 Mbps, 2 Mbps, 5.5 Mbps, 11 Mbps">
+                                    <option value="1000000" name="1 Mbps"/>
+                                    <option value="2000000" name="2 Mbps"/>
+                                    <option value="5500000" name="5.5 Mbps"/>
+                                    <option value="11000000" name="11 Mbps"/>
+                                </variable>
+                            </option>
+                        </variable>
+                    </option>
+                </variable>
+                <variable key="PHY802.11-FREQUENCY-BAND" type="Selection" name="Frequency Band" default="2400000000" disable="TRUE">
+                    <option value="2400000000" name="2.4 GHz"/>
+                </variable>
+                <variable key="PHY802.11-20MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 20 MHz" min="1" max="12" default="6" />
+                <variable key="PHY802.11-TX-POWER-1MBPS" type="Fixed" name="Transmission Power at 1 Mbps (dBm)" default="15.0" oldKey="PHY802.11b-TX-POWER--1MBPS"/>
+                <variable key="PHY802.11-TX-POWER-2MBPS" type="Fixed" name="Transmission Power at 2 Mbps (dBm)" default="15.0" oldKey="PHY802.11b-TX-POWER--2MBPS"/>
+                <variable key="PHY802.11-TX-POWER-5.5MBPS" type="Fixed" name="Transmission Power at 5.5 Mbps (dBm)" default="15.0" oldKey="PHY802.11b-TX-POWER--6MBPS"/>
+                <variable key="PHY802.11-TX-POWER-11MBPS" type="Fixed" name="Transmission Power at 11 Mbps (dBm)" default="15.0" oldKey="PHY802.11b-TX-POWER-11MBPS"/>
+                <variable key="PHY802.11-USE-LEGACY-802.11b" type="selection" name="Use Legacy 802.11b PHY Values" default="NO">
+                    <option value="YES" name="Yes">
+                        <variable key="PHY802.11-RX-SENSITIVITY-1MBPS" type="Fixed" name="Receive Sensitivity at 1 Mbps (dBm)" default="-94.0" oldKey="PHY802.11b-RX-SENSITIVITY--1MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-2MBPS" type="Fixed" name="Receive Sensitivity at 2 Mbps (dBm)" default="-91.0" oldKey="PHY802.11b-RX-SENSITIVITY--2MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-5.5MBPS" type="Fixed" name="Receive Sensitivity at 5.5 Mbps (dBm)" default="-87.0" oldKey="PHY802.11b-RX-SENSITIVITY--6MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-11MBPS" type="Fixed" name="Receive Sensitivity at 11 Mbps (dBm)" default="-83.0" oldKey="PHY802.11b-RX-SENSITIVITY-11MBPS"/>
+                    </option>
+                    <option value="NO" name="No">
+                        <variable key="PHY802.11-RX-SENSITIVITY-1MBPS" type="Fixed" name="Receive Sensitivity at 1 Mbps (dBm)" default="-82.0" oldKey="PHY802.11b-RX-SENSITIVITY--1MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-2MBPS" type="Fixed" name="Receive Sensitivity at 2 Mbps (dBm)" default="-80.0" oldKey="PHY802.11b-RX-SENSITIVITY--2MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-5.5MBPS" type="Fixed" name="Receive Sensitivity at 5.5 Mbps (dBm)" default="-78.0" oldKey="PHY802.11b-RX-SENSITIVITY--6MBPS"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-11MBPS" type="Fixed" name="Receive Sensitivity at 11 Mbps (dBm)" default="-76.0" oldKey="PHY802.11b-RX-SENSITIVITY-11MBPS"/>
+                    </option>
+                </variable>                
+                <variable key="PHY802.11-ESTIMATED-DIRECTIONAL-ANTENNA-GAIN" type="Fixed" name="Estimated Directional Antenna Gain (dB)" default="15.0" visibilityrequires="false"/>
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11b">
+                    <option value="BER-BASED" name="BER-based Reception Model" help="If specified, the Simulator will look up Bit Error Rate (BER) in the SNR - BER table specified by BER-TABLE-FILE.">
+                        <variable name="Number of BER Tables" key="DUMMY-NUM-PHY-RX-BER-TABLE-802.11b" default="4" type="Array" embeddedarray="true" disable="true" >
+                            <variable key="PHY-RX-BER-TABLE-FILE" type="File" name="BER Table" default="[Required]" filetype="ber" />
+                        </variable>
+                    </option>
+                    <option value="PHY802.11b" name="PHY802.11b Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.11n" name="802.11n Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-NUM-ANTENNA-ELEMENTS" type="Integer" name="Number of Antenna Elements" default="1" min="1" max="4" oldKey="PHY802.11n-NUM-ANTENNA-ELEMENTS" />
+                <variable key="PHY802.11-SHORT-GI-CAPABLE" name="Enable Short OFDM Inter-symbol Guard Interval Capability" type="Selection" default="NO" help="Is the 802.11n radio capable using short guard interval in OFDM modulation?" oldKey="PHY802.11n-SHORT-GI-CAPABLE">
+                    <option value="NO" name="No"/>
+                    <option value="YES" name="Yes"/>
+                </variable>
+                <variable key="PHY802.11-TX-POWER" type="Fixed" name="Transmission Power (dBm)" default="20.0" oldKey="PHY802.11n-TX-POWER" />
+                <variable key="PHY802.11-FREQUENCY-BAND" type="selection" name="Frequency Band" default="5000000000" >
+                    <option value="2400000000" name="2.4 GHz">
+                        <variable key="PHY802.11-20MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 20 MHz" min="1" max="12" default="6"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS0" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 0" default="-82.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS0" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS1" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 1" default="-79.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS1"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS2" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 2" default="-77.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS2"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS3" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 3" default="-74.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS3"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS4" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 4" default="-70.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS4"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS5" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 5" default="-66.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS5"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS6" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 6" default="-65.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS6"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS7" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 7" default="-64.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS7"/>
+                        <variable key="PHY802.11-40MHz-SUPPORTED" name="Enable Support for 40 MHz Bandwidth" type="Selection" default="NO" help="Is the 802.11ac radio capable using 40 MHz Bandwidth">
+                            <option value="NO" name="No"/>
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-40MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 40 MHz" min="3" max="10" default="4"/>
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS0" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 0" default="-79.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS0" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS1" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 1" default="-76.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS1" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS2" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 2" default="-74.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS2" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS3" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 3" default="-71.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS3" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS4" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 4" default="-67.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS4" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS5" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 5" default="-63.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS5" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS6" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 6" default="-62.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS6" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS7" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 7" default="-61.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS7" />
+                            </option>
+                        </variable>
+                    </option>
+                    <option value="5000000000" name="5 GHz">
+                        <variable key="PHY802.11-20MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 20 MHz" min="9" max="163" default="40"/>
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS0" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 0" default="-82.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS0" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS1" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 1" default="-79.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS1" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS2" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 2" default="-77.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS2" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS3" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 3" default="-74.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS3" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS4" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 4" default="-70.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS4" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS5" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 5" default="-66.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS5" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS6" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 6" default="-65.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS6" />
+                        <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS7" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 7" default="-64.0" oldKey="PHY802.11n-RX-SENSITIVITY-20MHz-MCS7" />
+                        <variable key="PHY802.11-40MHz-SUPPORTED" name="Enable Support for 40 MHz Bandwidth" type="Selection" default="NO" help="Is the 802.11ac radio capable using 40 MHz Bandwidth">
+                            <option value="NO" name="No"/>
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-40MHz-CHANNEL-INDEX" type="Fixed" name="Channel Index for 40 MHz" min="11" max="161" default="38"/>
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS0" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 0" default="-79.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS0" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS1" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 1" default="-76.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS1" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS2" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 2" default="-74.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS2" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS3" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 3" default="-71.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS3" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS4" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 4" default="-67.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS4" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS5" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 5" default="-63.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS5" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS6" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 6" default="-62.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS6" />
+                                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS7" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 7" default="-61.0" oldKey="PHY802.11n-RX-SENSITIVITY-40MHz-MCS7" />
+                            </option>
+                        </variable>
+                    </option>
+                </variable>
+                <variable key="PHY802.11-ESTIMATED-DIRECTIONAL-ANTENNA-GAIN" type="Fixed" name="Estimated Directional Antenna Gain (dB)" default="15.0" visibilityrequires="false"/>
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11n">
+                    <option value="PHY802.11n" name="PHY802.11n Reception Model" />
+                </variable>
+            </option>
+
+            <option value="PHY802.11ac" name="802.11ac Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-NUM-ANTENNA-ELEMENTS" type="Integer" name="Number of Antenna Elements" default="1" min="1" max="8" />
+                <variable key="PHY802.11-ANTENNA-ELEMENT-SPACE" type="Fixed" name="Antenna Element Space" default="0.5" />
+                
+                <variable key="PHY802.11-SHORT-GI-CAPABLE" name="Enable Short OFDM Inter-symbol Guard Interval Capability" type="Selection" default="NO" help="Is the 802.11ac radio capable of using short guard interval in OFDM modulation?">
+                    <option value="NO" name="No"/>
+                    <option value="YES" name="Yes"/>
+                </variable>
+                <variable key="PHY802.11-TX-POWER" type="Fixed" name="Transmission Power (dBm)" default="20.0" />
+                <variable key="PHY802.11-FREQUENCY-BAND" type="Selection" name="Frequency Band" default="5000000000" disable="TRUE">
+                    <option value="5000000000" name="5 GHz" />
+                </variable>
+                <variable key="PHY802.11-20MHz-CHANNEL-INDEX" name="Channel Index for 20 MHz" type="Integer" min="9" max="163" default="40" />
+                <variable key="PHY802.11-40MHz-CHANNEL-INDEX" name="Channel Index for 40 MHz" type="Integer" min="11" max="161" default="38" />
+                <variable key="PHY802.11-80MHz-CHANNEL-INDEX" name="Channel Index for 80 MHz" type="Integer" min="15" max="157" default="42" />
+                
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS0" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 0" default="-82.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS1" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 1" default="-79.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS2" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 2" default="-77.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS3" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 3" default="-74.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS4" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 4" default="-70.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS5" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 5" default="-66.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS6" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 6" default="-65.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS7" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 7" default="-64.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS8" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 8" default="-59.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-20MHz-MCS9" type="Fixed" name="Receive Sensitivity at 20 MHz for MCS 9" default="-57.0" />
+
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS0" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 0" default="-79.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS1" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 1" default="-76.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS2" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 2" default="-74.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS3" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 3" default="-71.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS4" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 4" default="-67.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS5" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 5" default="-63.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS6" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 6" default="-62.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS7" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 7" default="-61.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS8" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 8" default="-56.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-40MHz-MCS9" type="Fixed" name="Receive Sensitivity at 40 MHz for MCS 9" default="-54.0" />
+
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS0" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 0" default="-76.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS1" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 1" default="-73.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS2" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 2" default="-71.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS3" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 3" default="-68.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS4" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 4" default="-64.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS5" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 5" default="-60.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS6" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 6" default="-59.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS7" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 7" default="-58.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS8" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 8" default="-53.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-80MHz-MCS9" type="Fixed" name="Receive Sensitivity at 80 MHz for MCS 9" default="-51.0" />
+
+                <variable key="PHY802.11-160MHz-SUPPORTED" name="Enable Support for 160 MHz Bandwidth" type="Selection" default="NO" help="Is the 802.11ac radio capable of using 160 MHz Bandwidth">
+                    <option value="NO" name="No"/>
+                    <option value="YES" name="Yes">
+                        <variable key="PHY802.11-160MHz-CHANNEL-INDEX" name="Channel Index for 160 MHz" type="Integer" min="23" max="149" default="50" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS0"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 0" default="-73.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS1"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 1" default="-70.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS2"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 2" default="-68.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS3"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 3" default="-65.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS4"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 4" default="-61.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS5"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 5" default="-57.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS6"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 6" default="-56.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS7"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 7" default="-55.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS8"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 8" default="-50.0" />
+                            <variable key="PHY802.11-RX-SENSITIVITY-160MHz-MCS9"  type="Fixed" name="Receive Sensitivity at 160 MHz for MCS 9" default="-48.0" />
+                    </option>
+                </variable>
+
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11ac">
+                    <option value="PHY802.11ac" name="PHY802.11ac Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.11pCCH" name="802.11p Control Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-10MHz-CHANNEL-INDEX" name="Channel Index for 10 MHz" type="Integer" default="178" disable="TRUE"/>
+                <variable key="PHY802.11-AUTO-RATE-FALLBACK" type="Selection" name="Enable Auto Rate Fallback" default="NO" optional="false">
+                    <option value="NO" name="No">
+                        <variable key="PHY802.11-DATA-RATE" type="Selection" name="Data Rate" default="3000000" help="Data rates in bps. Supported data rates: 3 Mbps, 4.5 Mbps, 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 27 Mbps">
+                            <option value="3000000" name="3 Mbps"/>
+                            <option value="4500000" name="4.5 Mbps"/>
+                            <option value="6000000" name="6 Mbps"/>
+                            <option value="9000000" name="9 Mbps"/>
+                            <option value="12000000" name="12 Mbps"/>
+                            <option value="18000000" name="18 Mbps"/>
+                            <option value="24000000" name="24 Mbps"/>
+                            <option value="27000000" name="27 Mbps"/>
+                        </variable>
+                    </option>
+                    <option value="YES" name="Yes">
+                        <variable key="DUMMY-PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Specify Broadcast Data Rate" default="NO">
+                            <option value="NO" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Broadcast Data Rate" default="3000000" help="Data rates in bps. Supported data rates: 3 Mbps, 4.5 Mbps, 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 27 Mbps">
+                                    <option value="3000000" name="3 Mbps"/>
+                                    <option value="4500000" name="4.5 Mbps"/>
+                                    <option value="6000000" name="6 Mbps"/>
+                                    <option value="9000000" name="9 Mbps"/>
+                                    <option value="12000000" name="12 Mbps"/>
+                                    <option value="18000000" name="18 Mbps"/>
+                                    <option value="24000000" name="24 Mbps"/>
+                                    <option value="27000000" name="27 Mbps"/>
+                                </variable>
+                            </option>
+                        </variable>
+                    </option>
+                </variable>
+                <variable key="PHY802.11-ESTIMATED-DIRECTIONAL-ANTENNA-GAIN" type="Fixed" name="Estimated Directional Antenna Gain (dB)" default="15.0" visibilityrequires="false"/>
+                <variable key="PHY802.11-TX-POWER-3MBPS" type="Fixed" name="Transmission Power at 3 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-4.5MBPS" type="Fixed" name="Transmission Power at 4.5 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-6MBPS" type="Fixed" name="Transmission Power at 6 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-9MBPS" type="Fixed" name="Transmission Power at 9 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-12MBPS" type="Fixed" name="Transmission Power at 12 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-18MBPS" type="Fixed" name="Transmission Power at 18 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-24MBPS" type="Fixed" name="Transmission Power at 24 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-27MBPS" type="Fixed" name="Transmission Power at 27 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-RX-SENSITIVITY-3MBPS" type="Fixed" name="Receive Sensitivity at 3 Mbps (dBm)" default="-85.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-4.5MBPS" type="Fixed" name="Receive Sensitivity at 4.5 Mbps (dBm)" default="-84.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-6MBPS" type="Fixed" name="Receive Sensitivity at 6 Mbps (dBm)" default="-82.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-9MBPS" type="Fixed" name="Receive Sensitivity at 9 Mbps (dBm)" default="-80.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-12MBPS" type="Fixed" name="Receive Sensitivity at 12 Mbps (dBm)" default="-77.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-18MBPS" type="Fixed" name="Receive Sensitivity at 18 Mbps (dBm)" default="-70.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-24MBPS" type="Fixed" name="Receive Sensitivity at 24 Mbps (dBm)" default="-69.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-27MBPS" type="Fixed" name="Receive Sensitivity at 27 Mbps (dBm)" default="-67.0" />
+
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11pCCH">
+                            <option value="PHY802.11pCCH" name="PHY802.11p Control Channel Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.11pSCH" name="802.11p Service Radio" addon="wireless">
+                <variable key="PHY802.11-RADIO-OVERLAY-ID" type="Fixed" name="Radio Overlay ID" min="0" default="[Optional]"/>
+                <variable key="PHY802.11-10MHz-CHANNEL-INDEX" name="Channel Index for 10 MHz" type="Integer" min="172" max="184" default="172"/>
+                <variable key="PHY802.11-AUTO-RATE-FALLBACK" type="Selection" name="Enable Auto Rate Fallback" default="NO" optional="false">
+                    <option value="NO" name="No">
+                        <variable key="PHY802.11-DATA-RATE" type="Selection" name="Data Rate" default="3000000" help="Data rates in bps. Supported data rates: 3 Mbps, 4.5 Mbps, 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 27 Mbps">
+                            <option value="3000000" name="3 Mbps"/>
+                            <option value="4500000" name="4.5 Mbps"/>
+                            <option value="6000000" name="6 Mbps"/>
+                            <option value="9000000" name="9 Mbps"/>
+                            <option value="12000000" name="12 Mbps"/>
+                            <option value="18000000" name="18 Mbps"/>
+                            <option value="24000000" name="24 Mbps"/>
+                            <option value="27000000" name="27 Mbps"/>
+                        </variable>
+                    </option>
+                    <option value="YES" name="Yes">
+                        <variable key="DUMMY-PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Specify Broadcast Data Rate" default="NO">
+                            <option value="NO" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable key="PHY802.11-DATA-RATE-FOR-BROADCAST" type="Selection" name="Broadcast Data Rate" default="3000000" help="Data rates in bps. Supported data rates: 3 Mbps, 4.5 Mbps, 6 Mbps, 9 Mbps, 12 Mbps, 18 Mbps, 24 Mbps, 27 Mbps">
+                                    <option value="3000000" name="3 Mbps"/>
+                                    <option value="4500000" name="4.5 Mbps"/>
+                                    <option value="6000000" name="6 Mbps"/>
+                                    <option value="9000000" name="9 Mbps"/>
+                                    <option value="12000000" name="12 Mbps"/>
+                                    <option value="18000000" name="18 Mbps"/>
+                                    <option value="24000000" name="24 Mbps"/>
+                                    <option value="27000000" name="27 Mbps"/>
+                                </variable>
+                            </option>
+                        </variable>
+                    </option>
+                    </variable>
+                <variable key="PHY802.11-ESTIMATED-DIRECTIONAL-ANTENNA-GAIN" type="Fixed" name="Estimated Directional Antenna Gain (dB)" default="15.0" visibilityrequires="false"/>
+                <variable key="PHY802.11-TX-POWER-3MBPS" type="Fixed" name="Transmission Power at 3 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-4.5MBPS" type="Fixed" name="Transmission Power at 4.5 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-6MBPS" type="Fixed" name="Transmission Power at 6 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-9MBPS" type="Fixed" name="Transmission Power at 9 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-12MBPS" type="Fixed" name="Transmission Power at 12 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-18MBPS" type="Fixed" name="Transmission Power at 18 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-24MBPS" type="Fixed" name="Transmission Power at 24 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-TX-POWER-27MBPS" type="Fixed" name="Transmission Power at 27 Mbps (dBm)" default="28.8" />
+                <variable key="PHY802.11-RX-SENSITIVITY-3MBPS" type="Fixed" name="Receive Sensitivity at 3 Mbps (dBm)" default="-85.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-4.5MBPS" type="Fixed" name="Receive Sensitivity at 4.5 Mbps (dBm)" default="-84.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-6MBPS" type="Fixed" name="Receive Sensitivity at 6 Mbps (dBm)" default="-82.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-9MBPS" type="Fixed" name="Receive Sensitivity at 9 Mbps (dBm)" default="-80.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-12MBPS" type="Fixed" name="Receive Sensitivity at 12 Mbps (dBm)" default="-77.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-18MBPS" type="Fixed" name="Receive Sensitivity at 18 Mbps (dBm)" default="-70.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-24MBPS" type="Fixed" name="Receive Sensitivity at 24 Mbps (dBm)" default="-69.0" />
+                <variable key="PHY802.11-RX-SENSITIVITY-27MBPS" type="Fixed" name="Receive Sensitivity at 27 Mbps (dBm)" default="-67.0" />
+                     
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.11pSCH">
+                        <option value="PHY802.11pSCH" name="PHY802.11p Service Channel Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.16" name="802.16 Radio" addon="advanced_wireless">
+                <variable name="Maximum Transmission Power (dBm)" key="PHY802.16-MAX-TX-POWER" type="Fixed" default="50.0" help="maximum transmission power in dBm" />
+                <variable name="Transmission Power (dBm)" key="PHY802.16-TX-POWER" type="Fixed" default="20.0" help="transmission power in dBm" requires="[PHY802.16-MAX-TX-POWER] > this.value" />
+                <variable name="Channel Bandwidth (Hz)" key="PHY802.16-CHANNEL-BANDWIDTH" type="Fixed multiplier" unit="Hz" default="20 MHz" invisible="device,interface" />
+                <variable name="FFT Size" key="PHY802.16-FFT-SIZE" type="Selection" default="2048" invisible="device">
+                    <option value="2048" name="2048" />
+                    <option value="1024" name="1024" />
+                    <option value="512" name="512" />
+                    <option value="128" name="128" />
+                </variable>
+                <variable name="Cyclic Prefix Factor" key="PHY802.16-CYCLIC-PREFIX" type="Selection" default="8.0" invisible="device">
+                    <option value="4.0" name="4.0" />
+                    <option value="8.0" name="8.0" />
+                    <option value="16.0" name="16.0" />
+                    <option value="32.0" name="32.0" />
+                </variable>
+                <variable name="Packet Reception Model" key="PHY-RX-MODEL" type="Selection" default="PHY802.16">
+                    <option value="PHY802.16" name="PHY802.16 Reception Model" />
+                </variable>
+            </option>
+            <option value="PHY802.15.4" name="802.15.4 Radio" addon="sensor_networks">
+                <variable name="Transmission Power (dBm)" key="PHY802.15.4-TX-POWER" type="Fixed" default="3.0" help="transmission power in dBm" />
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="PHY802.15.4">
+                    <option value="PHY802.15.4" name="PHY802.15.4 Reception Model" />
+                    <option value="BER-BASED" name="BER-based Reception Model" help="If specified, the Simulator will look up Bit Error Rate (BER) in the SNR - BER table specified by BER-TABLE-FILE.">
+                        <variable name="Number of BER Tables" key="DUMMY-NUM-PHY-RX-BER-TABLE-802.11a" default="1" type="Array" embeddedarray="true" disable="true">
+                            <variable key="PHY-RX-BER-TABLE-FILE" type="File" name="BER Table" default="[Required]" filetype="ber" />
+                        </variable>
+                    </option>
+                </variable>
+                <variable name="Modulation Scheme" key="PHY802.15.4-MODULATION" type="Selection" default="O-QPSK" >
+                    <option value="BPSK" name="BPSK" />
+                    <option value="ASK" name="ASK" />
+                    <option value="O-QPSK" name="O-QPSK" />
+                </variable>
+                <variable name="CCA Mode" key="PHY802.15.4-CCA-MODE" type="Selection" default="CARRIER-SENSE" >
+                    <option value="CARRIER-SENSE" name="Carrier Sense" />
+                    <option value="ENERGY-ABOVE-THRESHOLD" name="Energy above Threshold" />
+                    <option value="CARRIER-SENSE-WITH-ENERGY-ABOVE-THRESHOLD" name="Carrier Sense with Energy above Threshold" />
+                </variable>
+            </option>
+            <option value="PHY-GSM" name="GSM" addon="cellular">
+                <variable key="PHY-GSM-DATA-RATE" type="Fixed multiplier" name="Data Rate" default="270.833 Kbps" help="bandwidth in bps" unit="bps" maxunit="Gbps" minunit="bps" />
+                <variable key="PHY-GSM-TX-POWER" type="Fixed" name="Transmission Power (dBm)" default="15.0" help="transmission power in dBm" />
+                <variable key="PHY-GSM-RX-SENSITIVITY" type="Fixed" name="Receive Sensitivity (dBm)" default="-91.0" help="sensitivity in dBm" />
+                <variable key="PHY-GSM-RX-THRESHOLD" type="Fixed" name="Receive Threshold (dBm)" default="-92.0" help="Minimum power for received packet (in dBm)" />
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="BER-BASED">
+                    <option value="BER-BASED" name="BER-based Reception Model" help="If specified, the Simulator will look up Bit Error Rate (BER) in the SNR - BER table specified by BER-TABLE-FILE.">
+                        <variable name="Number of BER Tables" key="DUMMY-NUM-PHY-RX-BER-TABLE-GSM" default="1" type="Array" embeddedarray="true" disable="true">
+                            <variable key="PHY-RX-BER-TABLE-FILE" type="File" name="BER Table" default="[Required]" filetype="ber" />
+                        </variable>
+                    </option>
+                </variable>
+            </option>
+            <option value="PHY-CELLULAR" name="Cellular PHY" addon="umts">
+                <variable name="Cellular PHY Model" key="CELLULAR-PHY-MODEL" type="Selection" default="PHY-UMTS" help="Select a specific cellular PHY model">
+                    <option value="PHY-UMTS" name="UMTS PHY Model" help="WCDMA PHY model of UMTS" >
+                        <variable name="Maximum Transmission Power (dBm)" key="PHY-UMTS-MAX-TX-POWER" type="Fixed" default="30.0" help="Maximum transmission power in dBm" />
+                        <variable name="Minimum Transmission Power (dBm)" key="PHY-UMTS-MIN-TX-POWER" type="Fixed" default="-30.0" help="Minimum transmission power in dBm" />
+                        <variable name="Enable HSDPA Capability" key="PHY-UMTS-HSDPA-CAPABLE" type="Selection" default="NO" help="Is the UMTS radio HSDPA capable?">
+                            <option value="NO" name="No" />
+                            <option value="YES" name="Yes" />
+                        </variable>
+                        <variable name="Packet Reception Model" key="PHY-RX-MODEL" type="Selection" default="PHY-UMTS">
+                            <option value="PHY-UMTS" name="PHY UMTS" />
+                        </variable>
+                        <variable name="Specify Downlink Scrambling Code Set" key="DUMMY-PHY-UMTS-NodeB-SCRAMBLING-CODE-SET" type="Selection" default="N/A" help="Specify the downlink scrambling code set index for a NodeB" optional="true">
+                            <option value="N/A" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable name="Scrambling Code Set Index" key="PHY-UMTS-NodeB-SCRAMBLING-CODE-SET-INDEX" type="Integer" default="0" min="0" max="511" />
+                            </option>
+                        </variable>
+                    </option>
+                    <option value="PHY-MUOS" name="MUOS PHY Model" help="WCDMA PHY model of MUOS" >
+                        <variable name="Maximum Transmission Power (dBm)" key="PHY-MUOS-MAX-TX-POWER" type="Fixed" default="40.0" help="Maximum transmission power in dBm" />
+                        <variable name="Minimum Transmission Power (dBm)" key="PHY-MUOS-MIN-TX-POWER" type="Fixed" default="0.0" help="Minimum transmission power in dBm" />
+                        <variable name="Packet Reception Model" key="PHY-RX-MODEL" type="Selection" default="PHY-MUOS">
+                            <option value="PHY-MUOS" name="PHY MUOS" />
+                        </variable>
+                        <variable name="Specify Downlink Scrambling Code Set" key="DUMMY-PHY-MUOS-SATELITE-SCRAMBLING-CODE-SET" type="Selection" default="N/A" help="Specify the downlink scrambling code set index for a Satellite" >
+                            <option value="N/A" name="No" />
+                            <option value="YES" name="Yes">
+                                <variable name="Scrambling Code Set Index" key="PHY-MUOS-SATELLITE-SCRAMBLING-CODE-SET-INDEX" type="Integer" default="0" min="0" max="511" />
+                            </option>
+                        </variable>
+                    </option>                         
+                </variable>
+            </option>
+            <option value="PHY-ABSTRACT" name="Abstract" addon="wireless">
+                <variable key="PHY-ABSTRACT-DATA-RATE" type="Fixed multiplier" name="Data Rate" default="2 Mbps" help="bandwidth in bps" unit="bps" maxunit="Gbps" minunit="bps" />
+                <variable name="Frequency Bandwidth" key="PHY-ABSTRACT-BANDWIDTH" type="Fixed multiplier" default="2 MHz" help="channel frequency bandwidth in Hz" unit="Hz" />
+                <variable key="PHY-ABSTRACT-TX-POWER" type="Fixed" name="Transmission Power (dBm)" default="15.0" help="transmission power in dBm" />
+                <variable key="PHY-ABSTRACT-RX-SENSITIVITY" type="Fixed" name="Reception Sensitivity (dBm)" default="-91.0" help="sensitivity in dBm" />
+                <variable key="PHY-ABSTRACT-RX-THRESHOLD" type="Fixed" name="Reception Threshold (dBm)" default="-81.0" help="Minimum power for received packet (in dBm)" />
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="SNR-THRESHOLD-BASED">
+                    <option value="SNR-THRESHOLD-BASED" name="SNR-based Reception Model" help="If the Signal to Noise Ratio (SNR) is more than the SNR Threshold (in dB), it receives the signal without error. Otherwise the packet is dropped."><!--  visibilityrequires="[MAC-PROTOCOL] != 'MAC-CES-WNW-MDL'">-->
+                        <variable key="PHY-RX-SNR-THRESHOLD" type="Fixed" name="SNR Threshold" default="10.0" />
+                    </option>
+                    <option value="BER-BASED" name="BER-based Reception Model" help="If specified, the Simulator will look up Bit Error Rate (BER) in the SNR - BER table specified by BER-TABLE-FILE." > <!--visibilityrequires="[MAC-PROTOCOL] != 'MAC-CES-WNW-MDL'">-->
+                        <variable name="Number of BER Tables" key="DUMMY-NUM-PHY-RX-BER-TABLE-ABSTRACT" default="1" type="Array" embeddedarray="true">
+                            <variable key="PHY-RX-BER-TABLE-FILE" type="File" name="BER Table" default="[Required]" filetype="ber" />
+                        </variable>
+                    </option>
+                </variable>
+            </option>
+            <option value="PHY-LTE" name="LTE PHY" addon="lte" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS'">
+              <variable name="Station Type" key="DUMMY-PHY-LTE-STATION-TYPE" type="Selection" default="UE" invisible="device">
+                <option value="eNB" name="evolved Node B">
+                  <variable key="PHY-LTE-DL-CHANNEL" name="DL Channel Index" type="Text" default="0" invisible="device" />
+                  <variable key="PHY-LTE-UL-CHANNEL" name="UL Channel Index" type="Text" default="1" invisible="device" />
+                  <variable key="PHY-LTE-TX-POWER" name="Transmission Power (dBm)" type="Fixed" default="23" max="1000" min="-1000" help="transmission power in dBm" invisible="device" />
+                  <variable key="PHY-LTE-NUM-TX-ANTENNAS" name="Number of Transmission Antennas" type="Selection" default="1" invisible="device">
+                    <option value="1" name="1" />
+                    <option value="2" name="2" />
+                  </variable>
+                  <variable key="PHY-LTE-NUM-RX-ANTENNAS" name="Number of Reception Antennas" type="Selection" default="1" invisible="device">
+                    <option value="1" name="1" />
+                    <option value="2" name="2" />
+                  </variable>
+                  <variable key="PHY-LTE-PUCCH-OVERHEAD" name="Control Signals Overhead for Uplink" type="Integer" default="0" max="100" min="0" help="Control channel/signals overhead for uplink" invisible="device" />
+                  <variable key="PHY-RX-MODEL" name="Packet Reception Model" type="Selection" default="PHY-LTE" invisible="device" >
+                    <option value="PHY-LTE" name="LTE Reception Model" />
+                  </variable>
+                  <variable key="PHY-LTE-TPC-P_O_PUSCH" name="TPC P_O_PUSCH (dBm)" type="Fixed" default="-90" max="1000" min="-1000" help="P_O_PUSCH for UL TPC. in (dBm)" invisible="device" />
+                  <variable key="PHY-LTE-TPC-ALPHA" name="TPC Alpha" type="Fixed" default="1" max="1" min="0" invisible="device" />
+                  <variable key="PHY-LTE-CELL-SELECTION-RX-LEVEL-MIN" name="Cell Selection Rx Level Min (dBm)" type="Fixed" default="-140" max="1000" min="-1000" help="" invisible="device" />
+                  <variable key="PHY-LTE-CELL-SELECTION-RX-LEVEL-MIN-OFFSET" name="Cell Selection Rx Level Min Offset (dB)" type="Fixed" default="0" max="1000" min="-1000" help="" invisible="device" />
+                  <variable key="PHY-LTE-CELL-SELECTION-QUAL-LEVEL-MIN" name="Cell Selection Qual Level Min (dB)" type="Fixed" default="-19.5" max="1000" min="-1000" help="" invisible="device" />
+                  <variable key="PHY-LTE-CELL-SELECTION-QUAL-LEVEL-MIN-OFFSET" name="Cell Selection Qual Level Min Offset (dB)" type="Fixed" default="0" max="1000" min="-1000" help="" invisible="device" />
+                  <variable key="PHY-LTE-RA-DETECTION-THRESHOLD" name="Random Access Detection Threshold (dBm)" type="Fixed" default="-100" max="1000" min="-1000" help="" invisible="device" />
+                  <variable key="PHY-LTE-RX-SENSITIVITY" type="Fixed" name="Receive Sensitivity (dBm)" default="-1000" max="1000" min="-1000" invisible="device" help="sensitivity in dBm" />
+                  <variable key="PHY-LTE-PATHLOSS-FILTER-COEFFICIENT" type="Fixed" name="Filter Coefficient for Pathloss Measurement" help="Used for SINR estimation to determine CQI/RI to feedback" default="40" min="0" invisible="device" />
+                  <variable key="PHY-LTE-INTERFERENCE-FILTER-COEFFICIENT" type="Fixed" name="Filter Coefficient for Interference Power Measurement" help="Used for SINR estimation to determine CQI/RI to feedback" default="40" min="0" invisible="device" />
+                </option>
+                
+                <option value="UE" name="User Equipment">
+                  <variable key="PHY-LTE-TX-POWER" name="Transmission Power (dBm)" type="Fixed" default="23" max="1000" min="-1000" help="transmission power in dBm" invisible="device" />
+                  <variable key="PHY-LTE-NUM-TX-ANTENNAS" name="Number of Transmission Antennas" type="Selection" default="1" invisible="device">
+                    <option value="1" name="1" />
+                  </variable>
+                  <variable key="PHY-LTE-NUM-RX-ANTENNAS" name="Number of Reception Antennas" type="Selection" default="1" invisible="device">
+                    <option value="1" name="1" />
+                    <option value="2" name="2" />
+                  </variable>
+                  <variable key="PHY-RX-MODEL" name="Packet Reception Model" type="Selection" default="PHY-LTE" invisible="device">
+                    <option value="PHY-LTE" name="LTE Reception Model" />
+                  </variable>
+                  <variable key="PHY-LTE-CQI-REPORTING-INTERVAL" name="CQI Reporting Interval" type="Integer" default="10" min="1" help="PHY-LTE-CQI-REPORTING-INTERVAL" invisible="device" />
+                  <variable key="PHY-LTE-CQI-REPORTING-OFFSET" name="CQI Reporting Offset" type="Integer" default="0" min="0" help="PHY-LTE-CQI-REPORTING-OFFSET" invisible="device" />
+                  <variable key="PHY-LTE-RI-REPORTING-INTERVAL" name="RI Reporting Interval" type="Integer" default="10" min="1" help="PHY-LTE-RI-REPORTING-INTERVAL" invisible="device" />
+                  <variable key="PHY-LTE-RI-REPORTING-OFFSET" name="RI Reporting Offset" type="Integer" default="1" min="0" help="PHY-LTE-RI-REPORTING-OFFSET" invisible="device" />
+                  <variable key="PHY-LTE-SRS-TRANSMISSION-INTERVAL" name="SRS Transmission Interval (TTI)" type="Integer" default="10" min="1" help="" invisible="device" />
+                  <variable key="PHY-LTE-SRS-TRANSMISSION-OFFSET" name="SRS Transmission Offset (TTI)" type="Integer" default="0" min="0" help="" invisible="device" />
+                  <variable key="PHY-LTE-NON-SERVING-CELL-MEASUREMENT-PERIOD" type="Time" name="Cell Sellection Measurement Period" default="200MS" help="" invisible="device" />
+                  <variable key="PHY-LTE-CELL-SELECTION-MIN-SERVING-DURATION" type="Time" name="Cell Sellection Minimum Serving Duration" default="1S" help="" invisible="device" />
+                  <variable key="PHY-LTE-RX-SENSITIVITY" type="Fixed" name="Receive Sensitivity (dBm)" default="-1000" max="1000" min="-1000" invisible="device" help="sensitivity in dBm" />
+                  <variable key="PHY-LTE-PATHLOSS-FILTER-COEFFICIENT" type="Fixed" name="Filter Coefficient for Pathloss Measurement" help="Used for SINR estimation in scheduler" default="40" min="0" invisible="device" />
+                  <variable key="PHY-LTE-INTERFERENCE-FILTER-COEFFICIENT" type="Fixed" name="Filter Coefficient for Interference Power Measurement" help="Used for SINR estimation in scheduler" default="40" min="0" invisible="device" />
+                </option>
+              </variable>
+              
+                <variable key="PHY-LTE-CHANNEL-BANDWIDTH" name="Channel Bandwidth (MHz)" type="Selection" default="10000000" invisible="interface,device">
+                  <option value="1400000" name="1.4" />
+                  <option value="3000000" name="3" />
+                  <option value="5000000" name="5" />
+                  <option value="10000000" name="10" />
+                  <option value="15000000" name="15" />
+                  <option value="20000000" name="20" />
+                </variable>
+              
+            </option>
+            <option value="FCSC-PROTOTYPE" name="FCSC Prototype" addon="military">
+                <variable key="PHY-FCSC-DATA-RATE" type="Fixed multiplier" name="Data Rate" default="2 Mbps" help="bandwidth in bps" unit="bps" maxunit="Gbps" minunit="bps" />
+                <variable key="PHY-FCSC-TX-POWER" type="Fixed" name="Transmission Power (dBm)" default="15.0" help="transmission power in dBm" />
+                <variable key="PHY-FCSC-RX-SENSITIVITY" type="Fixed" name="Receive Sensitivity (dBm)" default="-91.0" help="sensitivity in dBm" />
+                <variable key="PHY-FCSC-RX-THRESHOLD" type="Fixed" name="Receive Threshold (dBm)" default="-81.0" help="Minimum power for received packet (in dBm)" />
+                <variable key="PHY-RX-MODEL" type="Selection" name="Packet Reception Model" default="SNR-THRESHOLD-BASED">
+                    <option value="SNR-THRESHOLD-BASED" name="SNR-based Reception Model" help="If the Signal to Noise Ratio (SNR) is more than the SNR Threshold (in dB), it receives the signal without error. Otherwise the packet is dropped.">
+                        <variable key="PHY-RX-SNR-THRESHOLD" type="Fixed" name="SNR Threshold" default="10.0" />
+                    </option>
+                </variable>
+            </option>
+            <option value="SATELLITE-RSV" name="Satellite RSV PHY" addon="wireless" >
+                <variable name="Channel Bandwidth" help="Hz" key="PHY-SATELLITE-RSV-CHANNEL-BANDWIDTH" type="Fixed multiplier" unit="Hz" default="1280 KHz" />
+                <variable name="Preamble Size" help="symbols multiple of 8" key="PHY-SATELLITE-RSV-PREAMBLE-SIZE" type="Integer" default="64" />
+                <variable name="R-S Shorten Last Codeword" key="PHY-SATELLITE-RSV-USE-SHORTEN-LAST-CODEWORD" type="Selection" default="YES">
+                    <option value="YES" name="Shorten Last Codeword" />
+                    <option value="NO" name="Do Not Shorten Last Codeword" />
+                </variable>
+                <variable name="R-S Block And Code Size" key="PHY-SATELLITE-RSV-BLOCK-CODING" type="Selection" default="REED-SOLOMON-204-188">
+                    <option value="REED-SOLOMON-204-188" name="REED-SOLOMON-204-188" />
+                </variable>
+                <variable name="Modulation Profile" key="PHY-SATELLITE-RSV-TRANSMISSION-MODE" type="Selection" default="BPSK">
+                    <option value="BPSK" name="BPSK" />
+                    <option value="QPSK" name="QPSK" />
+                    <option value="8PSK" name="8PSK" />
+                    <option value="USER-DEFINED" name="USER-DEFINED" >
+                        <variable name="Transmit Power" key="PHY-SATELLITE-RSV-TRANSMIT-POWER" type="Fixed" default="[Required]" />
+                        <variable name="Sensitivity" key="PHY-SATELLITE-RSV-SENSITIVITY" type="Fixed" default="[Required]" />
+                        <variable name="Bits per Symbol" key="PHY-SATELLITE-RSV-BITS-PER-SYMBOL" type="Fixed" default="[Required]" />
+                    </option>
+                </variable>
+                <variable name="Convolutional Coding Profile" key="PHY-SATELLITE-RSV-CONVOLUTIONAL-CODING" type="Selection" default="VITERBI-1-2">
+                    <option value="VITERBI-1-2" name="VITERBI-1-2" />
+                    <option value="VITERBI-2-3" name="VITERBI-2-3" />
+                    <option value="VITERBI-3-4" name="VITERBI-3-4" />
+                    <option value="VITERBI-5-6" name="VITERBI-5-6" />
+                    <option value="VITERBI-7-8" name="VITERBI-7-8" />
+                    <option value="VITERBI-8-9" name="VITERBI-8-9" />
+                </variable>
+                <variable name="Guard Time" key="PHY-SATELLITE-RSV-GUARD-TIME" type="Time" default="10US" />
+                <variable name="Adjacent Channel Interference" help="dB" key="PHY-SATELLITE-RSV-ADJACENT-CHANNEL-INTERFERENCE" type="Fixed" default="18.0" />
+                <variable name="Adjacent Satellite Inteference" help="dB" key="PHY-SATELLITE-RSV-ADJACENT-SATELLITE-INTERFERENCE" type="Fixed" default="30.0" />
+                <variable name="Intermodulation Distortion" help="dB" key="PHY-SATELLITE-RSV-INTERMODULATION-INTERFERENCE" type="Fixed" default="25.0" />
+                <variable name="Receiver Threshold" help="dB" key="PHY-SATELLITE-RSV-EBNO-THRESHOLD" type="Fixed" default="7.0" />
+                <variable name="Error Model" key="PHY-RX-MODEL" default="SNR-THRESHOLD-BASED" type="Selection">
+                    <option value="SNR-THRESHOLD-BASED" name="SNR-based Reception Model" />
+                </variable>
+                <variable name="Error Threshold" help="dB" key="PHY-RX-SNR-THRESHOLD" type="Fixed" default="7.0"/>
+            </option>
+        </variable>
+        <variable name="Specify Antenna Model from File" key="DUMMY-ANTENNA-MODEL-CONFIG-FILE-SPECIFY" type="Selection" default="NO" addon="wireless" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'" >
+            <option value="YES" name="Yes">
+                <variable name="Antenna Model" key="ANTENNA-MODEL" type="SelectionDynamic" default="None"  help="Please go to Tools->Antenna Model Editor to load the antenna model file" dynamicantennamodels="true" optional="true"/>
+                <variable name="Antenna Gain (dB)" key="ANTENNA-GAIN" type="Fixed" default="0.0" help="antenna gain in dB" dependson = "ANTENNA-MODEL" />
+        <variable name="Antenna Height (meters)" key="ANTENNA-HEIGHT" type="Fixed" default="1.5" help="antenna height in meters" dependson = "ANTENNA-MODEL" />
+        <variable name="Antenna Efficiency" key="ANTENNA-EFFICIENCY" type="Fixed" default="0.8" help="efficiency of the antenna" dependson = "ANTENNA-MODEL" />
+        <variable name="Antenna Mismatch Loss (dB)" key="ANTENNA-MISMATCH-LOSS" type="Fixed" default="0.3" help="antenna mismatch loss in dB" dependson = "ANTENNA-MODEL" />
+        <variable name="Antenna Cable Loss (dB)" key="ANTENNA-CABLE-LOSS" type="Fixed" default="0.0" help="antenna cable loss in dB" dependson = "ANTENNA-MODEL" />
+                <variable name="Antenna Connection Loss (dB)" key="ANTENNA-CONNECTION-LOSS" type="Fixed" default="0.2" help="antenna connection loss in dB" dependson = "ANTENNA-MODEL" />
+                <variable name="Antenna Orientation Azimuth (degrees)" key="ANTENNA-ORIENTATION-AZIMUTH" type="Fixed" default="0" help="antenna orientation azimuth in degree" />
+                <variable name="Antenna Orientation Elevation (degrees)" key="ANTENNA-ORIENTATION-ELEVATION" type="Fixed" default="0" help="antenna orientation azimuth in degree" />
+            </option>
+            <option value="NO" name="No">
+                <variable name="Antenna Model" key="ANTENNA-MODEL" type="Selection" default="OMNIDIRECTIONAL">
+                    <option value="OMNIDIRECTIONAL" name="Omnidirectional" >
+                    </option>
+                    <option value="SWITCHED-BEAM" name="Switched Beam" addon="wireless">
+                        <variable name="Antenna Pattern Type" key="ANTENNA-PATTERN-TYPE" type="Selection" default="TRADITIONAL" >
+                                <option value="TRADITIONAL" name="Traditional" >
+                                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                </option>
+                                <option value="ASCII2D" name="Ascii2d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth,asciiazimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="ASCII3D" name="Ascii3d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="*ascii3d" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="NSMA" name="Nsma" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="nsm,nsma" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                        </variable>
+                    </option>
+                    <option value="STEERABLE" name="Steerable" addon="wireless">
+                        <variable name="Antenna Pattern Steerable Set Repeat Angle" key="ANTENNA-PATTERN-STEERABLE-SET-REPEAT-ANGLE" type="Fixed" default="360" min="1" max="360"/>
+                        <variable name="Antenna Pattern Type" key="ANTENNA-PATTERN-TYPE" type="Selection" default="TRADITIONAL" >
+                                <option value="TRADITIONAL" name="Traditional" >
+                                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                </option>
+                                <option value="ASCII2D" name="Ascii2d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth,asciiazimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="ASCII3D" name="Ascii3d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="*ascii3d" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="NSMA" name="Nsma" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="nsm,nsma" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                        </variable>
+                    </option>
+                    <option value="PATTERNED" name="Patterned" >
+                        <variable name="Antenna Pattern Type" key="ANTENNA-PATTERN-TYPE" type="Selection" default="TRADITIONAL" >
+                                <option value="TRADITIONAL" name="Traditional" >
+                                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                </option>
+                                <option value="ASCII2D" name="Ascii2d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable key="ANTENNA-AZIMUTH-PATTERN-FILE" type="File" name="Antenna Azimuth Pattern File" default="[Required]" filetype="antenna-azimuth,asciiazimuth" />
+                                        <variable key="ANTENNA-ELEVATION-PATTERN-FILE" type="File" name="Antenna Elevation Pattern File" default="[Optional]" optional="true" filetype="antenna-elevation" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="ASCII3D" name="Ascii3d" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="*ascii3d" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                                <option value="NSMA" name="Nsma" >
+                                        <variable name="Antenna Pattern Num Patterns" key="ANTENNA-PATTERN-NUM-PATTERNS" type="Fixed" default="1" min="1"/>
+                                        <variable name="Antenna Pattern Pattern File " key="ANTENNA-PATTERN-PATTERN-FILE" type="File" default="[Required]" filetype="nsm,nsma" />
+                                        <variable name="Antenna Pattern Conversion Parameter" key="ANTENNA-PATTERN-CONVERSION-PARAMETER" type="Fixed" default="25" />
+                                        <variable name="Antenna Pattern Azimuth Resolution" key="ANTENNA-PATTERN-AZIMUTH-RESOLUTION" type="Fixed" default="360" min="1" max="360"  />
+                                        <variable name="Antenna Pattern Elevation Resolution" key="ANTENNA-PATTERN-ELEVATION-RESOLUTION" type="Fixed" default="180" min="1" max="180" />
+                                </option>
+                        </variable>
+                    </option>
+                </variable>
+                <variable name="Antenna Gain (dB)" key="ANTENNA-GAIN" type="Fixed" default="0.0" help="antenna gain in dB" />
+                <variable name="Antenna Height (meters)" key="ANTENNA-HEIGHT" type="Fixed" default="1.5" help="antenna height in meters" />
+                <variable name="Antenna Efficiency" key="ANTENNA-EFFICIENCY" type="Fixed" default="0.8" help="efficiency of the antenna" />
+                <variable name="Antenna Mismatch Loss (dB)" key="ANTENNA-MISMATCH-LOSS" type="Fixed" default="0.3" help="antenna mismatch loss in dB" />
+                <variable name="Antenna Cable Loss (dB)" key="ANTENNA-CABLE-LOSS" type="Fixed" default="0.0" help="antenna cable loss in dB" />
+                <variable name="Antenna Connection Loss (dB)" key="ANTENNA-CONNECTION-LOSS" type="Fixed" default="0.2" help="antenna connection loss in dB" />
+                <variable name="Antenna Orientation Azimuth (degrees)" key="ANTENNA-ORIENTATION-AZIMUTH" type="Fixed" default="0" help="antenna orientation azimuth in degree" />
+                <variable name="Antenna Orientation Elevation (degrees)" key="ANTENNA-ORIENTATION-ELEVATION" type="Fixed" default="0" help="antenna orientation azimuth in degree" />
+            </option>
+        </variable>
+        <variable name="Temperature (K)" key="PHY-TEMPERATURE" type="Fixed" default="290.0" min="0" max="398.0" help="Temperature of the environment in K" addon="wireless" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'"/>
+        <variable name="Noise Factor" key="PHY-NOISE-FACTOR" type="Fixed" default="10.0" addon="wireless" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'"/>
+        <variable name="Energy Model" key="ENERGY-MODEL-SPECIFICATION" type="Selection" default="NONE" visibilityrequires="[DUMMY-INTERFACE-TYPE] == 'SUBNET-WIRELESS' || [DUMMY-INTERFACE-TYPE] == 'SUBNET-ADVANCE-SATELLITE'">
+            <option value="NONE" name="None" />
+            <option value="MICA-MOTES" name="Mica-Motes" />
+            <option value="MICAZ" name="MicaZ" />
+            <option value="USER-DEFINED" name="User Specified" >
+                <variable name="Transmission Current Load (mAmp)" key="ENERGY-TX-CURRENT-LOAD" type="Fixed" default="280.0" />
+                <variable name="Reception Load (mAmp)" key="ENERGY-RX-CURRENT-LOAD" type="Fixed" default="204.0" />
+                <variable name="Idle Current Load (mAmp)" key="ENERGY-IDLE-CURRENT-LOAD" type="Fixed" default="178.0" />
+                <variable name="Sleep Current Load (mAmp)" key="ENERGY-SLEEP-CURRENT-LOAD" type="Fixed" default="14.0" />
+                <variable name="Supply Voltage of the Interface (volt)" key="ENERGY-OPERATIONAL-VOLTAGE" type="Fixed" default="3.0" />
+            </option>
+            <option value="GENERIC" name="Generic" >
+                <variable name=" Power Amplifier Inefficiency Factor" key="ENERGY-POWER-AMPLIFIER-INEFFICIENCY-FACTOR" type="Fixed" default="6.5" />
+                <variable name=" Transmit Circuitry Power Consumption (mW)" key="ENERGY-TRANSMIT-CIRCUITRY-POWER-CONSUMPTION" type="Fixed" default="100.0" />
+                <variable name=" Receive Circuitry Power Consumption (mW)" key="ENERGY-RECEIVE-CIRCUITRY-POWER-CONSUMPTION" type="Fixed" default="130.0" />
+                <variable name=" Idle Circuitry Power Consumption (mW)" key="ENERGY-IDLE-CIRCUITRY-POWER-CONSUMPTION" type="Fixed" default="120.0" />
+                <variable name=" Sleep Circuitry Power Consumption (mW)" key="ENERGY-SLEEP-CIRCUITRY-POWER-CONSUMPTION" type="Fixed" default="0.0" />
+                <variable name=" Supply Voltage (volt)" key="ENERGY-SUPPLY-VOLTAGE" type="Fixed" default="6.5" />
+            </option>
+        </variable>
+    </subcategory>
+</category>

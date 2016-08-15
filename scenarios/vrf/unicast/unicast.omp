@@ -1,0 +1,36 @@
+(address-map 
+   (object-map 
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 1")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 2")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 3")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 4")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 5")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 6")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 7")
+      )
+      (map-entry 
+         (address  1 3001)
+         (name  "M1A2 8")
+      )
+   )
+)

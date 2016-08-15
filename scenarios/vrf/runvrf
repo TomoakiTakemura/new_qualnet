@@ -1,0 +1,275 @@
+#!/bin/csh
+
+# Before running this script, make sure QUALNET_HOME and VRF_HOME are defined.
+#
+# To use this script to run a single test case,
+#  cd to the desired directory
+#  $QUALNET_HOME/scenarios/vrf/runvrf <file.config> <num_cpus>
+# where file.config is the name of the test case input file.
+# num_cpus is optional for use with Parallel QualNet
+#
+# To use this file to run all the verification scenarios, do the following:
+#
+#  cd $QUALNET_HOME/scenarios/vrf
+#  find . -name "*.config" -exec $QUALNET_HOME/scenarios/vrf/runvrf {} <num_cpus> \;
+#
+# The find command will find every test case (config file), run qualnet on it,
+# and compare the produced stat file with the expected.
+
+if ( ! ($?VRF_HOME) ) then
+    echo VRF_HOME must be defined
+    exit
+endif
+
+set clobber  #allow us to overwrite output files from previous tests
+
+set dir        = $1:h                # the directory containing the test case
+if ($dir == $1) then                 # special case if you are in the desired scenario directory
+  set dir = ${cwd}
+endif
+set configfile = $1:t                # the test case config file
+set file       = $configfile:r       #  * with the ".config" stripped off
+set outfile    = $file.out           #  * with .out extension
+set vrfout     = vrf-$file.out       #  * with .out extension
+set statfile   = $file.stat          #  * with .stat extension
+set expected   = $file.expected.stat # the expected stat file
+set difffile   = $file.dif           # differences between expected and statfile
+set tracefile  = $file.trace         # trace file generated
+set traceexp   = $file.expected.trace # expected trace file
+set tracediff  = $file.trace.dif     # differences between expected and actual traces
+
+set protocol = `grep VRLINK-PROTOCOL $1 | sed 's/#.*//g' `
+if ( "$protocol" == "" ) then
+  echo Required param VRLINK-PROTOCOL is missing from $configfile
+  exit
+else
+  set protocol = `echo $protocol | sed 's/VRLINK-PROTOCOL //'`
+endif
+
+if ( "$protocol" == "DIS" ) then
+  set vrffile    = `echo $file | sed 's/-dis//g' `
+else if ( "$protocol" == "HLA13" ) then     
+  set vrffile    = `echo $file | sed 's/-hla//g' `
+else if ( "$protocol" == "HLA1516" ) then
+  set vrffile    = `echo $file | sed 's/-hla1516//g' `
+else
+  echo Unsupported protocol
+  exit
+endif
+
+set vrfbin = $VRF_HOME/bin
+if( ! -e $vrfbin ) then
+  set vrfbin = $VRF_HOME/bin64
+endif
+
+if( ! -e $vrfbin ) then
+  echo Cannot locate VRF bin directory
+  exit
+endif
+
+set disIpAddress = `grep VRLINK-DIS-IP-ADDRESS $1 | sed 's/#.*//g' `
+set disDeviceAddress = `grep VRLINK-DIS-NETWORK-INTERFACE $1 | sed 's/#.*//g' `
+
+set disPort = `grep VRLINK-DIS-PORT $1 | sed 's/#.*//g' `
+
+if ( "$disIpAddress" == "" ) then
+  set disIpAddress = 127.255.255.255
+else
+  set disIpAddress = `echo $disIpAddress  | sed 's/^[^0-9]*//g'`
+endif
+
+if ( "$disDeviceAddress" == "" ) then
+  set disDeviceAddress = 127.0.0.1
+else
+  set disDeviceAddress = `echo $disDeviceAddress  | sed 's/^[^0-9]*//g'`
+endif
+
+
+if ( "$disPort" == "" ) then
+  set disPort = 3000
+else
+  set disPort = `echo $disPort  | sed 's/^[^0-9]*//g'`
+endif
+
+set federation = `grep VRLINK-FEDERATION-NAME $1 | sed 's/#.*//g' `
+set rprVersion = `grep VRLINK-RPR-FOM-VERSION $1 | sed 's/#.*//g' `
+
+if ( "$rprVersion" == "" ) then
+  set rprVersion = "1.0"
+else
+  set rprVersion = `echo $rprVersion | sed 's/VRLINK-RPR-FOM-VERSION //'`
+endif
+
+if ( "$rprVersion" == "1.0" && "$protocol" == "HLA13" ) then
+  set fedfile = VR-Link.fed
+else if ( "$rprVersion" == "2.0017" && "$protocol" == "HLA13" ) then
+  set fedfile = VR-Link20017-1.fed
+else if ( "$rprVersion" == "1.0" && "$protocol" == "HLA1516" ) then
+  set fedfile = VR-Link.xml
+else if ( "$rprVersion" == "2.0017" && "$protocol" == "HLA1516" ) then
+  set fedfile = VR-Link20017-1.xml
+else if ( "$protocol" != "DIS" ) then
+  echo Unsupported RPR Fom Version
+  exit
+endif
+
+if ( "$federation" == "" ) then
+  set federation = VR-Link
+else
+  set federation = `echo $federation | sed 's/VRLINK-FEDERATION-NAME //'`
+endif
+
+# set the fullpath to the VR-Forces scenario
+# look for version specific scenario files first
+if ($dir == ${cwd}) then
+  set vrfpath = ${cwd}/${vrffile}.scn
+else
+  set vrfpath = ${cwd}/${dir}/${vrffile}.scn
+endif
+if( ! -e $vrfpath ) then
+  set vrfpath = ${cwd}/${dir}/${vrffile}.scn
+endif
+if( ! -e $vrfpath ) then
+  set vrfpath = ${cwd}/${vrffile}.scn
+endif
+if( ! -e $vrfpath ) then
+  echo Could not find VR-Forces scenario.
+  echo $vrfpath
+  exit
+endif
+
+# set the VR-Forces sim time for longer then qualnet sim time
+# to give vrfSim enough time to intialize
+set vrfInitTime = 20
+set simtime = `grep SIMULATION-TIME $1 | sed 's/#.*//g' | sed 's/^[^0-9]*//g'`
+set units = `echo $simtime | sed 's/[0-9 ]//g' `
+set simtime = `echo $simtime | sed 's/[^0-9]//g'`
+
+if ( $units == "M" ) then
+  set simtime = `expr $simtime \* 60`
+else if ( $units == "H" ) then
+  set simtime = `expr $simtime \* 3600`
+else if ( $units == "D" ) then
+  set simtime = `expr $simtime \* 86400`
+endif
+
+set vrfsimtime = `expr $simtime + $vrfInitTime`
+
+set linuxexpected   = $file.expected.linux.stat # the expected stat file for linux
+# the following is to determine whether we're running on linux
+if (-e /bin/uname) then
+  set os = `/bin/uname`
+else if (-e /usr/bin/uname) then
+  set os = `/usr/bin/uname`
+else
+  set os = "unknown"
+endif
+
+if (${#argv} > 1) then
+  set cpus = $2
+else
+  set cpus = 1
+endif
+
+set result = "0";
+set traceresult = "0";
+
+cd $dir
+
+rm -f $outfile
+rm -f $vrfout
+rm -f $difffile
+rm -f $statfile
+rm -f $expected.sorted
+rm -f $statfile.sorted
+rm -f $tracediff
+rm -f $tracefile
+rm -f $traceexp.sorted
+rm -f $tracefile.sorted
+
+# this command is for sequental and shared memory parallel
+$QUALNET_HOME/bin/qualnet $configfile -np $cpus >& $outfile &
+
+#
+# VR-Forces backend expects to start in the VR-Forces bin directory
+if ( "$protocol" == "DIS" ) then
+  ( cd $vrfbin ; ( sleep $vrfsimtime ; echo q ) | ./vrfSimDIS -r -L $vrfpath -P $disPort -A $disIpAddress --deviceAddress $disDeviceAddress) >& $vrfout
+else if ( "$protocol" == "HLA13" ) then
+  ( cd $vrfbin ; ( sleep $vrfsimtime ; echo q ) | ./vrfSimHLA13 -r -L $vrfpath --rprFomVersion $rprVersion -x $federation -F $fedfile) >& $vrfout
+else if ( "$protocol" == "HLA1516" ) then
+  ( cd $vrfbin ; ( sleep $vrfsimtime ; echo q ) | ./vrfSimHLA1516 -r -L $vrfpath --rprFomVersion $rprVersion -x $federation -F $fedfile) >& $vrfout
+endif
+
+if (! -e $expected) then
+  echo Simulation completed but there is no expected statfile
+  exit
+endif
+
+sort $statfile >& $statfile.sorted
+sort $expected >& $expected.sorted
+
+# output to difffile to suppress output to screen
+
+if ($os == "Linux") then
+  dos2unix -q $statfile.sorted
+  dos2unix -q $expected.sorted
+else if ($os == "SunOS") then
+  dos2unix -850 $statfile.sorted $statfile.sorted
+  dos2unix -850 $expected.sorted $expected.sorted
+else
+  dos2unix $statfile.sorted
+  dos2unix $expected.sorted
+endif
+
+diff $expected.sorted $statfile.sorted >& $difffile
+set result = $status;
+
+if ($result != "0" && $os == "Linux" && -e $linuxexpected) then
+  sort $linuxexpected >& $expected.sorted
+  diff $expected.sorted $statfile.sorted >& $difffile
+  set result = $status;
+endif
+
+if (-e $statfile) then
+  if ($result != "0") then
+    echo "Output differs for $dir/$configfile, see $dir/$difffile"
+  else
+    echo "Output matches for $dir/$configfile"
+    # remove working files
+    rm -f $outfile
+    rm -f $vrfout
+    rm -f $difffile
+    rm -f $statfile
+    rm -f $expected.sorted
+    rm -f $statfile.sorted
+  endif
+else
+  echo "$dir/$configfile did not complete, see $dir/$outfile"
+endif
+
+if (-e $traceexp) then
+  if (-e $tracefile) then
+    if ($os != "Linux" && $os != "SunOS") then
+      dos2unix $tracefile
+    endif
+
+    sort $traceexp >& $traceexp.sorted
+    sort $tracefile >& $tracefile.sorted
+
+    diff -B $traceexp.sorted $tracefile.sorted >& $tracediff
+    set traceresult = $status;
+    
+    if ($traceresult != "0") then
+      echo "Packet trace output differs for $dir/$configfile, see $dir/$tracediff"
+    else
+      echo "Packet trace output matches for $dir/$configfile"
+      # remove working files
+      rm -f $tracediff
+      rm -f $tracefile
+      rm -f $traceexp.sorted
+      rm -f $tracefile.sorted
+    endif
+  else
+    echo "$dir/$configfile did not generate trace file"
+  endif
+endif

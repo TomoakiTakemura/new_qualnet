@@ -1,0 +1,12 @@
+add_global_include_dir(.)
+add_global_definitions(-DADDON_ANE)
+add_srcs(
+  ane_mac.cpp
+  ane_mac.h
+  anesat_mac.h
+  anesat_node.h
+  anesat_subnet.h
+  anesat_tc.h
+  anesat_upstream.h)
+add_scenario_dir(wireless/ane)
+add_doxygen_inputs(.)

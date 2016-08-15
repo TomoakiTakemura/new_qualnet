@@ -1,0 +1,125 @@
+VR-Forces Test Scenarios
+
+Due to small changes in the timing of the VR-Forces scenario, a lot of the stats
+will change from run to run. In some cases VR-Forces will send different numbers
+of messages. It makes it difficult to use the expected.stat files to determine
+if the scenario passes. Instead you have to run the scenario in the VR-Forces GUI
+or capture and examine the QualNet output.
+
+There is a runvrf (LINUX only) script that you can use. It will run the VR-Forces 
+and qualnet regression scenarios from the command line and check the output. It 
+can run either DIS or HLA QualNet scenarios. You need to a VRF-HOME variable to 
+the VR-Forces home directory and set your paths so that VR-Forces can find its 
+libraries. Do NOT use runvrf with CommsDemoWithSocketInterface.  
+
+To be able to use the runvrf script with HLA scenarios, you need to configure
+the RTI to automatically seldect the RTI configuration. Sometimes VR-Forces
+takes a long time to checkout a license or connect to the RTI. This can cause
+the runvrf script to check the simulation results before QualNet is finished.
+
+Scenarios
+
+Each scenario directory contains a QualNet DIS config file and a QualNet HLA
+config file. There is also a VR-Forces scn file. In some cases there are two
+VR-Forces scn files; one for version 3.11 and one for version 3.12. These
+scenarios all have a SIMULATION-TIME of 5 minutes. It is important that you
+start running VR-Forces and QualNet at close to the same time or some events
+may be missed.
+
+CommsDemo
+This is our standard vrforces comms demo scenario using GENERICMAC. You should
+run this scenario in the VR-Forces GUI. In this scenario, the M1A1 1 entity 
+tells the UAV to turn on its sensors and look for the enemy. The UAV will move
+towards the enemy and will report their location. The two tanks will move to 
+the enemy and attack them. The scenario passes if the enemy is destroyed.
+
+CommsDemoWithSocketInterface
+This is the same vrf scenario as CommsDemo.  In the qualnet scenario there are two
+additional nodes that are mapped to the socket interface. Nodes not mapped are not 
+deactivated on start up and therefore can be used by the HLA/DIS interface.
+These two nodes additional move and issue CER via commands issued through the
+socket interface.  mts-socket must be executed prior to qualnet for this scenario.
+See the README file in the folder for more details on how to run this scenario.
+
+dted
+This is another demo scnario where the home base tries to warn the APC 1 & 2 entities
+of an ambush but a hill blocks the signal. The scenario passes if APC 1 & 2 first 
+move closer to the Home Base entity and then moves away without getting destroyed.
+
+hierarchy
+In this scenario, a hierarchy component is defined.  MIA2 1, MIA2 2, MIA2 3, 
+MIA2 4 are all part of that component.   After 15 seconds the qualnet hierarchy 
+and its individual nodes should all move up and to the right.  If a vrf user decides
+to move the platform mnaually, the qualnet hierarchy and individual nodes should move
+as well. This scenario exists to test component statement parsing, and heirachy 
+assingment for entities.
+
+unicast
+In this scenario, the M1A2 1 entity sends hellos to the M1A1 2, M1A2 4,
+M1A2 6 and M1A2 8 entities. It sends one hello every second cycling through
+the receivers. When the entity receives the hello it will reply. To determine
+if the scenario passes, you need to examine the comms requests in the output file.
+
+If you use
+
+    grep CREQ unicast-dis.out
+
+You should see 1 request to a different entity every second. First the hello
+from the M1A2 1 entity and then the reply. For example:
+
+DIS: CREQ, M1A2 1 (1,0) unicast to M1A2 2 (2,0), send time 23.940024000, msgId: 0
+DIS: CREQ, M1A2 2 (2,0) unicast to M1A2 1 (1,0), send time 23.960023000, msgId: 0
+DIS: CREQ, M1A2 1 (1,0) unicast to M1A2 4 (4,0), send time 24.940040000, msgId: 1
+DIS: CREQ, M1A2 4 (4,0) unicast to M1A2 1 (1,0), send time 24.960024000, msgId: 0
+DIS: CREQ, M1A2 1 (1,0) unicast to M1A2 6 (6,0), send time 25.943147000, msgId: 2
+DIS: CREQ, M1A2 6 (6,0) unicast to M1A2 1 (1,0), send time 25.960024000, msgId: 0
+DIS: CREQ, M1A2 1 (1,0) unicast to M1A2 8 (8,0), send time 26.940027000, msgId: 3
+DIS: CREQ, M1A2 8 (8,0) unicast to M1A2 1 (1,0), send time 26.960023000, msgId: 0
+
+broadcast
+In this scenario, the M1A2 1 entity sends a broadcast hello every
+second. Any entity that receives the broadcast will reply. To determine if the
+scenario passes, you need to examine the comms requests in the output file.
+
+If you use
+
+    grep CREQ broadcast-dis.out
+
+You should see 4 requests every second. First the broadcast from the M1A2 1
+entity and then the reply's from the M1A2 2, M1A2 3 and M1A2 4 entities.
+
+For example:
+
+DIS: CREQ, M1A2 1 (1,0) broadcast, send time 23.040022000, msgId: 0
+DIS: CREQ, M1A2 2 (2,0) broadcast to M1A2 1, send time 23.060025000, msgId: 0
+DIS: CREQ, M1A2 3 (3,0) broadcast to M1A2 1, send time 23.060058000, msgId: 0
+DIS: CREQ, M1A2 4 (4,0) broadcast to M1A2 1, send time 23.060089000, msgId: 0
+
+Notes: Due to the scenario being 802.11 and using multiple concurrent multicast
+sources, some of the CREQ may not reach their destination.  You will see TIMEOUT
+OCCURRED print outs in these cases.
+
+multicast
+In this scenario, the M1A2 1 entity sends a multicast hello every second. Any
+entity that receives the hello will reply.  To determine if the scenario passes,
+you need to examine the comms requests in the output file.
+
+If you use
+
+    grep CREQ multicast-dis.out
+
+You should see 8 requests every second. First the multicast from the M1A2 1
+entity and then the reply's from the other 7 entities. For example:
+
+DIS: CREQ, M1A2 1 (1,0) broadcast, send time 21.950729000, msgId: 0
+DIS: CREQ, M1A2 2 (2,0) broadcast to M1A2 1, send time 21.970742000, msgId: 0
+DIS: CREQ, M1A2 3 (3,0) broadcast to M1A2 1, send time 21.970777000, msgId: 0
+DIS: CREQ, M1A2 4 (4,0) broadcast to M1A2 1, send time 21.970812000, msgId: 0
+DIS: CREQ, M1A2 5 (5,0) broadcast to M1A2 1, send time 21.970850000, msgId: 0
+DIS: CREQ, M1A2 6 (6,0) broadcast to M1A2 1, send time 21.970884000, msgId: 0
+DIS: CREQ, M1A2 7 (7,0) broadcast to M1A2 1, send time 21.970923000, msgId: 0
+DIS: CREQ, M1A2 8 (8,0) broadcast to M1A2 1, send time 21.970971000, msgId: 0
+
+Notes: Due to the scenario being 802.11 and using multiple concurrent multicast
+sources, some of the CREQ may not reach their destination.  You will see TIMEOUT
+OCCURRED print outs in these cases.

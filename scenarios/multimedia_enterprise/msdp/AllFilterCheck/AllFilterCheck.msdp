@@ -1,0 +1,10 @@
+[2] msdp peer 192.0.12.2 connect-source 192.0.12.1 remote-as 2
+[2] msdp peer 192.0.2.2 connect-source 192.0.2.1 remote-as 1
+[4] msdp peer 192.0.2.1 connect-source 192.0.2.2 remote-as 1
+[9] msdp peer 192.0.12.1 connect-source 192.0.12.2 remote-as 1
+
+[2] msdp sa-filter out 192.0.2.2 list 100
+[2] msdp sa-filter in 192.0.12.2 list 100
+
+[9] msdp redistribute list 100
+

@@ -1,0 +1,77 @@
+# Copyright (c) 2001-2015, SCALABLE Network Technologies, Inc.  All Rights Reserved.
+#                          600 Corporate Pointe
+#                          Suite 1200
+#                          Culver City, CA 90230
+#                          info@scalable-networks.com
+#
+# This source code is licensed, not sold, and is subject to a written
+# license agreement.  Among other things, no portion of this source
+# code may be copied, transmitted, disclosed, displayed, distributed,
+# translated, used as the basis for a derivative work, or used, in
+# whole or in part, for any program or purpose other than its intended
+# use in compliance with the license agreement as part of the QualNet
+# software.  This source code and certain of the algorithms contained
+# within it are confidential trade secrets of Scalable Network
+# Technologies, Inc. and may not be used as the basis for any other
+# software, hardware, product or service.
+
+
+####################################################################
+# PEERING SPECIFIC PARAMETER:
+####################################################################
+#
+# MSDP PEERING:
+#    used to configure an MSDP peer specified by the IP address. 
+#    If connect-source keyword is also specified, then the primary 
+#    address of the specified local interface is used as the source
+#    IP address for the TCP connection.
+#    [<Node Id>] msdp peer <peer interface address> [connect-source <interface address>] [remote-as <remote AS Id>] 
+#
+# For example:
+#    [2] msdp peer 192.0.12.2 connect-source 192.0.12.1 remote-as 2
+#
+# SA Filter OUT:
+#    To configure an outgoing filter list for Source-Active messages
+#    sent to the specified MSDP peer. It allows only those (S, G) entries
+#    that pass the extended access list. If no list is specified, then
+#    it filters out all the (S, G) entries.
+#    [<Node Id>]  msdp sa-filter out <peer IP Address> [list <Extended Access List Id>]
+# 
+# For example:    
+#    [2] msdp sa-filter out 192.0.12.2 list 100
+#
+# SA Filter IN:
+#    To configure an incoming filter list for Source-Active messages
+#    received from the specified MSDP peer. It allows only those (S, G) entries
+#    that pass the extended access list. If no list is specified, then
+#    it filters out all the (S, G) entries.
+#    [<Node Id>]  msdp sa-filter in <peer IP Address> [list <Extended Access List Id>]
+#
+# For example:
+#    [2] msdp sa-filter in 192.0.12.2 list 100
+#
+# MESH GROUP:
+#    To configure an MSDP mesh group and specify the IP address of the peer
+#    that belong this mesh group.
+#    [<Node Id>] msdp mesh-group <mesh Id> <peer IP address>
+#
+# For example:
+#    [2] msdp mesh-group 2 192.0.12.2
+#
+# DEFAULT PEERING:
+#    To define a default peer from which to accept all MSDP Source-Active messages.
+#    [<Node Id>] msdp default-peer <peer IP address>
+#    [2] msdp default-peer 192.0.12.2
+#
+##################################################################################
+# SOURCE SPECIFIC PARAMETER
+##################################################################################
+# REDISTRIBUTE FILTER:
+#    To configure a filter on a node for local sources that are to be advertised to
+#    its MSDP peers. It allows only those (S, G) entries that pass the access list
+#    (stanadrd or extended). If no list is specified, then it filters out all the 
+#    sources.
+#    [<Node Id>] msdp redistribute [list <list Id>]
+# For example:
+#    [9] msdp redistribute list 5 
+#

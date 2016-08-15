@@ -1,0 +1,12 @@
+Port 9035
+TimeManagementMode TimeManagedFast 5.0
+InitializeSimulation COORDINATESYSTEM Cartesian
+CreatePlatform 1 0 X 600 Y 150 DAMAGESTATE 0 Type 1
+CreatePlatform 2 0 X 700 Y 150 DAMAGESTATE 0 Type 1
+CommEffectsRequest 1 2 10 ID1 10 TCP SIZE 1 Precedence Routine
+CommEffectsRequest 1 2 11 ID1 11 TCP SIZE 512 Precedence Routine
+CommEffectsRequest 1 2 12 ID1 12 TCP SIZE 20000 Precedence Routine
+CommEffectsRequest 1 2 20 ID1 20 UDP SIZE 1 Precedence Routine
+CommEffectsRequest 1 2 21 ID1 21 UDP SIZE 512 Precedence Routine
+CommEffectsRequest 1 2 22 ID1 22 UDP SIZE 20000 Precedence Routine
+StopSimulation 30

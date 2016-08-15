@@ -1,0 +1,3815 @@
+<?xml version="1.0"?>
+<Site Name="Site0" id="Site0" ReferencePoint="0.0 0.0 0.0" CoordinateType="geodetic" part="1" totalParts="01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:qualnet-road.xsd">
+<Region id="Region0" CoordinateType="geodetic">
+<position>-71.176727 42.335905 0.0</position>
+<position>-71.176727 42.339596 0.0</position>
+<position>-71.169831 42.339596 0.0</position>
+<position>-71.169831 42.335905 0.0</position>
+</Region>
+<Building id="0B000" Name="0B000">
+<face Name="F0" id="F0">
+<position>-71.176549 42.337963 0</position>
+<position>-71.176597 42.338015 0</position>
+<position>-71.176597 42.338015 10</position>
+<position>-71.176549 42.337963 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176597 42.338015 0</position>
+<position>-71.176533 42.338441 0</position>
+<position>-71.176533 42.338441 10</position>
+<position>-71.176597 42.338015 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176533 42.338441 0</position>
+<position>-71.175837 42.338837 0</position>
+<position>-71.175837 42.338837 10</position>
+<position>-71.176533 42.338441 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175837 42.338837 0</position>
+<position>-71.175248 42.338861 0</position>
+<position>-71.175248 42.338861 10</position>
+<position>-71.175837 42.338837 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175248 42.338861 0</position>
+<position>-71.175127 42.338802 0</position>
+<position>-71.175127 42.338802 10</position>
+<position>-71.175248 42.338861 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175127 42.338802 0</position>
+<position>-71.175078 42.338729 0</position>
+<position>-71.175078 42.338729 10</position>
+<position>-71.175127 42.338802 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175078 42.338729 0</position>
+<position>-71.175053 42.338657 0</position>
+<position>-71.175053 42.338657 10</position>
+<position>-71.175078 42.338729 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.175053 42.338657 0</position>
+<position>-71.175369 42.337931 0</position>
+<position>-71.175369 42.337931 10</position>
+<position>-71.175053 42.338657 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.175369 42.337931 0</position>
+<position>-71.175431 42.337894 0</position>
+<position>-71.175431 42.337894 10</position>
+<position>-71.175369 42.337931 10</position>
+</face>
+<face Name="F9" id="F9">
+<position>-71.175431 42.337894 0</position>
+<position>-71.176549 42.337963 0</position>
+<position>-71.176549 42.337963 10</position>
+<position>-71.175431 42.337894 10</position>
+</face>
+<face Name="F10" id="F10">
+<position>-71.176549 42.337963 10</position>
+<position>-71.176597 42.338015 10</position>
+<position>-71.176533 42.338441 10</position>
+<position>-71.175837 42.338837 10</position>
+<position>-71.175248 42.338861 10</position>
+<position>-71.175127 42.338802 10</position>
+<position>-71.175078 42.338729 10</position>
+<position>-71.175053 42.338657 10</position>
+<position>-71.175369 42.337931 10</position>
+<position>-71.175431 42.337894 10</position>
+</face>
+</Building>
+<Building id="0B001" Name="0B001">
+<face Name="F0" id="F0">
+<position>-71.174782 42.336783 0</position>
+<position>-71.174962 42.336839 0</position>
+<position>-71.174962 42.336839 10</position>
+<position>-71.174782 42.336783 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174962 42.336839 0</position>
+<position>-71.174910 42.336924 0</position>
+<position>-71.174910 42.336924 10</position>
+<position>-71.174962 42.336839 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174910 42.336924 0</position>
+<position>-71.174735 42.336869 0</position>
+<position>-71.174735 42.336869 10</position>
+<position>-71.174910 42.336924 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174735 42.336869 0</position>
+<position>-71.174782 42.336783 0</position>
+<position>-71.174782 42.336783 10</position>
+<position>-71.174735 42.336869 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174782 42.336783 10</position>
+<position>-71.174962 42.336839 10</position>
+<position>-71.174910 42.336924 10</position>
+<position>-71.174735 42.336869 10</position>
+</face>
+</Building>
+<Building id="0B002" Name="0B002">
+<face Name="F0" id="F0">
+<position>-71.174891 42.336580 0</position>
+<position>-71.175015 42.336613 0</position>
+<position>-71.175015 42.336613 10</position>
+<position>-71.174891 42.336580 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175015 42.336613 0</position>
+<position>-71.174928 42.336745 0</position>
+<position>-71.174928 42.336745 10</position>
+<position>-71.175015 42.336613 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174928 42.336745 0</position>
+<position>-71.174812 42.336706 0</position>
+<position>-71.174812 42.336706 10</position>
+<position>-71.174928 42.336745 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174812 42.336706 0</position>
+<position>-71.174891 42.336580 0</position>
+<position>-71.174891 42.336580 10</position>
+<position>-71.174812 42.336706 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174891 42.336580 10</position>
+<position>-71.175015 42.336613 10</position>
+<position>-71.174928 42.336745 10</position>
+<position>-71.174812 42.336706 10</position>
+</face>
+</Building>
+<Building id="0B003" Name="0B003">
+<face Name="F0" id="F0">
+<position>-71.174993 42.336396 0</position>
+<position>-71.175130 42.336438 0</position>
+<position>-71.175130 42.336438 10</position>
+<position>-71.174993 42.336396 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175130 42.336438 0</position>
+<position>-71.175040 42.336583 0</position>
+<position>-71.175040 42.336583 10</position>
+<position>-71.175130 42.336438 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175040 42.336583 0</position>
+<position>-71.174908 42.336538 0</position>
+<position>-71.174908 42.336538 10</position>
+<position>-71.175040 42.336583 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174908 42.336538 0</position>
+<position>-71.174993 42.336396 0</position>
+<position>-71.174993 42.336396 10</position>
+<position>-71.174908 42.336538 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174993 42.336396 10</position>
+<position>-71.175130 42.336438 10</position>
+<position>-71.175040 42.336583 10</position>
+<position>-71.174908 42.336538 10</position>
+</face>
+</Building>
+<Building id="0B004" Name="0B004">
+<face Name="F0" id="F0">
+<position>-71.175335 42.336569 0</position>
+<position>-71.175442 42.336606 0</position>
+<position>-71.175442 42.336606 10</position>
+<position>-71.175335 42.336569 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175442 42.336606 0</position>
+<position>-71.175462 42.336582 0</position>
+<position>-71.175462 42.336582 10</position>
+<position>-71.175442 42.336606 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175462 42.336582 0</position>
+<position>-71.175525 42.336602 0</position>
+<position>-71.175525 42.336602 10</position>
+<position>-71.175462 42.336582 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175525 42.336602 0</position>
+<position>-71.175461 42.336701 0</position>
+<position>-71.175461 42.336701 10</position>
+<position>-71.175525 42.336602 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175461 42.336701 0</position>
+<position>-71.175287 42.336645 0</position>
+<position>-71.175287 42.336645 10</position>
+<position>-71.175461 42.336701 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175287 42.336645 0</position>
+<position>-71.175335 42.336569 0</position>
+<position>-71.175335 42.336569 10</position>
+<position>-71.175287 42.336645 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175335 42.336569 10</position>
+<position>-71.175442 42.336606 10</position>
+<position>-71.175462 42.336582 10</position>
+<position>-71.175525 42.336602 10</position>
+<position>-71.175461 42.336701 10</position>
+<position>-71.175287 42.336645 10</position>
+</face>
+</Building>
+<Building id="0B005" Name="0B005">
+<face Name="F0" id="F0">
+<position>-71.175350 42.336750 0</position>
+<position>-71.175369 42.336722 0</position>
+<position>-71.175369 42.336722 10</position>
+<position>-71.175350 42.336750 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175369 42.336722 0</position>
+<position>-71.175436 42.336746 0</position>
+<position>-71.175436 42.336746 10</position>
+<position>-71.175369 42.336722 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175436 42.336746 0</position>
+<position>-71.175367 42.336855 0</position>
+<position>-71.175367 42.336855 10</position>
+<position>-71.175436 42.336746 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175367 42.336855 0</position>
+<position>-71.175194 42.336793 0</position>
+<position>-71.175194 42.336793 10</position>
+<position>-71.175367 42.336855 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175194 42.336793 0</position>
+<position>-71.175243 42.336713 0</position>
+<position>-71.175243 42.336713 10</position>
+<position>-71.175194 42.336793 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175243 42.336713 0</position>
+<position>-71.175350 42.336750 0</position>
+<position>-71.175350 42.336750 10</position>
+<position>-71.175243 42.336713 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175350 42.336750 10</position>
+<position>-71.175369 42.336722 10</position>
+<position>-71.175436 42.336746 10</position>
+<position>-71.175367 42.336855 10</position>
+<position>-71.175194 42.336793 10</position>
+<position>-71.175243 42.336713 10</position>
+</face>
+</Building>
+<Building id="0B006" Name="0B006">
+<face Name="F0" id="F0">
+<position>-71.175365 42.336895 0</position>
+<position>-71.175289 42.337021 0</position>
+<position>-71.175289 42.337021 10</position>
+<position>-71.175365 42.336895 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175289 42.337021 0</position>
+<position>-71.175186 42.336976 0</position>
+<position>-71.175186 42.336976 10</position>
+<position>-71.175289 42.337021 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175186 42.336976 0</position>
+<position>-71.175249 42.336857 0</position>
+<position>-71.175249 42.336857 10</position>
+<position>-71.175186 42.336976 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175249 42.336857 0</position>
+<position>-71.175365 42.336895 0</position>
+<position>-71.175365 42.336895 10</position>
+<position>-71.175249 42.336857 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175365 42.336895 10</position>
+<position>-71.175289 42.337021 10</position>
+<position>-71.175186 42.336976 10</position>
+<position>-71.175249 42.336857 10</position>
+</face>
+</Building>
+<Building id="0B007" Name="0B007">
+<face Name="F0" id="F0">
+<position>-71.174961 42.337112 0</position>
+<position>-71.174956 42.336975 0</position>
+<position>-71.174956 42.336975 10</position>
+<position>-71.174961 42.337112 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174956 42.336975 0</position>
+<position>-71.175056 42.336974 0</position>
+<position>-71.175056 42.336974 10</position>
+<position>-71.174956 42.336975 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175056 42.336974 0</position>
+<position>-71.175049 42.337013 0</position>
+<position>-71.175049 42.337013 10</position>
+<position>-71.175056 42.336974 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175049 42.337013 0</position>
+<position>-71.175209 42.337016 0</position>
+<position>-71.175209 42.337016 10</position>
+<position>-71.175049 42.337013 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175209 42.337016 0</position>
+<position>-71.175205 42.337104 0</position>
+<position>-71.175205 42.337104 10</position>
+<position>-71.175209 42.337016 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175205 42.337104 0</position>
+<position>-71.174961 42.337112 0</position>
+<position>-71.174961 42.337112 10</position>
+<position>-71.175205 42.337104 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.174961 42.337112 10</position>
+<position>-71.174956 42.336975 10</position>
+<position>-71.175056 42.336974 10</position>
+<position>-71.175049 42.337013 10</position>
+<position>-71.175209 42.337016 10</position>
+<position>-71.175205 42.337104 10</position>
+</face>
+</Building>
+<Building id="0B008" Name="0B008">
+<face Name="F0" id="F0">
+<position>-71.175134 42.336141 0</position>
+<position>-71.175208 42.336169 0</position>
+<position>-71.175208 42.336169 10</position>
+<position>-71.175134 42.336141 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175208 42.336169 0</position>
+<position>-71.175199 42.336188 0</position>
+<position>-71.175199 42.336188 10</position>
+<position>-71.175208 42.336169 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175199 42.336188 0</position>
+<position>-71.175329 42.336231 0</position>
+<position>-71.175329 42.336231 10</position>
+<position>-71.175199 42.336188 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175329 42.336231 0</position>
+<position>-71.175282 42.336295 0</position>
+<position>-71.175282 42.336295 10</position>
+<position>-71.175329 42.336231 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175282 42.336295 0</position>
+<position>-71.175084 42.336231 0</position>
+<position>-71.175084 42.336231 10</position>
+<position>-71.175282 42.336295 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175084 42.336231 0</position>
+<position>-71.175134 42.336141 0</position>
+<position>-71.175134 42.336141 10</position>
+<position>-71.175084 42.336231 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175134 42.336141 10</position>
+<position>-71.175208 42.336169 10</position>
+<position>-71.175199 42.336188 10</position>
+<position>-71.175329 42.336231 10</position>
+<position>-71.175282 42.336295 10</position>
+<position>-71.175084 42.336231 10</position>
+</face>
+</Building>
+<Building id="0B009" Name="0B009">
+<face Name="F0" id="F0">
+<position>-71.175227 42.335986 0</position>
+<position>-71.175305 42.336010 0</position>
+<position>-71.175305 42.336010 10</position>
+<position>-71.175227 42.335986 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175305 42.336010 0</position>
+<position>-71.175288 42.336039 0</position>
+<position>-71.175288 42.336039 10</position>
+<position>-71.175305 42.336010 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175288 42.336039 0</position>
+<position>-71.175405 42.336074 0</position>
+<position>-71.175405 42.336074 10</position>
+<position>-71.175288 42.336039 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175405 42.336074 0</position>
+<position>-71.175364 42.336144 0</position>
+<position>-71.175364 42.336144 10</position>
+<position>-71.175405 42.336074 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175364 42.336144 0</position>
+<position>-71.175168 42.336081 0</position>
+<position>-71.175168 42.336081 10</position>
+<position>-71.175364 42.336144 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175168 42.336081 0</position>
+<position>-71.175227 42.335986 0</position>
+<position>-71.175227 42.335986 10</position>
+<position>-71.175168 42.336081 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175227 42.335986 10</position>
+<position>-71.175305 42.336010 10</position>
+<position>-71.175288 42.336039 10</position>
+<position>-71.175405 42.336074 10</position>
+<position>-71.175364 42.336144 10</position>
+<position>-71.175168 42.336081 10</position>
+</face>
+</Building>
+<Building id="0B010" Name="0B010">
+<face Name="F0" id="F0">
+<position>-71.175676 42.336377 0</position>
+<position>-71.175627 42.336467 0</position>
+<position>-71.175627 42.336467 10</position>
+<position>-71.175676 42.336377 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175627 42.336467 0</position>
+<position>-71.175396 42.336387 0</position>
+<position>-71.175396 42.336387 10</position>
+<position>-71.175627 42.336467 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175396 42.336387 0</position>
+<position>-71.175441 42.336303 0</position>
+<position>-71.175441 42.336303 10</position>
+<position>-71.175396 42.336387 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175441 42.336303 0</position>
+<position>-71.175676 42.336377 0</position>
+<position>-71.175676 42.336377 10</position>
+<position>-71.175441 42.336303 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175676 42.336377 10</position>
+<position>-71.175627 42.336467 10</position>
+<position>-71.175396 42.336387 10</position>
+<position>-71.175441 42.336303 10</position>
+</face>
+</Building>
+<Building id="0B011" Name="0B011">
+<face Name="F0" id="F0">
+<position>-71.175654 42.336136 0</position>
+<position>-71.175772 42.336175 0</position>
+<position>-71.175772 42.336175 10</position>
+<position>-71.175654 42.336136 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175772 42.336175 0</position>
+<position>-71.175717 42.336255 0</position>
+<position>-71.175717 42.336255 10</position>
+<position>-71.175772 42.336175 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175717 42.336255 0</position>
+<position>-71.175601 42.336218 0</position>
+<position>-71.175601 42.336218 10</position>
+<position>-71.175717 42.336255 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175601 42.336218 0</position>
+<position>-71.175654 42.336136 0</position>
+<position>-71.175654 42.336136 10</position>
+<position>-71.175601 42.336218 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175654 42.336136 10</position>
+<position>-71.175772 42.336175 10</position>
+<position>-71.175717 42.336255 10</position>
+<position>-71.175601 42.336218 10</position>
+</face>
+</Building>
+<Building id="0B012" Name="0B012">
+<face Name="F0" id="F0">
+<position>-71.175772 42.335970 0</position>
+<position>-71.175859 42.336001 0</position>
+<position>-71.175859 42.336001 10</position>
+<position>-71.175772 42.335970 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175859 42.336001 0</position>
+<position>-71.175799 42.336104 0</position>
+<position>-71.175799 42.336104 10</position>
+<position>-71.175859 42.336001 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175799 42.336104 0</position>
+<position>-71.175701 42.336069 0</position>
+<position>-71.175701 42.336069 10</position>
+<position>-71.175799 42.336104 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175701 42.336069 0</position>
+<position>-71.175772 42.335970 0</position>
+<position>-71.175772 42.335970 10</position>
+<position>-71.175701 42.336069 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175772 42.335970 10</position>
+<position>-71.175859 42.336001 10</position>
+<position>-71.175799 42.336104 10</position>
+<position>-71.175701 42.336069 10</position>
+</face>
+</Building>
+<Building id="0B013" Name="0B013">
+<face Name="F0" id="F0">
+<position>-71.174282 42.336698 0</position>
+<position>-71.174443 42.336747 0</position>
+<position>-71.174443 42.336747 10</position>
+<position>-71.174282 42.336698 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174443 42.336747 0</position>
+<position>-71.174384 42.336849 0</position>
+<position>-71.174384 42.336849 10</position>
+<position>-71.174443 42.336747 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174384 42.336849 0</position>
+<position>-71.174219 42.336795 0</position>
+<position>-71.174219 42.336795 10</position>
+<position>-71.174384 42.336849 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174219 42.336795 0</position>
+<position>-71.174282 42.336698 0</position>
+<position>-71.174282 42.336698 10</position>
+<position>-71.174219 42.336795 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174282 42.336698 10</position>
+<position>-71.174443 42.336747 10</position>
+<position>-71.174384 42.336849 10</position>
+<position>-71.174219 42.336795 10</position>
+</face>
+</Building>
+<Building id="0B014" Name="0B014">
+<face Name="F0" id="F0">
+<position>-71.174363 42.336507 0</position>
+<position>-71.174554 42.336572 0</position>
+<position>-71.174554 42.336572 10</position>
+<position>-71.174363 42.336507 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174554 42.336572 0</position>
+<position>-71.174500 42.336664 0</position>
+<position>-71.174500 42.336664 10</position>
+<position>-71.174554 42.336572 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174500 42.336664 0</position>
+<position>-71.174309 42.336599 0</position>
+<position>-71.174309 42.336599 10</position>
+<position>-71.174500 42.336664 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174309 42.336599 0</position>
+<position>-71.174363 42.336507 0</position>
+<position>-71.174363 42.336507 10</position>
+<position>-71.174309 42.336599 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174363 42.336507 10</position>
+<position>-71.174554 42.336572 10</position>
+<position>-71.174500 42.336664 10</position>
+<position>-71.174309 42.336599 10</position>
+</face>
+</Building>
+<Building id="0B015" Name="0B015">
+<face Name="F0" id="F0">
+<position>-71.174451 42.336351 0</position>
+<position>-71.174561 42.336394 0</position>
+<position>-71.174561 42.336394 10</position>
+<position>-71.174451 42.336351 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174561 42.336394 0</position>
+<position>-71.174578 42.336368 0</position>
+<position>-71.174578 42.336368 10</position>
+<position>-71.174561 42.336394 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174578 42.336368 0</position>
+<position>-71.174668 42.336397 0</position>
+<position>-71.174668 42.336397 10</position>
+<position>-71.174578 42.336368 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174668 42.336397 0</position>
+<position>-71.174607 42.336504 0</position>
+<position>-71.174607 42.336504 10</position>
+<position>-71.174668 42.336397 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174607 42.336504 0</position>
+<position>-71.174404 42.336436 0</position>
+<position>-71.174404 42.336436 10</position>
+<position>-71.174607 42.336504 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.174404 42.336436 0</position>
+<position>-71.174451 42.336351 0</position>
+<position>-71.174451 42.336351 10</position>
+<position>-71.174404 42.336436 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.174451 42.336351 10</position>
+<position>-71.174561 42.336394 10</position>
+<position>-71.174578 42.336368 10</position>
+<position>-71.174668 42.336397 10</position>
+<position>-71.174607 42.336504 10</position>
+<position>-71.174404 42.336436 10</position>
+</face>
+</Building>
+<Building id="0B016" Name="0B016">
+<face Name="F0" id="F0">
+<position>-71.174553 42.336190 0</position>
+<position>-71.174661 42.336227 0</position>
+<position>-71.174661 42.336227 10</position>
+<position>-71.174553 42.336190 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174661 42.336227 0</position>
+<position>-71.174682 42.336196 0</position>
+<position>-71.174682 42.336196 10</position>
+<position>-71.174661 42.336227 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174682 42.336196 0</position>
+<position>-71.174757 42.336218 0</position>
+<position>-71.174757 42.336218 10</position>
+<position>-71.174682 42.336196 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174757 42.336218 0</position>
+<position>-71.174690 42.336333 0</position>
+<position>-71.174690 42.336333 10</position>
+<position>-71.174757 42.336218 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174690 42.336333 0</position>
+<position>-71.174503 42.336270 0</position>
+<position>-71.174503 42.336270 10</position>
+<position>-71.174690 42.336333 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.174503 42.336270 0</position>
+<position>-71.174553 42.336190 0</position>
+<position>-71.174553 42.336190 10</position>
+<position>-71.174503 42.336270 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.174553 42.336190 10</position>
+<position>-71.174661 42.336227 10</position>
+<position>-71.174682 42.336196 10</position>
+<position>-71.174757 42.336218 10</position>
+<position>-71.174690 42.336333 10</position>
+<position>-71.174503 42.336270 10</position>
+</face>
+</Building>
+<Building id="0B017" Name="0B017">
+<face Name="F0" id="F0">
+<position>-71.174649 42.336012 0</position>
+<position>-71.174760 42.336056 0</position>
+<position>-71.174760 42.336056 10</position>
+<position>-71.174649 42.336012 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174760 42.336056 0</position>
+<position>-71.174779 42.336030 0</position>
+<position>-71.174779 42.336030 10</position>
+<position>-71.174760 42.336056 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174779 42.336030 0</position>
+<position>-71.174856 42.336061 0</position>
+<position>-71.174856 42.336061 10</position>
+<position>-71.174779 42.336030 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174856 42.336061 0</position>
+<position>-71.174777 42.336168 0</position>
+<position>-71.174777 42.336168 10</position>
+<position>-71.174856 42.336061 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174777 42.336168 0</position>
+<position>-71.174592 42.336099 0</position>
+<position>-71.174592 42.336099 10</position>
+<position>-71.174777 42.336168 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.174592 42.336099 0</position>
+<position>-71.174649 42.336012 0</position>
+<position>-71.174649 42.336012 10</position>
+<position>-71.174592 42.336099 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.174649 42.336012 10</position>
+<position>-71.174760 42.336056 10</position>
+<position>-71.174779 42.336030 10</position>
+<position>-71.174856 42.336061 10</position>
+<position>-71.174777 42.336168 10</position>
+<position>-71.174592 42.336099 10</position>
+</face>
+</Building>
+<Building id="0B018" Name="0B018">
+<face Name="F0" id="F0">
+<position>-71.174491 42.336030 0</position>
+<position>-71.174592 42.336065 0</position>
+<position>-71.174592 42.336065 10</position>
+<position>-71.174491 42.336030 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174592 42.336065 0</position>
+<position>-71.174546 42.336131 0</position>
+<position>-71.174546 42.336131 10</position>
+<position>-71.174592 42.336065 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174546 42.336131 0</position>
+<position>-71.174454 42.336100 0</position>
+<position>-71.174454 42.336100 10</position>
+<position>-71.174546 42.336131 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174454 42.336100 0</position>
+<position>-71.174491 42.336030 0</position>
+<position>-71.174491 42.336030 10</position>
+<position>-71.174454 42.336100 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174491 42.336030 10</position>
+<position>-71.174592 42.336065 10</position>
+<position>-71.174546 42.336131 10</position>
+<position>-71.174454 42.336100 10</position>
+</face>
+</Building>
+<Building id="0B019" Name="0B019">
+<face Name="F0" id="F0">
+<position>-71.174490 42.335991 0</position>
+<position>-71.174449 42.336057 0</position>
+<position>-71.174449 42.336057 10</position>
+<position>-71.174490 42.335991 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174449 42.336057 0</position>
+<position>-71.174355 42.336027 0</position>
+<position>-71.174355 42.336027 10</position>
+<position>-71.174449 42.336057 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174355 42.336027 0</position>
+<position>-71.174392 42.335961 0</position>
+<position>-71.174392 42.335961 10</position>
+<position>-71.174355 42.336027 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174392 42.335961 0</position>
+<position>-71.174490 42.335991 0</position>
+<position>-71.174490 42.335991 10</position>
+<position>-71.174392 42.335961 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174490 42.335991 10</position>
+<position>-71.174449 42.336057 10</position>
+<position>-71.174355 42.336027 10</position>
+<position>-71.174392 42.335961 10</position>
+</face>
+</Building>
+<Building id="0B020" Name="0B020">
+<face Name="F0" id="F0">
+<position>-71.174240 42.336064 0</position>
+<position>-71.174184 42.336166 0</position>
+<position>-71.174184 42.336166 10</position>
+<position>-71.174240 42.336064 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174184 42.336166 0</position>
+<position>-71.174088 42.336136 0</position>
+<position>-71.174088 42.336136 10</position>
+<position>-71.174184 42.336166 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174088 42.336136 0</position>
+<position>-71.174144 42.336032 0</position>
+<position>-71.174144 42.336032 10</position>
+<position>-71.174088 42.336136 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174144 42.336032 0</position>
+<position>-71.174240 42.336064 0</position>
+<position>-71.174240 42.336064 10</position>
+<position>-71.174144 42.336032 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174240 42.336064 10</position>
+<position>-71.174184 42.336166 10</position>
+<position>-71.174088 42.336136 10</position>
+<position>-71.174144 42.336032 10</position>
+</face>
+</Building>
+<Building id="0B021" Name="0B021">
+<face Name="F0" id="F0">
+<position>-71.174159 42.336232 0</position>
+<position>-71.174105 42.336339 0</position>
+<position>-71.174105 42.336339 10</position>
+<position>-71.174159 42.336232 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174105 42.336339 0</position>
+<position>-71.174000 42.336312 0</position>
+<position>-71.174000 42.336312 10</position>
+<position>-71.174105 42.336339 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174000 42.336312 0</position>
+<position>-71.174052 42.336208 0</position>
+<position>-71.174052 42.336208 10</position>
+<position>-71.174000 42.336312 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174052 42.336208 0</position>
+<position>-71.174159 42.336232 0</position>
+<position>-71.174159 42.336232 10</position>
+<position>-71.174052 42.336208 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174159 42.336232 10</position>
+<position>-71.174105 42.336339 10</position>
+<position>-71.174000 42.336312 10</position>
+<position>-71.174052 42.336208 10</position>
+</face>
+</Building>
+<Building id="0B022" Name="0B022">
+<face Name="F0" id="F0">
+<position>-71.173905 42.336421 0</position>
+<position>-71.173959 42.336391 0</position>
+<position>-71.173959 42.336391 10</position>
+<position>-71.173905 42.336421 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173959 42.336391 0</position>
+<position>-71.174011 42.336444 0</position>
+<position>-71.174011 42.336444 10</position>
+<position>-71.173959 42.336391 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174011 42.336444 0</position>
+<position>-71.173805 42.336540 0</position>
+<position>-71.173805 42.336540 10</position>
+<position>-71.174011 42.336444 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173805 42.336540 0</position>
+<position>-71.173734 42.336483 0</position>
+<position>-71.173734 42.336483 10</position>
+<position>-71.173805 42.336540 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173734 42.336483 0</position>
+<position>-71.173879 42.336399 0</position>
+<position>-71.173879 42.336399 10</position>
+<position>-71.173734 42.336483 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173879 42.336399 0</position>
+<position>-71.173905 42.336421 0</position>
+<position>-71.173905 42.336421 10</position>
+<position>-71.173879 42.336399 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.173905 42.336421 10</position>
+<position>-71.173959 42.336391 10</position>
+<position>-71.174011 42.336444 10</position>
+<position>-71.173805 42.336540 10</position>
+<position>-71.173734 42.336483 10</position>
+<position>-71.173879 42.336399 10</position>
+</face>
+</Building>
+<Building id="0B023" Name="0B023">
+<face Name="F0" id="F0">
+<position>-71.173497 42.336602 0</position>
+<position>-71.173491 42.336637 0</position>
+<position>-71.173491 42.336637 10</position>
+<position>-71.173497 42.336602 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173491 42.336637 0</position>
+<position>-71.173425 42.336626 0</position>
+<position>-71.173425 42.336626 10</position>
+<position>-71.173491 42.336637 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173425 42.336626 0</position>
+<position>-71.173426 42.336516 0</position>
+<position>-71.173426 42.336516 10</position>
+<position>-71.173425 42.336626 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173426 42.336516 0</position>
+<position>-71.173524 42.336520 0</position>
+<position>-71.173524 42.336520 10</position>
+<position>-71.173426 42.336516 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173524 42.336520 0</position>
+<position>-71.173523 42.336483 0</position>
+<position>-71.173523 42.336483 10</position>
+<position>-71.173524 42.336520 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173523 42.336483 0</position>
+<position>-71.173643 42.336485 0</position>
+<position>-71.173643 42.336485 10</position>
+<position>-71.173523 42.336483 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.173643 42.336485 0</position>
+<position>-71.173635 42.336594 0</position>
+<position>-71.173635 42.336594 10</position>
+<position>-71.173643 42.336485 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.173635 42.336594 0</position>
+<position>-71.173497 42.336602 0</position>
+<position>-71.173497 42.336602 10</position>
+<position>-71.173635 42.336594 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.173497 42.336602 10</position>
+<position>-71.173491 42.336637 10</position>
+<position>-71.173425 42.336626 10</position>
+<position>-71.173426 42.336516 10</position>
+<position>-71.173524 42.336520 10</position>
+<position>-71.173523 42.336483 10</position>
+<position>-71.173643 42.336485 10</position>
+<position>-71.173635 42.336594 10</position>
+</face>
+</Building>
+<Building id="0B024" Name="0B024">
+<face Name="F0" id="F0">
+<position>-71.172978 42.336620 0</position>
+<position>-71.172891 42.336563 0</position>
+<position>-71.172891 42.336563 10</position>
+<position>-71.172978 42.336620 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172891 42.336563 0</position>
+<position>-71.173045 42.336459 0</position>
+<position>-71.173045 42.336459 10</position>
+<position>-71.172891 42.336563 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173045 42.336459 0</position>
+<position>-71.173123 42.336520 0</position>
+<position>-71.173123 42.336520 10</position>
+<position>-71.173045 42.336459 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173123 42.336520 0</position>
+<position>-71.172978 42.336620 0</position>
+<position>-71.172978 42.336620 10</position>
+<position>-71.173123 42.336520 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172978 42.336620 10</position>
+<position>-71.172891 42.336563 10</position>
+<position>-71.173045 42.336459 10</position>
+<position>-71.173123 42.336520 10</position>
+</face>
+</Building>
+<Building id="0B025" Name="0B025">
+<face Name="F0" id="F0">
+<position>-71.173006 42.336680 0</position>
+<position>-71.172996 42.336746 0</position>
+<position>-71.172996 42.336746 10</position>
+<position>-71.173006 42.336680 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172996 42.336746 0</position>
+<position>-71.172913 42.336738 0</position>
+<position>-71.172913 42.336738 10</position>
+<position>-71.172996 42.336746 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172913 42.336738 0</position>
+<position>-71.172913 42.336684 0</position>
+<position>-71.172913 42.336684 10</position>
+<position>-71.172913 42.336738 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172913 42.336684 0</position>
+<position>-71.173006 42.336680 0</position>
+<position>-71.173006 42.336680 10</position>
+<position>-71.172913 42.336684 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173006 42.336680 10</position>
+<position>-71.172996 42.336746 10</position>
+<position>-71.172913 42.336738 10</position>
+<position>-71.172913 42.336684 10</position>
+</face>
+</Building>
+<Building id="0B026" Name="0B026">
+<face Name="F0" id="F0">
+<position>-71.173732 42.336749 0</position>
+<position>-71.173847 42.336759 0</position>
+<position>-71.173847 42.336759 10</position>
+<position>-71.173732 42.336749 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173847 42.336759 0</position>
+<position>-71.173829 42.336817 0</position>
+<position>-71.173829 42.336817 10</position>
+<position>-71.173847 42.336759 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173829 42.336817 0</position>
+<position>-71.173713 42.336810 0</position>
+<position>-71.173713 42.336810 10</position>
+<position>-71.173829 42.336817 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173713 42.336810 0</position>
+<position>-71.173732 42.336749 0</position>
+<position>-71.173732 42.336749 10</position>
+<position>-71.173713 42.336810 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173732 42.336749 10</position>
+<position>-71.173847 42.336759 10</position>
+<position>-71.173829 42.336817 10</position>
+<position>-71.173713 42.336810 10</position>
+</face>
+</Building>
+<Building id="0B027" Name="0B027">
+<face Name="F0" id="F0">
+<position>-71.173665 42.336083 0</position>
+<position>-71.173725 42.336150 0</position>
+<position>-71.173725 42.336150 10</position>
+<position>-71.173665 42.336083 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173725 42.336150 0</position>
+<position>-71.173512 42.336218 0</position>
+<position>-71.173512 42.336218 10</position>
+<position>-71.173725 42.336150 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173512 42.336218 0</position>
+<position>-71.173483 42.336150 0</position>
+<position>-71.173483 42.336150 10</position>
+<position>-71.173512 42.336218 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173483 42.336150 0</position>
+<position>-71.173665 42.336083 0</position>
+<position>-71.173665 42.336083 10</position>
+<position>-71.173483 42.336150 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173665 42.336083 10</position>
+<position>-71.173725 42.336150 10</position>
+<position>-71.173512 42.336218 10</position>
+<position>-71.173483 42.336150 10</position>
+</face>
+</Building>
+<Building id="0B028" Name="0B028">
+<face Name="F0" id="F0">
+<position>-71.173260 42.336193 0</position>
+<position>-71.173156 42.336069 0</position>
+<position>-71.173156 42.336069 10</position>
+<position>-71.173260 42.336193 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173156 42.336069 0</position>
+<position>-71.173245 42.336015 0</position>
+<position>-71.173245 42.336015 10</position>
+<position>-71.173156 42.336069 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173245 42.336015 0</position>
+<position>-71.173377 42.336136 0</position>
+<position>-71.173377 42.336136 10</position>
+<position>-71.173245 42.336015 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173377 42.336136 0</position>
+<position>-71.173260 42.336193 0</position>
+<position>-71.173260 42.336193 10</position>
+<position>-71.173377 42.336136 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173260 42.336193 10</position>
+<position>-71.173156 42.336069 10</position>
+<position>-71.173245 42.336015 10</position>
+<position>-71.173377 42.336136 10</position>
+</face>
+</Building>
+<Building id="0B029" Name="0B029">
+<face Name="F0" id="F0">
+<position>-71.171928 42.336186 0</position>
+<position>-71.171774 42.336200 0</position>
+<position>-71.171774 42.336200 10</position>
+<position>-71.171928 42.336186 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171774 42.336200 0</position>
+<position>-71.171748 42.336091 0</position>
+<position>-71.171748 42.336091 10</position>
+<position>-71.171774 42.336200 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171748 42.336091 0</position>
+<position>-71.171909 42.336072 0</position>
+<position>-71.171909 42.336072 10</position>
+<position>-71.171748 42.336091 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171909 42.336072 0</position>
+<position>-71.171928 42.336186 0</position>
+<position>-71.171928 42.336186 10</position>
+<position>-71.171909 42.336072 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171928 42.336186 10</position>
+<position>-71.171774 42.336200 10</position>
+<position>-71.171748 42.336091 10</position>
+<position>-71.171909 42.336072 10</position>
+</face>
+</Building>
+<Building id="0B030" Name="0B030">
+<face Name="F0" id="F0">
+<position>-71.172082 42.335979 0</position>
+<position>-71.172184 42.335947 0</position>
+<position>-71.172184 42.335947 10</position>
+<position>-71.172082 42.335979 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172184 42.335947 0</position>
+<position>-71.172245 42.336069 0</position>
+<position>-71.172245 42.336069 10</position>
+<position>-71.172184 42.335947 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172245 42.336069 0</position>
+<position>-71.172133 42.336095 0</position>
+<position>-71.172133 42.336095 10</position>
+<position>-71.172245 42.336069 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172133 42.336095 0</position>
+<position>-71.172082 42.335979 0</position>
+<position>-71.172082 42.335979 10</position>
+<position>-71.172133 42.336095 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172082 42.335979 10</position>
+<position>-71.172184 42.335947 10</position>
+<position>-71.172245 42.336069 10</position>
+<position>-71.172133 42.336095 10</position>
+</face>
+</Building>
+<Building id="0B031" Name="0B031">
+<face Name="F0" id="F0">
+<position>-71.172023 42.336367 0</position>
+<position>-71.171847 42.336404 0</position>
+<position>-71.171847 42.336404 10</position>
+<position>-71.172023 42.336367 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171847 42.336404 0</position>
+<position>-71.171798 42.336303 0</position>
+<position>-71.171798 42.336303 10</position>
+<position>-71.171847 42.336404 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171798 42.336303 0</position>
+<position>-71.171919 42.336264 0</position>
+<position>-71.171919 42.336264 10</position>
+<position>-71.171798 42.336303 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171919 42.336264 0</position>
+<position>-71.171940 42.336321 0</position>
+<position>-71.171940 42.336321 10</position>
+<position>-71.171919 42.336264 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171940 42.336321 0</position>
+<position>-71.172003 42.336305 0</position>
+<position>-71.172003 42.336305 10</position>
+<position>-71.171940 42.336321 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.172003 42.336305 0</position>
+<position>-71.172023 42.336367 0</position>
+<position>-71.172023 42.336367 10</position>
+<position>-71.172003 42.336305 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.172023 42.336367 10</position>
+<position>-71.171847 42.336404 10</position>
+<position>-71.171798 42.336303 10</position>
+<position>-71.171919 42.336264 10</position>
+<position>-71.171940 42.336321 10</position>
+<position>-71.172003 42.336305 10</position>
+</face>
+</Building>
+<Building id="0B032" Name="0B032">
+<face Name="F0" id="F0">
+<position>-71.172113 42.336590 0</position>
+<position>-71.171985 42.336622 0</position>
+<position>-71.171985 42.336622 10</position>
+<position>-71.172113 42.336590 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171985 42.336622 0</position>
+<position>-71.171904 42.336481 0</position>
+<position>-71.171904 42.336481 10</position>
+<position>-71.171985 42.336622 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171904 42.336481 0</position>
+<position>-71.172012 42.336448 0</position>
+<position>-71.172012 42.336448 10</position>
+<position>-71.171904 42.336481 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172012 42.336448 0</position>
+<position>-71.172113 42.336590 0</position>
+<position>-71.172113 42.336590 10</position>
+<position>-71.172012 42.336448 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172113 42.336590 10</position>
+<position>-71.171985 42.336622 10</position>
+<position>-71.171904 42.336481 10</position>
+<position>-71.172012 42.336448 10</position>
+</face>
+</Building>
+<Building id="0B033" Name="0B033">
+<face Name="F0" id="F0">
+<position>-71.172724 42.335912 0</position>
+<position>-71.172730 42.335963 0</position>
+<position>-71.172730 42.335963 10</position>
+<position>-71.172724 42.335912 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172730 42.335963 0</position>
+<position>-71.172816 42.335961 0</position>
+<position>-71.172816 42.335961 10</position>
+<position>-71.172730 42.335963 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172816 42.335961 0</position>
+<position>-71.172829 42.336044 0</position>
+<position>-71.172829 42.336044 10</position>
+<position>-71.172816 42.335961 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172829 42.336044 0</position>
+<position>-71.172645 42.336065 0</position>
+<position>-71.172645 42.336065 10</position>
+<position>-71.172829 42.336044 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172645 42.336065 0</position>
+<position>-71.172616 42.335923 0</position>
+<position>-71.172616 42.335923 10</position>
+<position>-71.172645 42.336065 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.172616 42.335923 0</position>
+<position>-71.172724 42.335912 0</position>
+<position>-71.172724 42.335912 10</position>
+<position>-71.172616 42.335923 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.172724 42.335912 10</position>
+<position>-71.172730 42.335963 10</position>
+<position>-71.172816 42.335961 10</position>
+<position>-71.172829 42.336044 10</position>
+<position>-71.172645 42.336065 10</position>
+<position>-71.172616 42.335923 10</position>
+</face>
+</Building>
+<Building id="0B034" Name="0B034">
+<face Name="F0" id="F0">
+<position>-71.174866 42.338082 0</position>
+<position>-71.174836 42.338194 0</position>
+<position>-71.174836 42.338194 10</position>
+<position>-71.174866 42.338082 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174836 42.338194 0</position>
+<position>-71.174649 42.338151 0</position>
+<position>-71.174649 42.338151 10</position>
+<position>-71.174836 42.338194 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174649 42.338151 0</position>
+<position>-71.174680 42.338043 0</position>
+<position>-71.174680 42.338043 10</position>
+<position>-71.174649 42.338151 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174680 42.338043 0</position>
+<position>-71.174866 42.338082 0</position>
+<position>-71.174866 42.338082 10</position>
+<position>-71.174680 42.338043 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174866 42.338082 10</position>
+<position>-71.174836 42.338194 10</position>
+<position>-71.174649 42.338151 10</position>
+<position>-71.174680 42.338043 10</position>
+</face>
+</Building>
+<Building id="0B035" Name="0B035">
+<face Name="F0" id="F0">
+<position>-71.173201 42.337608 0</position>
+<position>-71.173116 42.337597 0</position>
+<position>-71.173116 42.337597 10</position>
+<position>-71.173201 42.337608 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173116 42.337597 0</position>
+<position>-71.173115 42.337545 0</position>
+<position>-71.173115 42.337545 10</position>
+<position>-71.173116 42.337597 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173115 42.337545 0</position>
+<position>-71.173190 42.337545 0</position>
+<position>-71.173190 42.337545 10</position>
+<position>-71.173115 42.337545 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173190 42.337545 0</position>
+<position>-71.173201 42.337608 0</position>
+<position>-71.173201 42.337608 10</position>
+<position>-71.173190 42.337545 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173201 42.337608 10</position>
+<position>-71.173116 42.337597 10</position>
+<position>-71.173115 42.337545 10</position>
+<position>-71.173190 42.337545 10</position>
+</face>
+</Building>
+<Building id="0B036" Name="0B036">
+<face Name="F0" id="F0">
+<position>-71.173252 42.337640 0</position>
+<position>-71.173253 42.337702 0</position>
+<position>-71.173253 42.337702 10</position>
+<position>-71.173252 42.337640 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173253 42.337702 0</position>
+<position>-71.173315 42.337703 0</position>
+<position>-71.173315 42.337703 10</position>
+<position>-71.173253 42.337702 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173315 42.337703 0</position>
+<position>-71.173306 42.337789 0</position>
+<position>-71.173306 42.337789 10</position>
+<position>-71.173315 42.337703 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173306 42.337789 0</position>
+<position>-71.173162 42.337781 0</position>
+<position>-71.173162 42.337781 10</position>
+<position>-71.173306 42.337789 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173162 42.337781 0</position>
+<position>-71.173151 42.337645 0</position>
+<position>-71.173151 42.337645 10</position>
+<position>-71.173162 42.337781 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173151 42.337645 0</position>
+<position>-71.173252 42.337640 0</position>
+<position>-71.173252 42.337640 10</position>
+<position>-71.173151 42.337645 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.173252 42.337640 10</position>
+<position>-71.173253 42.337702 10</position>
+<position>-71.173315 42.337703 10</position>
+<position>-71.173306 42.337789 10</position>
+<position>-71.173162 42.337781 10</position>
+<position>-71.173151 42.337645 10</position>
+</face>
+</Building>
+<Building id="0B037" Name="0B037">
+<face Name="F0" id="F0">
+<position>-71.172703 42.337778 0</position>
+<position>-71.172658 42.337670 0</position>
+<position>-71.172658 42.337670 10</position>
+<position>-71.172703 42.337778 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172658 42.337670 0</position>
+<position>-71.172782 42.337646 0</position>
+<position>-71.172782 42.337646 10</position>
+<position>-71.172658 42.337670 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172782 42.337646 0</position>
+<position>-71.172821 42.337749 0</position>
+<position>-71.172821 42.337749 10</position>
+<position>-71.172782 42.337646 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172821 42.337749 0</position>
+<position>-71.172703 42.337778 0</position>
+<position>-71.172703 42.337778 10</position>
+<position>-71.172821 42.337749 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172703 42.337778 10</position>
+<position>-71.172658 42.337670 10</position>
+<position>-71.172782 42.337646 10</position>
+<position>-71.172821 42.337749 10</position>
+</face>
+</Building>
+<Building id="0B038" Name="0B038">
+<face Name="F0" id="F0">
+<position>-71.172531 42.337631 0</position>
+<position>-71.172471 42.337565 0</position>
+<position>-71.172471 42.337565 10</position>
+<position>-71.172531 42.337631 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172471 42.337565 0</position>
+<position>-71.172601 42.337504 0</position>
+<position>-71.172601 42.337504 10</position>
+<position>-71.172471 42.337565 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172601 42.337504 0</position>
+<position>-71.172666 42.337577 0</position>
+<position>-71.172666 42.337577 10</position>
+<position>-71.172601 42.337504 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172666 42.337577 0</position>
+<position>-71.172531 42.337631 0</position>
+<position>-71.172531 42.337631 10</position>
+<position>-71.172666 42.337577 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172531 42.337631 10</position>
+<position>-71.172471 42.337565 10</position>
+<position>-71.172601 42.337504 10</position>
+<position>-71.172666 42.337577 10</position>
+</face>
+</Building>
+<Building id="0B039" Name="0B039">
+<face Name="F0" id="F0">
+<position>-71.172343 42.337735 0</position>
+<position>-71.172262 42.337662 0</position>
+<position>-71.172262 42.337662 10</position>
+<position>-71.172343 42.337735 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172262 42.337662 0</position>
+<position>-71.172385 42.337606 0</position>
+<position>-71.172385 42.337606 10</position>
+<position>-71.172262 42.337662 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172385 42.337606 0</position>
+<position>-71.172453 42.337669 0</position>
+<position>-71.172453 42.337669 10</position>
+<position>-71.172385 42.337606 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172453 42.337669 0</position>
+<position>-71.172343 42.337735 0</position>
+<position>-71.172343 42.337735 10</position>
+<position>-71.172453 42.337669 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172343 42.337735 10</position>
+<position>-71.172262 42.337662 10</position>
+<position>-71.172385 42.337606 10</position>
+<position>-71.172453 42.337669 10</position>
+</face>
+</Building>
+<Building id="0B040" Name="0B040">
+<face Name="F0" id="F0">
+<position>-71.172211 42.337799 0</position>
+<position>-71.172263 42.337831 0</position>
+<position>-71.172263 42.337831 10</position>
+<position>-71.172211 42.337799 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172263 42.337831 0</position>
+<position>-71.172204 42.337893 0</position>
+<position>-71.172204 42.337893 10</position>
+<position>-71.172263 42.337831 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172204 42.337893 0</position>
+<position>-71.172051 42.337815 0</position>
+<position>-71.172051 42.337815 10</position>
+<position>-71.172204 42.337893 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172051 42.337815 0</position>
+<position>-71.172183 42.337703 0</position>
+<position>-71.172183 42.337703 10</position>
+<position>-71.172051 42.337815 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172183 42.337703 0</position>
+<position>-71.172264 42.337746 0</position>
+<position>-71.172264 42.337746 10</position>
+<position>-71.172183 42.337703 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.172264 42.337746 0</position>
+<position>-71.172211 42.337799 0</position>
+<position>-71.172211 42.337799 10</position>
+<position>-71.172264 42.337746 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.172211 42.337799 10</position>
+<position>-71.172263 42.337831 10</position>
+<position>-71.172204 42.337893 10</position>
+<position>-71.172051 42.337815 10</position>
+<position>-71.172183 42.337703 10</position>
+<position>-71.172264 42.337746 10</position>
+</face>
+</Building>
+<Building id="0B041" Name="0B041">
+<face Name="F0" id="F0">
+<position>-71.172751 42.337888 0</position>
+<position>-71.172644 42.338045 0</position>
+<position>-71.172644 42.338045 10</position>
+<position>-71.172751 42.337888 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172644 42.338045 0</position>
+<position>-71.172557 42.338013 0</position>
+<position>-71.172557 42.338013 10</position>
+<position>-71.172644 42.338045 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172557 42.338013 0</position>
+<position>-71.172602 42.337952 0</position>
+<position>-71.172602 42.337952 10</position>
+<position>-71.172557 42.338013 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172602 42.337952 0</position>
+<position>-71.172556 42.337934 0</position>
+<position>-71.172556 42.337934 10</position>
+<position>-71.172602 42.337952 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172556 42.337934 0</position>
+<position>-71.172620 42.337841 0</position>
+<position>-71.172620 42.337841 10</position>
+<position>-71.172556 42.337934 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.172620 42.337841 0</position>
+<position>-71.172751 42.337888 0</position>
+<position>-71.172751 42.337888 10</position>
+<position>-71.172620 42.337841 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.172751 42.337888 10</position>
+<position>-71.172644 42.338045 10</position>
+<position>-71.172557 42.338013 10</position>
+<position>-71.172602 42.337952 10</position>
+<position>-71.172556 42.337934 10</position>
+<position>-71.172620 42.337841 10</position>
+</face>
+</Building>
+<Building id="0B042" Name="0B042">
+<face Name="F0" id="F0">
+<position>-71.172519 42.338233 0</position>
+<position>-71.172392 42.338180 0</position>
+<position>-71.172392 42.338180 10</position>
+<position>-71.172519 42.338233 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172392 42.338180 0</position>
+<position>-71.172463 42.338078 0</position>
+<position>-71.172463 42.338078 10</position>
+<position>-71.172392 42.338180 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172463 42.338078 0</position>
+<position>-71.172583 42.338134 0</position>
+<position>-71.172583 42.338134 10</position>
+<position>-71.172463 42.338078 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172583 42.338134 0</position>
+<position>-71.172519 42.338233 0</position>
+<position>-71.172519 42.338233 10</position>
+<position>-71.172583 42.338134 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172519 42.338233 10</position>
+<position>-71.172392 42.338180 10</position>
+<position>-71.172463 42.338078 10</position>
+<position>-71.172583 42.338134 10</position>
+</face>
+</Building>
+<Building id="0B043" Name="0B043">
+<face Name="F0" id="F0">
+<position>-71.171981 42.338042 0</position>
+<position>-71.171877 42.337983 0</position>
+<position>-71.171877 42.337983 10</position>
+<position>-71.171981 42.338042 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171877 42.337983 0</position>
+<position>-71.172004 42.337860 0</position>
+<position>-71.172004 42.337860 10</position>
+<position>-71.171877 42.337983 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172004 42.337860 0</position>
+<position>-71.172114 42.337920 0</position>
+<position>-71.172114 42.337920 10</position>
+<position>-71.172004 42.337860 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172114 42.337920 0</position>
+<position>-71.171981 42.338042 0</position>
+<position>-71.171981 42.338042 10</position>
+<position>-71.172114 42.337920 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171981 42.338042 10</position>
+<position>-71.171877 42.337983 10</position>
+<position>-71.172004 42.337860 10</position>
+<position>-71.172114 42.337920 10</position>
+</face>
+</Building>
+<Building id="0B044" Name="0B044">
+<face Name="F0" id="F0">
+<position>-71.171869 42.338158 0</position>
+<position>-71.171837 42.338140 0</position>
+<position>-71.171837 42.338140 10</position>
+<position>-71.171869 42.338158 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171837 42.338140 0</position>
+<position>-71.171774 42.338215 0</position>
+<position>-71.171774 42.338215 10</position>
+<position>-71.171837 42.338140 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171774 42.338215 0</position>
+<position>-71.171667 42.338156 0</position>
+<position>-71.171667 42.338156 10</position>
+<position>-71.171774 42.338215 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171667 42.338156 0</position>
+<position>-71.171794 42.338034 0</position>
+<position>-71.171794 42.338034 10</position>
+<position>-71.171667 42.338156 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171794 42.338034 0</position>
+<position>-71.171921 42.338107 0</position>
+<position>-71.171921 42.338107 10</position>
+<position>-71.171794 42.338034 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.171921 42.338107 0</position>
+<position>-71.171869 42.338158 0</position>
+<position>-71.171869 42.338158 10</position>
+<position>-71.171921 42.338107 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.171869 42.338158 10</position>
+<position>-71.171837 42.338140 10</position>
+<position>-71.171774 42.338215 10</position>
+<position>-71.171667 42.338156 10</position>
+<position>-71.171794 42.338034 10</position>
+<position>-71.171921 42.338107 10</position>
+</face>
+</Building>
+<Building id="0B045" Name="0B045">
+<face Name="F0" id="F0">
+<position>-71.172472 42.338345 0</position>
+<position>-71.172415 42.338449 0</position>
+<position>-71.172415 42.338449 10</position>
+<position>-71.172472 42.338345 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172415 42.338449 0</position>
+<position>-71.172260 42.338404 0</position>
+<position>-71.172260 42.338404 10</position>
+<position>-71.172415 42.338449 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172260 42.338404 0</position>
+<position>-71.172315 42.338293 0</position>
+<position>-71.172315 42.338293 10</position>
+<position>-71.172260 42.338404 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172315 42.338293 0</position>
+<position>-71.172472 42.338345 0</position>
+<position>-71.172472 42.338345 10</position>
+<position>-71.172315 42.338293 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172472 42.338345 10</position>
+<position>-71.172415 42.338449 10</position>
+<position>-71.172260 42.338404 10</position>
+<position>-71.172315 42.338293 10</position>
+</face>
+</Building>
+<Building id="0B046" Name="0B046">
+<face Name="F0" id="F0">
+<position>-71.172248 42.338480 0</position>
+<position>-71.172344 42.338510 0</position>
+<position>-71.172344 42.338510 10</position>
+<position>-71.172248 42.338480 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172344 42.338510 0</position>
+<position>-71.172331 42.338539 0</position>
+<position>-71.172331 42.338539 10</position>
+<position>-71.172344 42.338510 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172331 42.338539 0</position>
+<position>-71.172381 42.338555 0</position>
+<position>-71.172381 42.338555 10</position>
+<position>-71.172331 42.338539 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172381 42.338555 0</position>
+<position>-71.172344 42.338628 0</position>
+<position>-71.172344 42.338628 10</position>
+<position>-71.172381 42.338555 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172344 42.338628 0</position>
+<position>-71.172194 42.338583 0</position>
+<position>-71.172194 42.338583 10</position>
+<position>-71.172344 42.338628 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.172194 42.338583 0</position>
+<position>-71.172248 42.338480 0</position>
+<position>-71.172248 42.338480 10</position>
+<position>-71.172194 42.338583 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.172248 42.338480 10</position>
+<position>-71.172344 42.338510 10</position>
+<position>-71.172331 42.338539 10</position>
+<position>-71.172381 42.338555 10</position>
+<position>-71.172344 42.338628 10</position>
+<position>-71.172194 42.338583 10</position>
+</face>
+</Building>
+<Building id="0B047" Name="0B047">
+<face Name="F0" id="F0">
+<position>-71.172296 42.338738 0</position>
+<position>-71.172248 42.338831 0</position>
+<position>-71.172248 42.338831 10</position>
+<position>-71.172296 42.338738 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172248 42.338831 0</position>
+<position>-71.172153 42.338803 0</position>
+<position>-71.172153 42.338803 10</position>
+<position>-71.172248 42.338831 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172153 42.338803 0</position>
+<position>-71.172205 42.338709 0</position>
+<position>-71.172205 42.338709 10</position>
+<position>-71.172153 42.338803 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172205 42.338709 0</position>
+<position>-71.172296 42.338738 0</position>
+<position>-71.172296 42.338738 10</position>
+<position>-71.172205 42.338709 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172296 42.338738 10</position>
+<position>-71.172248 42.338831 10</position>
+<position>-71.172153 42.338803 10</position>
+<position>-71.172205 42.338709 10</position>
+</face>
+</Building>
+<Building id="0B048" Name="0B048">
+<face Name="F0" id="F0">
+<position>-71.171786 42.338281 0</position>
+<position>-71.171675 42.338384 0</position>
+<position>-71.171675 42.338384 10</position>
+<position>-71.171786 42.338281 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171675 42.338384 0</position>
+<position>-71.171534 42.338292 0</position>
+<position>-71.171534 42.338292 10</position>
+<position>-71.171675 42.338384 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171534 42.338292 0</position>
+<position>-71.171639 42.338194 0</position>
+<position>-71.171639 42.338194 10</position>
+<position>-71.171534 42.338292 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171639 42.338194 0</position>
+<position>-71.171786 42.338281 0</position>
+<position>-71.171786 42.338281 10</position>
+<position>-71.171639 42.338194 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171786 42.338281 10</position>
+<position>-71.171675 42.338384 10</position>
+<position>-71.171534 42.338292 10</position>
+<position>-71.171639 42.338194 10</position>
+</face>
+</Building>
+<Building id="0B049" Name="0B049">
+<face Name="F0" id="F0">
+<position>-71.171585 42.338454 0</position>
+<position>-71.171541 42.338495 0</position>
+<position>-71.171541 42.338495 10</position>
+<position>-71.171585 42.338454 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171541 42.338495 0</position>
+<position>-71.171505 42.338471 0</position>
+<position>-71.171505 42.338471 10</position>
+<position>-71.171541 42.338495 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171505 42.338471 0</position>
+<position>-71.171445 42.338530 0</position>
+<position>-71.171445 42.338530 10</position>
+<position>-71.171505 42.338471 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171445 42.338530 0</position>
+<position>-71.171344 42.338469 0</position>
+<position>-71.171344 42.338469 10</position>
+<position>-71.171445 42.338530 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171344 42.338469 0</position>
+<position>-71.171453 42.338374 0</position>
+<position>-71.171453 42.338374 10</position>
+<position>-71.171344 42.338469 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.171453 42.338374 0</position>
+<position>-71.171585 42.338454 0</position>
+<position>-71.171585 42.338454 10</position>
+<position>-71.171453 42.338374 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.171585 42.338454 10</position>
+<position>-71.171541 42.338495 10</position>
+<position>-71.171505 42.338471 10</position>
+<position>-71.171445 42.338530 10</position>
+<position>-71.171344 42.338469 10</position>
+<position>-71.171453 42.338374 10</position>
+</face>
+</Building>
+<Building id="0B050" Name="0B050">
+<face Name="F0" id="F0">
+<position>-71.171364 42.338554 0</position>
+<position>-71.171333 42.338586 0</position>
+<position>-71.171333 42.338586 10</position>
+<position>-71.171364 42.338554 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171333 42.338586 0</position>
+<position>-71.171359 42.338601 0</position>
+<position>-71.171359 42.338601 10</position>
+<position>-71.171333 42.338586 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171359 42.338601 0</position>
+<position>-71.171312 42.338646 0</position>
+<position>-71.171312 42.338646 10</position>
+<position>-71.171359 42.338601 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171312 42.338646 0</position>
+<position>-71.171277 42.338627 0</position>
+<position>-71.171277 42.338627 10</position>
+<position>-71.171312 42.338646 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171277 42.338627 0</position>
+<position>-71.171249 42.338657 0</position>
+<position>-71.171249 42.338657 10</position>
+<position>-71.171277 42.338627 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.171249 42.338657 0</position>
+<position>-71.171166 42.338604 0</position>
+<position>-71.171166 42.338604 10</position>
+<position>-71.171249 42.338657 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.171166 42.338604 0</position>
+<position>-71.171267 42.338502 0</position>
+<position>-71.171267 42.338502 10</position>
+<position>-71.171166 42.338604 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.171267 42.338502 0</position>
+<position>-71.171364 42.338554 0</position>
+<position>-71.171364 42.338554 10</position>
+<position>-71.171267 42.338502 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.171364 42.338554 10</position>
+<position>-71.171333 42.338586 10</position>
+<position>-71.171359 42.338601 10</position>
+<position>-71.171312 42.338646 10</position>
+<position>-71.171277 42.338627 10</position>
+<position>-71.171249 42.338657 10</position>
+<position>-71.171166 42.338604 10</position>
+<position>-71.171267 42.338502 10</position>
+</face>
+</Building>
+<Building id="0B051" Name="0B051">
+<face Name="F0" id="F0">
+<position>-71.171202 42.338796 0</position>
+<position>-71.171059 42.338898 0</position>
+<position>-71.171059 42.338898 10</position>
+<position>-71.171202 42.338796 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171059 42.338898 0</position>
+<position>-71.170928 42.338817 0</position>
+<position>-71.170928 42.338817 10</position>
+<position>-71.171059 42.338898 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.170928 42.338817 0</position>
+<position>-71.171059 42.338712 0</position>
+<position>-71.171059 42.338712 10</position>
+<position>-71.170928 42.338817 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171059 42.338712 0</position>
+<position>-71.171202 42.338796 0</position>
+<position>-71.171202 42.338796 10</position>
+<position>-71.171059 42.338712 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171202 42.338796 10</position>
+<position>-71.171059 42.338898 10</position>
+<position>-71.170928 42.338817 10</position>
+<position>-71.171059 42.338712 10</position>
+</face>
+</Building>
+<Building id="0B052" Name="0B052">
+<face Name="F0" id="F0">
+<position>-71.170919 42.338974 0</position>
+<position>-71.170747 42.339101 0</position>
+<position>-71.170747 42.339101 10</position>
+<position>-71.170919 42.338974 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.170747 42.339101 0</position>
+<position>-71.170627 42.339030 0</position>
+<position>-71.170627 42.339030 10</position>
+<position>-71.170747 42.339101 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.170627 42.339030 0</position>
+<position>-71.170799 42.338889 0</position>
+<position>-71.170799 42.338889 10</position>
+<position>-71.170627 42.339030 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170799 42.338889 0</position>
+<position>-71.170919 42.338974 0</position>
+<position>-71.170919 42.338974 10</position>
+<position>-71.170799 42.338889 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170919 42.338974 10</position>
+<position>-71.170747 42.339101 10</position>
+<position>-71.170627 42.339030 10</position>
+<position>-71.170799 42.338889 10</position>
+</face>
+</Building>
+<Building id="0B053" Name="0B053">
+<face Name="F0" id="F0">
+<position>-71.170625 42.339157 0</position>
+<position>-71.170496 42.339338 0</position>
+<position>-71.170496 42.339338 10</position>
+<position>-71.170625 42.339157 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.170496 42.339338 0</position>
+<position>-71.170367 42.339289 0</position>
+<position>-71.170367 42.339289 10</position>
+<position>-71.170496 42.339338 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.170367 42.339289 0</position>
+<position>-71.170489 42.339105 0</position>
+<position>-71.170489 42.339105 10</position>
+<position>-71.170367 42.339289 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170489 42.339105 0</position>
+<position>-71.170625 42.339157 0</position>
+<position>-71.170625 42.339157 10</position>
+<position>-71.170489 42.339105 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170625 42.339157 10</position>
+<position>-71.170496 42.339338 10</position>
+<position>-71.170367 42.339289 10</position>
+<position>-71.170489 42.339105 10</position>
+</face>
+</Building>
+<Building id="0B054" Name="0B054">
+<face Name="F0" id="F0">
+<position>-71.170969 42.339389 0</position>
+<position>-71.171112 42.339443 0</position>
+<position>-71.171112 42.339443 10</position>
+<position>-71.170969 42.339389 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171112 42.339443 0</position>
+<position>-71.171028 42.339556 0</position>
+<position>-71.171028 42.339556 10</position>
+<position>-71.171112 42.339443 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171028 42.339556 0</position>
+<position>-71.170896 42.339501 0</position>
+<position>-71.170896 42.339501 10</position>
+<position>-71.171028 42.339556 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170896 42.339501 0</position>
+<position>-71.170969 42.339389 0</position>
+<position>-71.170969 42.339389 10</position>
+<position>-71.170896 42.339501 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170969 42.339389 10</position>
+<position>-71.171112 42.339443 10</position>
+<position>-71.171028 42.339556 10</position>
+<position>-71.170896 42.339501 10</position>
+</face>
+</Building>
+<Building id="0B055" Name="0B055">
+<face Name="F0" id="F0">
+<position>-71.171352 42.339126 0</position>
+<position>-71.171433 42.339192 0</position>
+<position>-71.171433 42.339192 10</position>
+<position>-71.171352 42.339126 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171433 42.339192 0</position>
+<position>-71.171321 42.339288 0</position>
+<position>-71.171321 42.339288 10</position>
+<position>-71.171433 42.339192 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171321 42.339288 0</position>
+<position>-71.171216 42.339228 0</position>
+<position>-71.171216 42.339228 10</position>
+<position>-71.171321 42.339288 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171216 42.339228 0</position>
+<position>-71.171352 42.339126 0</position>
+<position>-71.171352 42.339126 10</position>
+<position>-71.171216 42.339228 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171352 42.339126 10</position>
+<position>-71.171433 42.339192 10</position>
+<position>-71.171321 42.339288 10</position>
+<position>-71.171216 42.339228 10</position>
+</face>
+</Building>
+<Building id="0B056" Name="0B056">
+<face Name="F0" id="F0">
+<position>-71.171871 42.339059 0</position>
+<position>-71.171933 42.339103 0</position>
+<position>-71.171933 42.339103 10</position>
+<position>-71.171871 42.339059 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171933 42.339103 0</position>
+<position>-71.172006 42.339046 0</position>
+<position>-71.172006 42.339046 10</position>
+<position>-71.171933 42.339103 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172006 42.339046 0</position>
+<position>-71.172087 42.339108 0</position>
+<position>-71.172087 42.339108 10</position>
+<position>-71.172006 42.339046 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172087 42.339108 0</position>
+<position>-71.171906 42.339239 0</position>
+<position>-71.171906 42.339239 10</position>
+<position>-71.172087 42.339108 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171906 42.339239 0</position>
+<position>-71.171771 42.339147 0</position>
+<position>-71.171771 42.339147 10</position>
+<position>-71.171906 42.339239 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.171771 42.339147 0</position>
+<position>-71.171871 42.339059 0</position>
+<position>-71.171871 42.339059 10</position>
+<position>-71.171771 42.339147 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.171871 42.339059 10</position>
+<position>-71.171933 42.339103 10</position>
+<position>-71.172006 42.339046 10</position>
+<position>-71.172087 42.339108 10</position>
+<position>-71.171906 42.339239 10</position>
+<position>-71.171771 42.339147 10</position>
+</face>
+</Building>
+<Building id="0B057" Name="0B057">
+<face Name="F0" id="F0">
+<position>-71.172227 42.338908 0</position>
+<position>-71.172289 42.338962 0</position>
+<position>-71.172289 42.338962 10</position>
+<position>-71.172227 42.338908 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172289 42.338962 0</position>
+<position>-71.172139 42.339080 0</position>
+<position>-71.172139 42.339080 10</position>
+<position>-71.172289 42.338962 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172139 42.339080 0</position>
+<position>-71.172078 42.339033 0</position>
+<position>-71.172078 42.339033 10</position>
+<position>-71.172139 42.339080 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172078 42.339033 0</position>
+<position>-71.172227 42.338908 0</position>
+<position>-71.172227 42.338908 10</position>
+<position>-71.172078 42.339033 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172227 42.338908 10</position>
+<position>-71.172289 42.338962 10</position>
+<position>-71.172139 42.339080 10</position>
+<position>-71.172078 42.339033 10</position>
+</face>
+</Building>
+<Building id="0B058" Name="0B058">
+<face Name="F0" id="F0">
+<position>-71.172022 42.339416 0</position>
+<position>-71.172088 42.339565 0</position>
+<position>-71.172088 42.339565 10</position>
+<position>-71.172022 42.339416 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172088 42.339565 0</position>
+<position>-71.171984 42.339596 0</position>
+<position>-71.171984 42.339596 10</position>
+<position>-71.172088 42.339565 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171984 42.339596 0</position>
+<position>-71.171911 42.339434 0</position>
+<position>-71.171911 42.339434 10</position>
+<position>-71.171984 42.339596 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171911 42.339434 0</position>
+<position>-71.172022 42.339416 0</position>
+<position>-71.172022 42.339416 10</position>
+<position>-71.171911 42.339434 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172022 42.339416 10</position>
+<position>-71.172088 42.339565 10</position>
+<position>-71.171984 42.339596 10</position>
+<position>-71.171911 42.339434 10</position>
+</face>
+</Building>
+<Building id="0B059" Name="0B059">
+<face Name="F0" id="F0">
+<position>-71.173577 42.337853 0</position>
+<position>-71.173651 42.337873 0</position>
+<position>-71.173651 42.337873 10</position>
+<position>-71.173577 42.337853 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173651 42.337873 0</position>
+<position>-71.173637 42.337932 0</position>
+<position>-71.173637 42.337932 10</position>
+<position>-71.173651 42.337873 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173637 42.337932 0</position>
+<position>-71.173566 42.337921 0</position>
+<position>-71.173566 42.337921 10</position>
+<position>-71.173637 42.337932 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173566 42.337921 0</position>
+<position>-71.173577 42.337853 0</position>
+<position>-71.173577 42.337853 10</position>
+<position>-71.173566 42.337921 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173577 42.337853 10</position>
+<position>-71.173651 42.337873 10</position>
+<position>-71.173637 42.337932 10</position>
+<position>-71.173566 42.337921 10</position>
+</face>
+</Building>
+<Building id="0B060" Name="0B060">
+<face Name="F0" id="F0">
+<position>-71.173766 42.337862 0</position>
+<position>-71.174078 42.337932 0</position>
+<position>-71.174078 42.337932 10</position>
+<position>-71.173766 42.337862 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174078 42.337932 0</position>
+<position>-71.174040 42.338020 0</position>
+<position>-71.174040 42.338020 10</position>
+<position>-71.174078 42.337932 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174040 42.338020 0</position>
+<position>-71.173749 42.337944 0</position>
+<position>-71.173749 42.337944 10</position>
+<position>-71.174040 42.338020 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173749 42.337944 0</position>
+<position>-71.173766 42.337862 0</position>
+<position>-71.173766 42.337862 10</position>
+<position>-71.173749 42.337944 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173766 42.337862 10</position>
+<position>-71.174078 42.337932 10</position>
+<position>-71.174040 42.338020 10</position>
+<position>-71.173749 42.337944 10</position>
+</face>
+</Building>
+<Building id="0B061" Name="0B061">
+<face Name="F0" id="F0">
+<position>-71.174211 42.337950 0</position>
+<position>-71.174362 42.337976 0</position>
+<position>-71.174362 42.337976 10</position>
+<position>-71.174211 42.337950 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174362 42.337976 0</position>
+<position>-71.174349 42.338065 0</position>
+<position>-71.174349 42.338065 10</position>
+<position>-71.174362 42.337976 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174349 42.338065 0</position>
+<position>-71.174200 42.338036 0</position>
+<position>-71.174200 42.338036 10</position>
+<position>-71.174349 42.338065 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174200 42.338036 0</position>
+<position>-71.174211 42.337950 0</position>
+<position>-71.174211 42.337950 10</position>
+<position>-71.174200 42.338036 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174211 42.337950 10</position>
+<position>-71.174362 42.337976 10</position>
+<position>-71.174349 42.338065 10</position>
+<position>-71.174200 42.338036 10</position>
+</face>
+</Building>
+<Building id="0B062" Name="0B062">
+<face Name="F0" id="F0">
+<position>-71.174989 42.339318 0</position>
+<position>-71.174888 42.339313 0</position>
+<position>-71.174888 42.339313 10</position>
+<position>-71.174989 42.339318 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174888 42.339313 0</position>
+<position>-71.174905 42.339171 0</position>
+<position>-71.174905 42.339171 10</position>
+<position>-71.174888 42.339313 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174905 42.339171 0</position>
+<position>-71.175002 42.339168 0</position>
+<position>-71.175002 42.339168 10</position>
+<position>-71.174905 42.339171 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175002 42.339168 0</position>
+<position>-71.174989 42.339318 0</position>
+<position>-71.174989 42.339318 10</position>
+<position>-71.175002 42.339168 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174989 42.339318 10</position>
+<position>-71.174888 42.339313 10</position>
+<position>-71.174905 42.339171 10</position>
+<position>-71.175002 42.339168 10</position>
+</face>
+</Building>
+<Building id="0B063" Name="0B063">
+<face Name="F0" id="F0">
+<position>-71.175314 42.339177 0</position>
+<position>-71.175327 42.339325 0</position>
+<position>-71.175327 42.339325 10</position>
+<position>-71.175314 42.339177 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175327 42.339325 0</position>
+<position>-71.175207 42.339326 0</position>
+<position>-71.175207 42.339326 10</position>
+<position>-71.175327 42.339325 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175207 42.339326 0</position>
+<position>-71.175195 42.339181 0</position>
+<position>-71.175195 42.339181 10</position>
+<position>-71.175207 42.339326 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175195 42.339181 0</position>
+<position>-71.175314 42.339177 0</position>
+<position>-71.175314 42.339177 10</position>
+<position>-71.175195 42.339181 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175314 42.339177 10</position>
+<position>-71.175327 42.339325 10</position>
+<position>-71.175207 42.339326 10</position>
+<position>-71.175195 42.339181 10</position>
+</face>
+</Building>
+<Building id="0B064" Name="0B064">
+<face Name="F0" id="F0">
+<position>-71.175753 42.339367 0</position>
+<position>-71.175686 42.339367 0</position>
+<position>-71.175686 42.339367 10</position>
+<position>-71.175753 42.339367 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175686 42.339367 0</position>
+<position>-71.175686 42.339259 0</position>
+<position>-71.175686 42.339259 10</position>
+<position>-71.175686 42.339367 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175686 42.339259 0</position>
+<position>-71.175803 42.339254 0</position>
+<position>-71.175803 42.339254 10</position>
+<position>-71.175686 42.339259 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175803 42.339254 0</position>
+<position>-71.175803 42.339357 0</position>
+<position>-71.175803 42.339357 10</position>
+<position>-71.175803 42.339254 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175803 42.339357 0</position>
+<position>-71.175833 42.339353 0</position>
+<position>-71.175833 42.339353 10</position>
+<position>-71.175803 42.339357 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.175833 42.339353 0</position>
+<position>-71.175833 42.339437 0</position>
+<position>-71.175833 42.339437 10</position>
+<position>-71.175833 42.339353 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.175833 42.339437 0</position>
+<position>-71.175753 42.339442 0</position>
+<position>-71.175753 42.339442 10</position>
+<position>-71.175833 42.339437 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.175753 42.339442 0</position>
+<position>-71.175753 42.339367 0</position>
+<position>-71.175753 42.339367 10</position>
+<position>-71.175753 42.339442 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.175753 42.339367 10</position>
+<position>-71.175686 42.339367 10</position>
+<position>-71.175686 42.339259 10</position>
+<position>-71.175803 42.339254 10</position>
+<position>-71.175803 42.339357 10</position>
+<position>-71.175833 42.339353 10</position>
+<position>-71.175833 42.339437 10</position>
+<position>-71.175753 42.339442 10</position>
+</face>
+</Building>
+<Building id="0B065" Name="0B065">
+<face Name="F0" id="F0">
+<position>-71.176275 42.339216 0</position>
+<position>-71.176488 42.339210 0</position>
+<position>-71.176488 42.339210 10</position>
+<position>-71.176275 42.339216 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176488 42.339210 0</position>
+<position>-71.176481 42.339308 0</position>
+<position>-71.176481 42.339308 10</position>
+<position>-71.176488 42.339210 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176481 42.339308 0</position>
+<position>-71.176270 42.339312 0</position>
+<position>-71.176270 42.339312 10</position>
+<position>-71.176481 42.339308 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176270 42.339312 0</position>
+<position>-71.176275 42.339216 0</position>
+<position>-71.176275 42.339216 10</position>
+<position>-71.176270 42.339312 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176275 42.339216 10</position>
+<position>-71.176488 42.339210 10</position>
+<position>-71.176481 42.339308 10</position>
+<position>-71.176270 42.339312 10</position>
+</face>
+</Building>
+<Building id="0B066" Name="0B066">
+<face Name="F0" id="F0">
+<position>-71.175979 42.339334 0</position>
+<position>-71.175978 42.339235 0</position>
+<position>-71.175978 42.339235 10</position>
+<position>-71.175979 42.339334 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175978 42.339235 0</position>
+<position>-71.176221 42.339228 0</position>
+<position>-71.176221 42.339228 10</position>
+<position>-71.175978 42.339235 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176221 42.339228 0</position>
+<position>-71.176211 42.339322 0</position>
+<position>-71.176211 42.339322 10</position>
+<position>-71.176221 42.339228 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176211 42.339322 0</position>
+<position>-71.175979 42.339334 0</position>
+<position>-71.175979 42.339334 10</position>
+<position>-71.176211 42.339322 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175979 42.339334 10</position>
+<position>-71.175978 42.339235 10</position>
+<position>-71.176221 42.339228 10</position>
+<position>-71.176211 42.339322 10</position>
+</face>
+</Building>
+<Building id="0B067" Name="0B067">
+<face Name="F0" id="F0">
+<position>-71.175862 42.336609 0</position>
+<position>-71.175962 42.336635 0</position>
+<position>-71.175962 42.336635 10</position>
+<position>-71.175862 42.336609 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175962 42.336635 0</position>
+<position>-71.175908 42.336736 0</position>
+<position>-71.175908 42.336736 10</position>
+<position>-71.175962 42.336635 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175908 42.336736 0</position>
+<position>-71.175808 42.336709 0</position>
+<position>-71.175808 42.336709 10</position>
+<position>-71.175908 42.336736 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175808 42.336709 0</position>
+<position>-71.175862 42.336609 0</position>
+<position>-71.175862 42.336609 10</position>
+<position>-71.175808 42.336709 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175862 42.336609 10</position>
+<position>-71.175962 42.336635 10</position>
+<position>-71.175908 42.336736 10</position>
+<position>-71.175808 42.336709 10</position>
+</face>
+</Building>
+<Building id="0B068" Name="0B068">
+<face Name="F0" id="F0">
+<position>-71.175931 42.336465 0</position>
+<position>-71.176084 42.336518 0</position>
+<position>-71.176084 42.336518 10</position>
+<position>-71.175931 42.336465 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176084 42.336518 0</position>
+<position>-71.176038 42.336605 0</position>
+<position>-71.176038 42.336605 10</position>
+<position>-71.176084 42.336518 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176038 42.336605 0</position>
+<position>-71.175890 42.336549 0</position>
+<position>-71.175890 42.336549 10</position>
+<position>-71.176038 42.336605 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175890 42.336549 0</position>
+<position>-71.175931 42.336465 0</position>
+<position>-71.175931 42.336465 10</position>
+<position>-71.175890 42.336549 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175931 42.336465 10</position>
+<position>-71.176084 42.336518 10</position>
+<position>-71.176038 42.336605 10</position>
+<position>-71.175890 42.336549 10</position>
+</face>
+</Building>
+<Building id="0B069" Name="0B069">
+<face Name="F0" id="F0">
+<position>-71.176003 42.336314 0</position>
+<position>-71.176171 42.336371 0</position>
+<position>-71.176171 42.336371 10</position>
+<position>-71.176003 42.336314 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176171 42.336371 0</position>
+<position>-71.176122 42.336450 0</position>
+<position>-71.176122 42.336450 10</position>
+<position>-71.176171 42.336371 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176122 42.336450 0</position>
+<position>-71.175965 42.336409 0</position>
+<position>-71.175965 42.336409 10</position>
+<position>-71.176122 42.336450 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175965 42.336409 0</position>
+<position>-71.176003 42.336314 0</position>
+<position>-71.176003 42.336314 10</position>
+<position>-71.175965 42.336409 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176003 42.336314 10</position>
+<position>-71.176171 42.336371 10</position>
+<position>-71.176122 42.336450 10</position>
+<position>-71.175965 42.336409 10</position>
+</face>
+</Building>
+<Building id="0B070" Name="0B070">
+<face Name="F0" id="F0">
+<position>-71.176095 42.336169 0</position>
+<position>-71.176264 42.336232 0</position>
+<position>-71.176264 42.336232 10</position>
+<position>-71.176095 42.336169 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176264 42.336232 0</position>
+<position>-71.176214 42.336320 0</position>
+<position>-71.176214 42.336320 10</position>
+<position>-71.176264 42.336232 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176214 42.336320 0</position>
+<position>-71.176038 42.336272 0</position>
+<position>-71.176038 42.336272 10</position>
+<position>-71.176214 42.336320 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176038 42.336272 0</position>
+<position>-71.176095 42.336169 0</position>
+<position>-71.176095 42.336169 10</position>
+<position>-71.176038 42.336272 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176095 42.336169 10</position>
+<position>-71.176264 42.336232 10</position>
+<position>-71.176214 42.336320 10</position>
+<position>-71.176038 42.336272 10</position>
+</face>
+</Building>
+<Building id="0B071" Name="0B071">
+<face Name="F0" id="F0">
+<position>-71.176181 42.336042 0</position>
+<position>-71.176340 42.336082 0</position>
+<position>-71.176340 42.336082 10</position>
+<position>-71.176181 42.336042 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176340 42.336082 0</position>
+<position>-71.176290 42.336174 0</position>
+<position>-71.176290 42.336174 10</position>
+<position>-71.176340 42.336082 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176290 42.336174 0</position>
+<position>-71.176136 42.336131 0</position>
+<position>-71.176136 42.336131 10</position>
+<position>-71.176290 42.336174 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176136 42.336131 0</position>
+<position>-71.176181 42.336042 0</position>
+<position>-71.176181 42.336042 10</position>
+<position>-71.176136 42.336131 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176181 42.336042 10</position>
+<position>-71.176340 42.336082 10</position>
+<position>-71.176290 42.336174 10</position>
+<position>-71.176136 42.336131 10</position>
+</face>
+</Building>
+<Building id="0B072" Name="0B072">
+<face Name="F0" id="F0">
+<position>-71.176250 42.335905 0</position>
+<position>-71.176411 42.335949 0</position>
+<position>-71.176411 42.335949 10</position>
+<position>-71.176250 42.335905 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176411 42.335949 0</position>
+<position>-71.176372 42.336023 0</position>
+<position>-71.176372 42.336023 10</position>
+<position>-71.176411 42.335949 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176372 42.336023 0</position>
+<position>-71.176208 42.335986 0</position>
+<position>-71.176208 42.335986 10</position>
+<position>-71.176372 42.336023 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176208 42.335986 0</position>
+<position>-71.176250 42.335905 0</position>
+<position>-71.176250 42.335905 10</position>
+<position>-71.176208 42.335986 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176250 42.335905 10</position>
+<position>-71.176411 42.335949 10</position>
+<position>-71.176372 42.336023 10</position>
+<position>-71.176208 42.335986 10</position>
+</face>
+</Building>
+<Building id="0B073" Name="0B073">
+<face Name="F0" id="F0">
+<position>-71.176440 42.337329 0</position>
+<position>-71.176376 42.337265 0</position>
+<position>-71.176376 42.337265 10</position>
+<position>-71.176440 42.337329 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176376 42.337265 0</position>
+<position>-71.176491 42.337202 0</position>
+<position>-71.176491 42.337202 10</position>
+<position>-71.176376 42.337265 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176491 42.337202 0</position>
+<position>-71.176561 42.337274 0</position>
+<position>-71.176561 42.337274 10</position>
+<position>-71.176491 42.337202 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176561 42.337274 0</position>
+<position>-71.176440 42.337329 0</position>
+<position>-71.176440 42.337329 10</position>
+<position>-71.176561 42.337274 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176440 42.337329 10</position>
+<position>-71.176376 42.337265 10</position>
+<position>-71.176491 42.337202 10</position>
+<position>-71.176561 42.337274 10</position>
+</face>
+</Building>
+<Building id="0B074" Name="0B074">
+<face Name="F0" id="F0">
+<position>-71.175577 42.337571 0</position>
+<position>-71.175577 42.337470 0</position>
+<position>-71.175577 42.337470 10</position>
+<position>-71.175577 42.337571 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175577 42.337470 0</position>
+<position>-71.175746 42.337483 0</position>
+<position>-71.175746 42.337483 10</position>
+<position>-71.175577 42.337470 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175746 42.337483 0</position>
+<position>-71.175731 42.337581 0</position>
+<position>-71.175731 42.337581 10</position>
+<position>-71.175746 42.337483 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175731 42.337581 0</position>
+<position>-71.175577 42.337571 0</position>
+<position>-71.175577 42.337571 10</position>
+<position>-71.175731 42.337581 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175577 42.337571 10</position>
+<position>-71.175577 42.337470 10</position>
+<position>-71.175746 42.337483 10</position>
+<position>-71.175731 42.337581 10</position>
+</face>
+</Building>
+<Building id="0B075" Name="0B075">
+<face Name="F0" id="F0">
+<position>-71.176362 42.337550 0</position>
+<position>-71.176532 42.337564 0</position>
+<position>-71.176532 42.337564 10</position>
+<position>-71.176362 42.337550 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176532 42.337564 0</position>
+<position>-71.176520 42.337632 0</position>
+<position>-71.176520 42.337632 10</position>
+<position>-71.176532 42.337564 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176520 42.337632 0</position>
+<position>-71.176356 42.337617 0</position>
+<position>-71.176356 42.337617 10</position>
+<position>-71.176520 42.337632 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176356 42.337617 0</position>
+<position>-71.176362 42.337550 0</position>
+<position>-71.176362 42.337550 10</position>
+<position>-71.176356 42.337617 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176362 42.337550 10</position>
+<position>-71.176532 42.337564 10</position>
+<position>-71.176520 42.337632 10</position>
+<position>-71.176356 42.337617 10</position>
+</face>
+</Building>
+<Building id="0B076" Name="0B076">
+<face Name="F0" id="F0">
+<position>-71.174647 42.336983 0</position>
+<position>-71.174864 42.337005 0</position>
+<position>-71.174864 42.337005 10</position>
+<position>-71.174647 42.336983 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174864 42.337005 0</position>
+<position>-71.174852 42.337104 0</position>
+<position>-71.174852 42.337104 10</position>
+<position>-71.174864 42.337005 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174852 42.337104 0</position>
+<position>-71.174629 42.337079 0</position>
+<position>-71.174629 42.337079 10</position>
+<position>-71.174852 42.337104 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174629 42.337079 0</position>
+<position>-71.174647 42.336983 0</position>
+<position>-71.174647 42.336983 10</position>
+<position>-71.174629 42.337079 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174647 42.336983 10</position>
+<position>-71.174864 42.337005 10</position>
+<position>-71.174852 42.337104 10</position>
+<position>-71.174629 42.337079 10</position>
+</face>
+</Building>
+<Building id="0B077" Name="0B077">
+<face Name="F0" id="F0">
+<position>-71.173654 42.336851 0</position>
+<position>-71.173643 42.336947 0</position>
+<position>-71.173643 42.336947 10</position>
+<position>-71.173654 42.336851 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173643 42.336947 0</position>
+<position>-71.173463 42.336924 0</position>
+<position>-71.173463 42.336924 10</position>
+<position>-71.173643 42.336947 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173463 42.336924 0</position>
+<position>-71.173471 42.336847 0</position>
+<position>-71.173471 42.336847 10</position>
+<position>-71.173463 42.336924 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173471 42.336847 0</position>
+<position>-71.173654 42.336851 0</position>
+<position>-71.173654 42.336851 10</position>
+<position>-71.173471 42.336847 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173654 42.336851 10</position>
+<position>-71.173643 42.336947 10</position>
+<position>-71.173463 42.336924 10</position>
+<position>-71.173471 42.336847 10</position>
+</face>
+</Building>
+<Building id="0B078" Name="0B078">
+<face Name="F0" id="F0">
+<position>-71.174050 42.336999 0</position>
+<position>-71.174106 42.336887 0</position>
+<position>-71.174106 42.336887 10</position>
+<position>-71.174050 42.336999 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174106 42.336887 0</position>
+<position>-71.174335 42.336958 0</position>
+<position>-71.174335 42.336958 10</position>
+<position>-71.174106 42.336887 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174335 42.336958 0</position>
+<position>-71.174269 42.337068 0</position>
+<position>-71.174269 42.337068 10</position>
+<position>-71.174335 42.336958 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174269 42.337068 0</position>
+<position>-71.174050 42.336999 0</position>
+<position>-71.174050 42.336999 10</position>
+<position>-71.174269 42.337068 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174050 42.336999 10</position>
+<position>-71.174106 42.336887 10</position>
+<position>-71.174335 42.336958 10</position>
+<position>-71.174269 42.337068 10</position>
+</face>
+</Building>
+<Building id="0B079" Name="0B079">
+<face Name="F0" id="F0">
+<position>-71.173081 42.336805 0</position>
+<position>-71.173081 42.336900 0</position>
+<position>-71.173081 42.336900 10</position>
+<position>-71.173081 42.336805 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173081 42.336900 0</position>
+<position>-71.172913 42.336894 0</position>
+<position>-71.172913 42.336894 10</position>
+<position>-71.173081 42.336900 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172913 42.336894 0</position>
+<position>-71.172906 42.336810 0</position>
+<position>-71.172906 42.336810 10</position>
+<position>-71.172913 42.336894 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172906 42.336810 0</position>
+<position>-71.173081 42.336805 0</position>
+<position>-71.173081 42.336805 10</position>
+<position>-71.172906 42.336810 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173081 42.336805 10</position>
+<position>-71.173081 42.336900 10</position>
+<position>-71.172913 42.336894 10</position>
+<position>-71.172906 42.336810 10</position>
+</face>
+</Building>
+<Building id="0B080" Name="0B080">
+<face Name="F0" id="F0">
+<position>-71.173358 42.336821 0</position>
+<position>-71.173350 42.336912 0</position>
+<position>-71.173350 42.336912 10</position>
+<position>-71.173358 42.336821 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173350 42.336912 0</position>
+<position>-71.173173 42.336899 0</position>
+<position>-71.173173 42.336899 10</position>
+<position>-71.173350 42.336912 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173173 42.336899 0</position>
+<position>-71.173176 42.336829 0</position>
+<position>-71.173176 42.336829 10</position>
+<position>-71.173173 42.336899 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173176 42.336829 0</position>
+<position>-71.173358 42.336821 0</position>
+<position>-71.173358 42.336821 10</position>
+<position>-71.173176 42.336829 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173358 42.336821 10</position>
+<position>-71.173350 42.336912 10</position>
+<position>-71.173173 42.336899 10</position>
+<position>-71.173176 42.336829 10</position>
+</face>
+</Building>
+<Building id="0B081" Name="0B081">
+<face Name="F0" id="F0">
+<position>-71.173763 42.336873 0</position>
+<position>-71.173941 42.336896 0</position>
+<position>-71.173941 42.336896 10</position>
+<position>-71.173763 42.336873 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173941 42.336896 0</position>
+<position>-71.173908 42.337005 0</position>
+<position>-71.173908 42.337005 10</position>
+<position>-71.173941 42.336896 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173908 42.337005 0</position>
+<position>-71.173726 42.336971 0</position>
+<position>-71.173726 42.336971 10</position>
+<position>-71.173908 42.337005 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173726 42.336971 0</position>
+<position>-71.173763 42.336873 0</position>
+<position>-71.173763 42.336873 10</position>
+<position>-71.173726 42.336971 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173763 42.336873 10</position>
+<position>-71.173941 42.336896 10</position>
+<position>-71.173908 42.337005 10</position>
+<position>-71.173726 42.336971 10</position>
+</face>
+</Building>
+<Building id="0B082" Name="0B082">
+<face Name="F0" id="F0">
+<position>-71.172489 42.336309 0</position>
+<position>-71.172467 42.336486 0</position>
+<position>-71.172467 42.336486 10</position>
+<position>-71.172489 42.336309 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172467 42.336486 0</position>
+<position>-71.172253 42.336464 0</position>
+<position>-71.172253 42.336464 10</position>
+<position>-71.172467 42.336486 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172253 42.336464 0</position>
+<position>-71.172253 42.336306 0</position>
+<position>-71.172253 42.336306 10</position>
+<position>-71.172253 42.336464 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172253 42.336306 0</position>
+<position>-71.172489 42.336309 0</position>
+<position>-71.172489 42.336309 10</position>
+<position>-71.172253 42.336306 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172489 42.336309 10</position>
+<position>-71.172467 42.336486 10</position>
+<position>-71.172253 42.336464 10</position>
+<position>-71.172253 42.336306 10</position>
+</face>
+</Building>
+<Building id="0B083" Name="0B083">
+<face Name="F0" id="F0">
+<position>-71.172990 42.337504 0</position>
+<position>-71.172982 42.337417 0</position>
+<position>-71.172982 42.337417 10</position>
+<position>-71.172990 42.337504 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172982 42.337417 0</position>
+<position>-71.173204 42.337422 0</position>
+<position>-71.173204 42.337422 10</position>
+<position>-71.172982 42.337417 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173204 42.337422 0</position>
+<position>-71.173195 42.337512 0</position>
+<position>-71.173195 42.337512 10</position>
+<position>-71.173204 42.337422 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173195 42.337512 0</position>
+<position>-71.172990 42.337504 0</position>
+<position>-71.172990 42.337504 10</position>
+<position>-71.173195 42.337512 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172990 42.337504 10</position>
+<position>-71.172982 42.337417 10</position>
+<position>-71.173204 42.337422 10</position>
+<position>-71.173195 42.337512 10</position>
+</face>
+</Building>
+<Building id="0B084" Name="0B084">
+<face Name="F0" id="F0">
+<position>-71.173803 42.337670 0</position>
+<position>-71.173833 42.337526 0</position>
+<position>-71.173833 42.337526 10</position>
+<position>-71.173803 42.337670 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173833 42.337526 0</position>
+<position>-71.173965 42.337542 0</position>
+<position>-71.173965 42.337542 10</position>
+<position>-71.173833 42.337526 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173965 42.337542 0</position>
+<position>-71.173925 42.337681 0</position>
+<position>-71.173925 42.337681 10</position>
+<position>-71.173965 42.337542 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173925 42.337681 0</position>
+<position>-71.173803 42.337670 0</position>
+<position>-71.173803 42.337670 10</position>
+<position>-71.173925 42.337681 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173803 42.337670 10</position>
+<position>-71.173833 42.337526 10</position>
+<position>-71.173965 42.337542 10</position>
+<position>-71.173925 42.337681 10</position>
+</face>
+</Building>
+<Building id="0B085" Name="0B085">
+<face Name="F0" id="F0">
+<position>-71.173472 42.337545 0</position>
+<position>-71.173497 42.337453 0</position>
+<position>-71.173497 42.337453 10</position>
+<position>-71.173472 42.337545 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173497 42.337453 0</position>
+<position>-71.173714 42.337480 0</position>
+<position>-71.173714 42.337480 10</position>
+<position>-71.173497 42.337453 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173714 42.337480 0</position>
+<position>-71.173680 42.337583 0</position>
+<position>-71.173680 42.337583 10</position>
+<position>-71.173714 42.337480 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173680 42.337583 0</position>
+<position>-71.173472 42.337545 0</position>
+<position>-71.173472 42.337545 10</position>
+<position>-71.173680 42.337583 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173472 42.337545 10</position>
+<position>-71.173497 42.337453 10</position>
+<position>-71.173714 42.337480 10</position>
+<position>-71.173680 42.337583 10</position>
+</face>
+</Building>
+<Building id="0B086" Name="0B086">
+<face Name="F0" id="F0">
+<position>-71.171724 42.336894 0</position>
+<position>-71.171295 42.336962 0</position>
+<position>-71.171295 42.336962 10</position>
+<position>-71.171724 42.336894 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.171295 42.336962 0</position>
+<position>-71.171152 42.336571 0</position>
+<position>-71.171152 42.336571 10</position>
+<position>-71.171295 42.336962 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.171152 42.336571 0</position>
+<position>-71.171074 42.336585 0</position>
+<position>-71.171074 42.336585 10</position>
+<position>-71.171152 42.336571 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.171074 42.336585 0</position>
+<position>-71.171048 42.336496 0</position>
+<position>-71.171048 42.336496 10</position>
+<position>-71.171074 42.336585 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.171048 42.336496 0</position>
+<position>-71.171176 42.336470 0</position>
+<position>-71.171176 42.336470 10</position>
+<position>-71.171048 42.336496 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.171176 42.336470 0</position>
+<position>-71.171152 42.336404 0</position>
+<position>-71.171152 42.336404 10</position>
+<position>-71.171176 42.336470 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.171152 42.336404 0</position>
+<position>-71.171292 42.336375 0</position>
+<position>-71.171292 42.336375 10</position>
+<position>-71.171152 42.336404 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.171292 42.336375 0</position>
+<position>-71.171306 42.336444 0</position>
+<position>-71.171306 42.336444 10</position>
+<position>-71.171292 42.336375 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.171306 42.336444 0</position>
+<position>-71.171441 42.336420 0</position>
+<position>-71.171441 42.336420 10</position>
+<position>-71.171306 42.336444 10</position>
+</face>
+<face Name="F9" id="F9">
+<position>-71.171441 42.336420 0</position>
+<position>-71.171474 42.336509 0</position>
+<position>-71.171474 42.336509 10</position>
+<position>-71.171441 42.336420 10</position>
+</face>
+<face Name="F10" id="F10">
+<position>-71.171474 42.336509 0</position>
+<position>-71.171401 42.336532 0</position>
+<position>-71.171401 42.336532 10</position>
+<position>-71.171474 42.336509 10</position>
+</face>
+<face Name="F11" id="F11">
+<position>-71.171401 42.336532 0</position>
+<position>-71.171496 42.336811 0</position>
+<position>-71.171496 42.336811 10</position>
+<position>-71.171401 42.336532 10</position>
+</face>
+<face Name="F12" id="F12">
+<position>-71.171496 42.336811 0</position>
+<position>-71.171683 42.336782 0</position>
+<position>-71.171683 42.336782 10</position>
+<position>-71.171496 42.336811 10</position>
+</face>
+<face Name="F13" id="F13">
+<position>-71.171683 42.336782 0</position>
+<position>-71.171724 42.336894 0</position>
+<position>-71.171724 42.336894 10</position>
+<position>-71.171683 42.336782 10</position>
+</face>
+<face Name="F14" id="F14">
+<position>-71.171724 42.336894 10</position>
+<position>-71.171295 42.336962 10</position>
+<position>-71.171152 42.336571 10</position>
+<position>-71.171074 42.336585 10</position>
+<position>-71.171048 42.336496 10</position>
+<position>-71.171176 42.336470 10</position>
+<position>-71.171152 42.336404 10</position>
+<position>-71.171292 42.336375 10</position>
+<position>-71.171306 42.336444 10</position>
+<position>-71.171441 42.336420 10</position>
+<position>-71.171474 42.336509 10</position>
+<position>-71.171401 42.336532 10</position>
+<position>-71.171496 42.336811 10</position>
+<position>-71.171683 42.336782 10</position>
+</face>
+</Building>
+<Building id="0B087" Name="0B087">
+<face Name="F0" id="F0">
+<position>-71.174983 42.337681 0</position>
+<position>-71.174924 42.337888 0</position>
+<position>-71.174924 42.337888 10</position>
+<position>-71.174983 42.337681 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174924 42.337888 0</position>
+<position>-71.174684 42.337857 0</position>
+<position>-71.174684 42.337857 10</position>
+<position>-71.174924 42.337888 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174684 42.337857 0</position>
+<position>-71.174740 42.337651 0</position>
+<position>-71.174740 42.337651 10</position>
+<position>-71.174684 42.337857 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174740 42.337651 0</position>
+<position>-71.174983 42.337681 0</position>
+<position>-71.174983 42.337681 10</position>
+<position>-71.174740 42.337651 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174983 42.337681 10</position>
+<position>-71.174924 42.337888 10</position>
+<position>-71.174684 42.337857 10</position>
+<position>-71.174740 42.337651 10</position>
+</face>
+</Building>
+<Building id="0B088" Name="0B088">
+<face Name="F0" id="F0">
+<position>-71.174112 42.337775 0</position>
+<position>-71.174156 42.337556 0</position>
+<position>-71.174156 42.337556 10</position>
+<position>-71.174112 42.337775 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174156 42.337556 0</position>
+<position>-71.174643 42.337627 0</position>
+<position>-71.174643 42.337627 10</position>
+<position>-71.174156 42.337556 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174643 42.337627 0</position>
+<position>-71.174585 42.337845 0</position>
+<position>-71.174585 42.337845 10</position>
+<position>-71.174643 42.337627 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174585 42.337845 0</position>
+<position>-71.174112 42.337775 0</position>
+<position>-71.174112 42.337775 10</position>
+<position>-71.174585 42.337845 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174112 42.337775 10</position>
+<position>-71.174156 42.337556 10</position>
+<position>-71.174643 42.337627 10</position>
+<position>-71.174585 42.337845 10</position>
+</face>
+</Building>
+<Building id="0B089" Name="0B089">
+<face Name="F0" id="F0">
+<position>-71.173260 42.337504 0</position>
+<position>-71.173268 42.337431 0</position>
+<position>-71.173268 42.337431 10</position>
+<position>-71.173260 42.337504 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173268 42.337431 0</position>
+<position>-71.173414 42.337446 0</position>
+<position>-71.173414 42.337446 10</position>
+<position>-71.173268 42.337431 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173414 42.337446 0</position>
+<position>-71.173387 42.337527 0</position>
+<position>-71.173387 42.337527 10</position>
+<position>-71.173414 42.337446 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173387 42.337527 0</position>
+<position>-71.173260 42.337504 0</position>
+<position>-71.173260 42.337504 10</position>
+<position>-71.173387 42.337527 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173260 42.337504 10</position>
+<position>-71.173268 42.337431 10</position>
+<position>-71.173414 42.337446 10</position>
+<position>-71.173387 42.337527 10</position>
+</face>
+</Building>
+<Building id="0B090" Name="0B090">
+<face Name="F0" id="F0">
+<position>-71.172656 42.338957 0</position>
+<position>-71.172921 42.339020 0</position>
+<position>-71.172921 42.339020 10</position>
+<position>-71.172656 42.338957 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.172921 42.339020 0</position>
+<position>-71.172765 42.339345 0</position>
+<position>-71.172765 42.339345 10</position>
+<position>-71.172921 42.339020 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.172765 42.339345 0</position>
+<position>-71.172520 42.339295 0</position>
+<position>-71.172520 42.339295 10</position>
+<position>-71.172765 42.339345 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.172520 42.339295 0</position>
+<position>-71.172656 42.338957 0</position>
+<position>-71.172656 42.338957 10</position>
+<position>-71.172520 42.339295 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.172656 42.338957 10</position>
+<position>-71.172921 42.339020 10</position>
+<position>-71.172765 42.339345 10</position>
+<position>-71.172520 42.339295 10</position>
+</face>
+</Building>
+<Building id="0B091" Name="0B091">
+<face Name="F0" id="F0">
+<position>-71.170429 42.337723 0</position>
+<position>-71.170538 42.337801 0</position>
+<position>-71.170538 42.337801 10</position>
+<position>-71.170429 42.337723 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.170538 42.337801 0</position>
+<position>-71.170588 42.337753 0</position>
+<position>-71.170588 42.337753 10</position>
+<position>-71.170538 42.337801 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.170588 42.337753 0</position>
+<position>-71.170838 42.337923 0</position>
+<position>-71.170838 42.337923 10</position>
+<position>-71.170588 42.337753 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170838 42.337923 0</position>
+<position>-71.170261 42.338421 0</position>
+<position>-71.170261 42.338421 10</position>
+<position>-71.170838 42.337923 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170261 42.338421 0</position>
+<position>-71.170107 42.338313 0</position>
+<position>-71.170107 42.338313 10</position>
+<position>-71.170261 42.338421 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.170107 42.338313 0</position>
+<position>-71.170255 42.338181 0</position>
+<position>-71.170255 42.338181 10</position>
+<position>-71.170107 42.338313 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.170255 42.338181 0</position>
+<position>-71.170202 42.338145 0</position>
+<position>-71.170202 42.338145 10</position>
+<position>-71.170255 42.338181 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.170202 42.338145 0</position>
+<position>-71.170496 42.337897 0</position>
+<position>-71.170496 42.337897 10</position>
+<position>-71.170202 42.338145 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.170496 42.337897 0</position>
+<position>-71.170345 42.337812 0</position>
+<position>-71.170345 42.337812 10</position>
+<position>-71.170496 42.337897 10</position>
+</face>
+<face Name="F9" id="F9">
+<position>-71.170345 42.337812 0</position>
+<position>-71.170429 42.337723 0</position>
+<position>-71.170429 42.337723 10</position>
+<position>-71.170345 42.337812 10</position>
+</face>
+<face Name="F10" id="F10">
+<position>-71.170429 42.337723 10</position>
+<position>-71.170538 42.337801 10</position>
+<position>-71.170588 42.337753 10</position>
+<position>-71.170838 42.337923 10</position>
+<position>-71.170261 42.338421 10</position>
+<position>-71.170107 42.338313 10</position>
+<position>-71.170255 42.338181 10</position>
+<position>-71.170202 42.338145 10</position>
+<position>-71.170496 42.337897 10</position>
+<position>-71.170345 42.337812 10</position>
+</face>
+</Building>
+<Building id="0B092" Name="0B092">
+<face Name="F0" id="F0">
+<position>-71.174135 42.338273 0</position>
+<position>-71.174309 42.338301 0</position>
+<position>-71.174309 42.338301 10</position>
+<position>-71.174135 42.338273 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.174309 42.338301 0</position>
+<position>-71.174241 42.338456 0</position>
+<position>-71.174241 42.338456 10</position>
+<position>-71.174309 42.338301 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.174241 42.338456 0</position>
+<position>-71.174311 42.338461 0</position>
+<position>-71.174311 42.338461 10</position>
+<position>-71.174241 42.338456 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.174311 42.338461 0</position>
+<position>-71.174176 42.338830 0</position>
+<position>-71.174176 42.338830 10</position>
+<position>-71.174311 42.338461 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.174176 42.338830 0</position>
+<position>-71.173984 42.338801 0</position>
+<position>-71.173984 42.338801 10</position>
+<position>-71.174176 42.338830 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173984 42.338801 0</position>
+<position>-71.174135 42.338273 0</position>
+<position>-71.174135 42.338273 10</position>
+<position>-71.173984 42.338801 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.174135 42.338273 10</position>
+<position>-71.174309 42.338301 10</position>
+<position>-71.174241 42.338456 10</position>
+<position>-71.174311 42.338461 10</position>
+<position>-71.174176 42.338830 10</position>
+<position>-71.173984 42.338801 10</position>
+</face>
+</Building>
+<Building id="0B093" Name="0B093">
+<face Name="F0" id="F0">
+<position>-71.173286 42.338528 0</position>
+<position>-71.173735 42.338604 0</position>
+<position>-71.173735 42.338604 10</position>
+<position>-71.173286 42.338528 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173735 42.338604 0</position>
+<position>-71.173685 42.338748 0</position>
+<position>-71.173685 42.338748 10</position>
+<position>-71.173735 42.338604 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173685 42.338748 0</position>
+<position>-71.173579 42.338730 0</position>
+<position>-71.173579 42.338730 10</position>
+<position>-71.173685 42.338748 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173579 42.338730 0</position>
+<position>-71.173562 42.338779 0</position>
+<position>-71.173562 42.338779 10</position>
+<position>-71.173579 42.338730 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173562 42.338779 0</position>
+<position>-71.173321 42.338742 0</position>
+<position>-71.173321 42.338742 10</position>
+<position>-71.173562 42.338779 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173321 42.338742 0</position>
+<position>-71.173343 42.338680 0</position>
+<position>-71.173343 42.338680 10</position>
+<position>-71.173321 42.338742 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.173343 42.338680 0</position>
+<position>-71.173238 42.338664 0</position>
+<position>-71.173238 42.338664 10</position>
+<position>-71.173343 42.338680 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.173238 42.338664 0</position>
+<position>-71.173286 42.338528 0</position>
+<position>-71.173286 42.338528 10</position>
+<position>-71.173238 42.338664 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.173286 42.338528 10</position>
+<position>-71.173735 42.338604 10</position>
+<position>-71.173685 42.338748 10</position>
+<position>-71.173579 42.338730 10</position>
+<position>-71.173562 42.338779 10</position>
+<position>-71.173321 42.338742 10</position>
+<position>-71.173343 42.338680 10</position>
+<position>-71.173238 42.338664 10</position>
+</face>
+</Building>
+<Building id="0B094" Name="0B094">
+<face Name="F0" id="F0">
+<position>-71.175624 42.336940 0</position>
+<position>-71.175761 42.336896 0</position>
+<position>-71.175761 42.336896 10</position>
+<position>-71.175624 42.336940 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175761 42.336896 0</position>
+<position>-71.175821 42.337017 0</position>
+<position>-71.175821 42.337017 10</position>
+<position>-71.175761 42.336896 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.175821 42.337017 0</position>
+<position>-71.175677 42.337050 0</position>
+<position>-71.175677 42.337050 10</position>
+<position>-71.175821 42.337017 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175677 42.337050 0</position>
+<position>-71.175624 42.336940 0</position>
+<position>-71.175624 42.336940 10</position>
+<position>-71.175677 42.337050 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175624 42.336940 10</position>
+<position>-71.175761 42.336896 10</position>
+<position>-71.175821 42.337017 10</position>
+<position>-71.175677 42.337050 10</position>
+</face>
+</Building>
+<Building id="0B095" Name="0B095">
+<face Name="F0" id="F0">
+<position>-71.176386 42.336566 0</position>
+<position>-71.176504 42.336677 0</position>
+<position>-71.176504 42.336677 10</position>
+<position>-71.176386 42.336566 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176504 42.336677 0</position>
+<position>-71.176358 42.336753 0</position>
+<position>-71.176358 42.336753 10</position>
+<position>-71.176504 42.336677 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176358 42.336753 0</position>
+<position>-71.176249 42.336654 0</position>
+<position>-71.176249 42.336654 10</position>
+<position>-71.176358 42.336753 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176249 42.336654 0</position>
+<position>-71.176386 42.336566 0</position>
+<position>-71.176386 42.336566 10</position>
+<position>-71.176249 42.336654 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176386 42.336566 10</position>
+<position>-71.176504 42.336677 10</position>
+<position>-71.176358 42.336753 10</position>
+<position>-71.176249 42.336654 10</position>
+</face>
+</Building>
+<Building id="0B096" Name="0B096">
+<face Name="F0" id="F0">
+<position>-71.175810 42.336809 0</position>
+<position>-71.175904 42.336744 0</position>
+<position>-71.175904 42.336744 10</position>
+<position>-71.175810 42.336809 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.175904 42.336744 0</position>
+<position>-71.176035 42.336861 0</position>
+<position>-71.176035 42.336861 10</position>
+<position>-71.175904 42.336744 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176035 42.336861 0</position>
+<position>-71.175928 42.336918 0</position>
+<position>-71.175928 42.336918 10</position>
+<position>-71.176035 42.336861 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.175928 42.336918 0</position>
+<position>-71.175810 42.336809 0</position>
+<position>-71.175810 42.336809 10</position>
+<position>-71.175928 42.336918 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.175810 42.336809 10</position>
+<position>-71.175904 42.336744 10</position>
+<position>-71.176035 42.336861 10</position>
+<position>-71.175928 42.336918 10</position>
+</face>
+</Building>
+<Building id="0B097" Name="0B097">
+<face Name="F0" id="F0">
+<position>-71.176624 42.336464 0</position>
+<position>-71.176727 42.336563 0</position>
+<position>-71.176727 42.336563 10</position>
+<position>-71.176624 42.336464 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176727 42.336563 0</position>
+<position>-71.176585 42.336645 0</position>
+<position>-71.176585 42.336645 10</position>
+<position>-71.176727 42.336563 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176585 42.336645 0</position>
+<position>-71.176484 42.336558 0</position>
+<position>-71.176484 42.336558 10</position>
+<position>-71.176585 42.336645 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176484 42.336558 0</position>
+<position>-71.176624 42.336464 0</position>
+<position>-71.176624 42.336464 10</position>
+<position>-71.176484 42.336558 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176624 42.336464 10</position>
+<position>-71.176727 42.336563 10</position>
+<position>-71.176585 42.336645 10</position>
+<position>-71.176484 42.336558 10</position>
+</face>
+</Building>
+<Building id="0B098" Name="0B098">
+<face Name="F0" id="F0">
+<position>-71.176155 42.336688 0</position>
+<position>-71.176278 42.336791 0</position>
+<position>-71.176278 42.336791 10</position>
+<position>-71.176155 42.336688 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176278 42.336791 0</position>
+<position>-71.176132 42.336864 0</position>
+<position>-71.176132 42.336864 10</position>
+<position>-71.176278 42.336791 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176132 42.336864 0</position>
+<position>-71.176012 42.336757 0</position>
+<position>-71.176012 42.336757 10</position>
+<position>-71.176132 42.336864 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176012 42.336757 0</position>
+<position>-71.176155 42.336688 0</position>
+<position>-71.176155 42.336688 10</position>
+<position>-71.176012 42.336757 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176155 42.336688 10</position>
+<position>-71.176278 42.336791 10</position>
+<position>-71.176132 42.336864 10</position>
+<position>-71.176012 42.336757 10</position>
+</face>
+</Building>
+<Building id="0B099" Name="0B099">
+<face Name="F0" id="F0">
+<position>-71.170689 42.337076 0</position>
+<position>-71.170329 42.337147 0</position>
+<position>-71.170329 42.337147 10</position>
+<position>-71.170689 42.337076 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.170329 42.337147 0</position>
+<position>-71.170290 42.337037 0</position>
+<position>-71.170290 42.337037 10</position>
+<position>-71.170329 42.337147 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.170290 42.337037 0</position>
+<position>-71.170361 42.337020 0</position>
+<position>-71.170361 42.337020 10</position>
+<position>-71.170290 42.337037 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170361 42.337020 0</position>
+<position>-71.170274 42.336755 0</position>
+<position>-71.170274 42.336755 10</position>
+<position>-71.170361 42.337020 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170274 42.336755 0</position>
+<position>-71.169907 42.336847 0</position>
+<position>-71.169907 42.336847 10</position>
+<position>-71.170274 42.336755 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.169907 42.336847 0</position>
+<position>-71.169831 42.336605 0</position>
+<position>-71.169831 42.336605 10</position>
+<position>-71.169907 42.336847 10</position>
+</face>
+<face Name="F6" id="F6">
+<position>-71.169831 42.336605 0</position>
+<position>-71.169990 42.336575 0</position>
+<position>-71.169990 42.336575 10</position>
+<position>-71.169831 42.336605 10</position>
+</face>
+<face Name="F7" id="F7">
+<position>-71.169990 42.336575 0</position>
+<position>-71.170024 42.336686 0</position>
+<position>-71.170024 42.336686 10</position>
+<position>-71.169990 42.336575 10</position>
+</face>
+<face Name="F8" id="F8">
+<position>-71.170024 42.336686 0</position>
+<position>-71.170525 42.336596 0</position>
+<position>-71.170525 42.336596 10</position>
+<position>-71.170024 42.336686 10</position>
+</face>
+<face Name="F9" id="F9">
+<position>-71.170525 42.336596 0</position>
+<position>-71.170689 42.337076 0</position>
+<position>-71.170689 42.337076 10</position>
+<position>-71.170525 42.336596 10</position>
+</face>
+<face Name="F10" id="F10">
+<position>-71.170689 42.337076 10</position>
+<position>-71.170329 42.337147 10</position>
+<position>-71.170290 42.337037 10</position>
+<position>-71.170361 42.337020 10</position>
+<position>-71.170274 42.336755 10</position>
+<position>-71.169907 42.336847 10</position>
+<position>-71.169831 42.336605 10</position>
+<position>-71.169990 42.336575 10</position>
+<position>-71.170024 42.336686 10</position>
+<position>-71.170525 42.336596 10</position>
+</face>
+</Building>
+<Building id="0B100" Name="0B100">
+<face Name="F0" id="F0">
+<position>-71.176164 42.337453 0</position>
+<position>-71.176079 42.337366 0</position>
+<position>-71.176079 42.337366 10</position>
+<position>-71.176164 42.337453 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.176079 42.337366 0</position>
+<position>-71.176306 42.337287 0</position>
+<position>-71.176306 42.337287 10</position>
+<position>-71.176079 42.337366 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.176306 42.337287 0</position>
+<position>-71.176359 42.337365 0</position>
+<position>-71.176359 42.337365 10</position>
+<position>-71.176306 42.337287 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.176359 42.337365 0</position>
+<position>-71.176164 42.337453 0</position>
+<position>-71.176164 42.337453 10</position>
+<position>-71.176359 42.337365 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.176164 42.337453 10</position>
+<position>-71.176079 42.337366 10</position>
+<position>-71.176306 42.337287 10</position>
+<position>-71.176359 42.337365 10</position>
+</face>
+</Building>
+</Site>

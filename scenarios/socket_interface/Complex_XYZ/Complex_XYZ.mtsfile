@@ -1,0 +1,26 @@
+Port 9033
+TimeManagementMode RealTime
+InitializeSimulation COORDINATESYSTEM Cartesian
+CreatePlatform P1 0 X 600 Y 150 DAMAGESTATE 0 Type 1
+CreatePlatform P2 0 X 900 Y 150 DAMAGESTATE 0 Type 1
+CreatePlatform P3 0 X 400 Y 500 DAMAGESTATE 0 Type 1
+CreatePlatform P4 0 X 400 Y 500 DAMAGESTATE 0 Type 1
+UpdatePlatform P3 0 VELX 0 VELY 50 VELZ 0
+UpdatePlatform P3 50 VELX 50 VELY 0 VELZ 0
+QuerySimulationState 50
+UpdatePlatform P3 150 VELX 0 VELY -50 VELZ 0
+UpdatePlatform P3 200 VELX -50 VELY 0 VELZ 0
+UpdatePlatform P3 250 VELX 0 VELY 0 VELZ 0
+UpdatePlatform P4 50  X 400 Y 505 Z 0
+UpdatePlatform P4 150  X 405 Y 505 Z 0
+UpdatePlatform P4 200  X 405 Y 500 Z 0
+UpdatePlatform P4 250  X 400 Y 500 Z 0
+#If there is only one node in an entity you may use entityIds in CommEffectsReqeusts
+CommEffectsRequest P1 P2 10 ID1 1 UDP SIZE 512 INTERVAL 5S END-TIME 100S Precedence Routine Description PlatformToPlatformUdpInterval
+#Otherwise one must use interface addresses like this
+CommEffectsRequest 169.0.0.5 169.0.0.6 10 ID1 2 TCP SIZE 512 INTERVAL 5S END-TIME 100S Precedence Priority Description InterfaceAddrToInterfaceAddrTcpIntervalPriority
+UpdatePlatform P1 42 DAMAGESTATE 1
+UpdatePlatform P1 58 DAMAGESTATE 0
+PauseSimulation 175 Duration 5
+StopSimulation 250
+

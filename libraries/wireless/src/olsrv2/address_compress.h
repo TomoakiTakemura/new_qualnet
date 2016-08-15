@@ -1,0 +1,105 @@
+// Copyright (c) 2001-2015, SCALABLE Network Technologies, Inc.  All Rights Reserved.
+//                          600 Corporate Pointe
+//                          Suite 1200
+//                          Culver City, CA 90230
+//                          info@scalable-networks.com
+//
+// This source code is licensed, not sold, and is subject to a written
+// license agreement.  Among other things, no portion of this source
+// code may be copied, transmitted, disclosed, displayed, distributed,
+// translated, used as the basis for a derivative work, or used, in
+// whole or in part, for any program or purpose other than its intended
+// use in compliance with the license agreement as part of the QualNet
+// software.  This source code and certain of the algorithms contained
+// within it are confidential trade secrets of Scalable Network
+// Technologies, Inc. and may not be used as the basis for any other
+// software, hardware, product or service.
+
+/*
+ *
+ * Copyright (c) 2006, Graduate School of Niigata University,
+ *                                         Ad hoc Network Lab.
+ * Developer:
+ *  Yasunori Owada  [yowada@net.ie.niigata-u.ac.jp],
+ *  Kenta Tsuchida  [ktsuchi@net.ie.niigata-u.ac.jp],
+ *  Taka Maeno      [tmaeno@net.ie.niigata-u.ac.jp],
+ *  Hiroei Imai     [imai@ie.niigata-u.ac.jp].
+ * Contributor:
+ *  Keita Yamaguchi [kyama@net.ie.niigata-u.ac.jp],
+ *  Yuichi Murakami [ymura@net.ie.niigata-u.ac.jp],
+ *  Hiraku Okada    [hiraku@ie.niigata-u.ac.jp].
+ *
+ * This software is available with usual "research" terms
+ * with the aim of retain credits of the software.
+ * Permission to use, copy, modify and distribute this software for any
+ * purpose and without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies,
+ * and the name of NIIGATA, or any contributor not be used in advertising
+ * or publicity pertaining to this material without the prior explicit
+ * permission. The software is provided "as is" without any
+ * warranties, support or liabilities of any kind.
+ * This product includes software developed by the University of
+ * California, Berkeley and its contributors protected by copyrights.
+ */
+#ifndef __OLSR_ADDRESS_COMPRESS_H
+#define __OLSR_ADDRESS_COMPRESS_H
+
+#include "olsr_common.h"
+#include "olsr_list.h"
+#include "olsr.h"
+#include "pktbuf.h"
+
+
+
+#define LOCAL_ADDRESS_BLOCK 255
+enum
+{
+  //NOT_COMPRESS,
+  SIMPLE_COMPRESS
+};
+
+typedef struct block_data
+{
+  union olsr_ip_addr iface_addr;
+  olsr_u8_t link_status;
+  olsr_u8_t other_if;
+  olsr_u8_t MPR_Selection;
+  olsr_u8_t Prefix_Length;
+  olsr_u8_t other_neigh;
+
+
+  olsr_bool covered;
+} BLOCK_DATA;
+
+typedef struct base_address
+{
+  olsr_u32_t size;
+  BLOCK_DATA *data;
+} BASE_ADDRESS;
+
+typedef struct prefix_str
+{
+  olsr_u32_t prefix_size;
+  olsr_u8_t *prefix;
+
+  olsr_u32_t union_num;
+} PREFIX;
+
+typedef struct address_block
+{
+  PREFIX prefix;
+  OLSR_LIST block;
+} ADDRESS_BLOCK;
+
+
+/* function prototypes */
+void address_compress(struct olsrv2 *, olsr_pktbuf_t *,
+    olsr_u8_t, olsr_u8_t, union olsr_ip_addr *);
+
+void create_attached_network_address_block(struct olsrv2 *,
+                       olsr_pktbuf_t *,
+                       olsr_u8_t ,
+                       olsr_u8_t ,
+                       union olsr_ip_addr *);
+
+#endif

@@ -1,0 +1,2 @@
+[2] msdp peer 192.0.12.2 connect-source 192.0.12.1 remote-as 2
+[9] msdp peer 192.0.12.1 connect-source 192.0.12.2 remote-as 1

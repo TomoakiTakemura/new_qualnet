@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Site Name="Site0" id="Site0" ReferencePoint="0.0 0.0 0.0" CoordinateType="geodetic" part="1" totalParts="01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:qualnet-road.xsd">
+<Region id="Region0" CoordinateType="geodetic">
+<position>-71.173946 42.336133 0.0</position>
+<position>-71.173946 42.338491 0.0</position>
+<position>-71.169932 42.338491 0.0</position>
+<position>-71.169932 42.336133 0.0</position>
+</Region>
+<Foliage id="1F000" Name="1F000" density="0.15">
+<face Name="F0" id="F0">
+<position>-71.170474 42.336564 0</position>
+<position>-71.170077 42.336640 0</position>
+<position>-71.170077 42.336640 10</position>
+<position>-71.170474 42.336564 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.170077 42.336640 0</position>
+<position>-71.169932 42.336246 0</position>
+<position>-71.169932 42.336246 10</position>
+<position>-71.170077 42.336640 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.169932 42.336246 0</position>
+<position>-71.170335 42.336133 0</position>
+<position>-71.170335 42.336133 10</position>
+<position>-71.169932 42.336246 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.170335 42.336133 0</position>
+<position>-71.170404 42.336353 0</position>
+<position>-71.170404 42.336353 10</position>
+<position>-71.170335 42.336133 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.170404 42.336353 0</position>
+<position>-71.170474 42.336564 0</position>
+<position>-71.170474 42.336564 10</position>
+<position>-71.170404 42.336353 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.170474 42.336564 10</position>
+<position>-71.170077 42.336640 10</position>
+<position>-71.169932 42.336246 10</position>
+<position>-71.170335 42.336133 10</position>
+<position>-71.170404 42.336353 10</position>
+</face>
+</Foliage>
+<Foliage id="1F001" Name="1F001" density="0.15">
+<face Name="F0" id="F0">
+<position>-71.173854 42.338491 0</position>
+<position>-71.173363 42.338402 0</position>
+<position>-71.173363 42.338402 10</position>
+<position>-71.173854 42.338491 10</position>
+</face>
+<face Name="F1" id="F1">
+<position>-71.173363 42.338402 0</position>
+<position>-71.173492 42.338182 0</position>
+<position>-71.173492 42.338182 10</position>
+<position>-71.173363 42.338402 10</position>
+</face>
+<face Name="F2" id="F2">
+<position>-71.173492 42.338182 0</position>
+<position>-71.173946 42.338267 0</position>
+<position>-71.173946 42.338267 10</position>
+<position>-71.173492 42.338182 10</position>
+</face>
+<face Name="F3" id="F3">
+<position>-71.173946 42.338267 0</position>
+<position>-71.173943 42.338267 0</position>
+<position>-71.173943 42.338267 10</position>
+<position>-71.173946 42.338267 10</position>
+</face>
+<face Name="F4" id="F4">
+<position>-71.173943 42.338267 0</position>
+<position>-71.173854 42.338491 0</position>
+<position>-71.173854 42.338491 10</position>
+<position>-71.173943 42.338267 10</position>
+</face>
+<face Name="F5" id="F5">
+<position>-71.173854 42.338491 10</position>
+<position>-71.173363 42.338402 10</position>
+<position>-71.173492 42.338182 10</position>
+<position>-71.173946 42.338267 10</position>
+<position>-71.173943 42.338267 10</position>
+</face>
+</Foliage>
+</Site>
