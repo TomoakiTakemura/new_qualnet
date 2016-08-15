@@ -985,6 +985,9 @@ typedef struct mac_802_15_4_str
 	int numVarBcnHandler;				//count received variable beacon during a normal BI
 //for server
 	UInt8 RecmBO;					//servers MQTTAPP set recommend BO. this value isnt change by MAC
+	UInt8 VarBO //now Variable Beacon interval
+	bool isEnableVarBcn;
+	int numVarBcn; //count send varBcn
 
 #endif
 }MacData802_15_4;

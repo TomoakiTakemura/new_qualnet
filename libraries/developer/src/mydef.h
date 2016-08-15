@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-//#define CHANGE_BI
+#define CHANGE_BI
 #define MODE15_4E
 
 typedef

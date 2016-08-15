@@ -4803,19 +4803,53 @@ if (KANDEB){
 						//add my packet info
 #ifdef CHANGE_BI
 						MyApiBeaconData *myBcn;
-						myBcn = (MyApiBeaconData *)MESSAGE_AddInfo(node,
+						//myBcn = (MyApiBeaconData *)
+						MESSAGE_AddInfo(node,
 								mac->txBeacon,
 								sizeof(MyApiBeaconData),
 								INFO_TYPE_MYAPI_BEACON);
+						myBcn = MESSAGE_ReturnInfo(mac->txBeacon,
+								INFO_TYPE_MYAPI_BEACON);
 						//set isVariableBeacon and VariableBO
 						//
-						if(RecmBO == 0){
+						if(mac->RecmBO == 0){
 							//notset
+							mac->VarBO = 0;
 							myBcn->isVariableBeacon = false;
 							myBcn->VariableBO = 0;
 						}
 						else{
-							//RecmBO is set. decide use varBeacon
+									//RecmBO is set. decide use varBeacon
+							if (!mac->isEnableVerBcn){
+								//Start VarBcn
+								//next beacon is VarBcn
+								mac->VarBO = mac->RecmBO;
+								mac->isEnableVerBcn = true;
+								myBcn->isVariableBeacon = false;
+								myBcn->VariableBO = mac->VarBO;
+							}
+							else{
+								//deccide varBeacon
+								int maxBcn = 1, i;
+								for (i = 0; i < mac->mpib.macBeaconOrder - mac->VarBI; i++)
+									maxBcn = maxBcn * 2;
+								maxBcn--;
+								if (numVarBcn == maxBcn){
+									//this Bcn is normal
+									//config VarBO by RecnBO
+									mac->VarBO = mac->RecmBO;
+
+									myBcn->isVariableBeacon = false;
+									myBcn->VariableBO = mac->VarBO;
+									mac->numVarBcn = 0;
+								}
+								else{
+									//this is VarBcn
+									myBcn->isVariableBeacon = true;
+									myBcn->VariableBO = mac->VarBO;
+									mac->numVarBcn++;
+								}
+							}
 						}
 						
 #endif //CHANGE_BI
@@ -4953,6 +4987,12 @@ if (KANDEB){
                     wtime + node->getNodeTime());
         }
         mac->macBeaconOrder_last = mac->mpib.macBeaconOrder;
+
+#ifdef CHANGE_BI
+		//add num count
+		if (isEnableVarBcn)
+			mac->numVarBcn++;
+#endif
 
         // schedule timer fot 1st GTS slot
         Mac802_15_4ScheduleGtsTimerAtPanCoord(node, interfaceIndex, mac);
